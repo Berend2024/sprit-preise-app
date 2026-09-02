@@ -10,8 +10,9 @@ LOCATIONS = [
     {"name": "München", "lat": 48.1351, "lng": 11.5820},
     {"name": "Köln", "lat": 50.9375, "lng": 6.9603},
     {"name": "Frankfurt", "lat": 50.1109, "lng": 8.6821},
-    # Region um Emden (entspricht config.js: defaultLat/defaultLng)
+    # Region um Berumbur/Emden (entspricht config.js: defaultLat/defaultLng)
     {"name": "Emden", "lat": 53.3631, "lng": 7.2049},
+    {"name": "Norden", "lat": 53.5953, "lng": 7.2078},
     {"name": "Aurich", "lat": 53.4671, "lng": 7.5544},
     {"name": "Oldenburg", "lat": 53.1439, "lng": 8.2146},
     {"name": "Bremen", "lat": 53.0793, "lng": 8.8017},
