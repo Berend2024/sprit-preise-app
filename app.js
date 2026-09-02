@@ -1,217 +1,243 @@
-/* global L, APP_CONFIG */
-
-'use strict';
-
 /*
- * Erwartetes Format von data/prices.json:
- * [
- *   {
- *     "name": "Tankstelle Musterstadt",
- *     "brand": "Beispiel",
- *     "lat": 52.5205,
- *     "lng": 13.4060,
- *     "diesel": 1.659,
- *     "e5": 1.799,
- *     "e10": 1.739,
- *     "address": "Musterstraße 1, 10115 Berlin"
- *   }
- * ]
- *
- * Preise sind Euro pro Liter. "address" ist optional; alle anderen Felder
- * sollten für eine gültige Tankstelle vorhanden sein.
+ * Spritpreise-Web-App
+ * Erwartet Leaflet als globales window.L (z. B. über ein CDN in index.html).
  */
+(function () {
+  'use strict';
 
-const config = window.APP_CONFIG || {};
-const DEFAULT_LAT = Number.isFinite(Number(config.defaultLat)) ? Number(config.defaultLat) : 52.5200;
-const DEFAULT_LNG = Number.isFinite(Number(config.defaultLng)) ? Number(config.defaultLng) : 13.4050;
-const DEFAULT_RADIUS = clamp(Number(config.defaultRadiusKm) || 25, 1, 200);
-const VALID_FUELS = new Set(['diesel', 'e5', 'e10']);
+  var DEFAULT_LOCATION = { lat: 52.52, lng: 13.405 }; // Berlin
+  var FUEL_TYPES = ['diesel', 'e5', 'e10'];
+  var map;
+  var markerLayer;
+  var stations = [];
+  var currentLocation;
+  var selectedFuel = 'diesel';
+  var radiusKm = null;
+  var config = {};
 
-let currentLocation = { lat: DEFAULT_LAT, lng: DEFAULT_LNG };
-let stations = [];
-let map;
-let markerLayer;
-let userMarker;
-
-const fuelLabels = {
-  diesel: 'Diesel',
-  e5: 'Super E5',
-  e10: 'Super E10'
-};
-
-const elements = {};
-
-document.addEventListener('DOMContentLoaded', init);
-
-async function init() {
-  elements.map = document.getElementById('map');
-  elements.stationList = document.getElementById('stationList');
-  elements.stationCount = document.getElementById('stationCount');
-  elements.resultSummary = document.getElementById('resultSummary');
-  elements.statusMessage = document.getElementById('statusMessage');
-  elements.fuelSelect = document.getElementById('fuelSelect');
-  elements.radiusInput = document.getElementById('radiusInput');
-  elements.locateButton = document.getElementById('locateButton');
-
-  const configuredFuel = VALID_FUELS.has(config.defaultFuel) ? config.defaultFuel : 'diesel';
-  elements.fuelSelect.value = configuredFuel;
-  elements.radiusInput.value = DEFAULT_RADIUS;
-
-  map = L.map(elements.map, { zoomControl: true }).setView(
-    [currentLocation.lat, currentLocation.lng],
-    zoomForRadius(DEFAULT_RADIUS)
-  );
-  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'
-  }).addTo(map);
-  markerLayer = L.layerGroup().addTo(map);
-  setUserMarker();
-
-  elements.fuelSelect.addEventListener('change', renderResults);
-  elements.radiusInput.addEventListener('input', renderResults);
-  elements.locateButton.addEventListener('click', useCurrentLocation);
-
-  try {
-    const response = await fetch('data/prices.json', { cache: 'no-store' });
-    if (!response.ok) throw new Error(`HTTP ${response.status}`);
-    const data = await response.json();
-    if (!Array.isArray(data)) throw new Error('Die JSON-Datei enthält kein Array.');
-    stations = data.filter(isValidStation);
-    renderResults();
-  } catch (error) {
-    console.error('Tankstellendaten konnten nicht geladen werden:', error);
-    showStatus('Die Tankstellendaten konnten nicht geladen werden. Bitte später erneut versuchen.', true);
-    elements.stationList.innerHTML = '<p class="empty-state">Keine Tankstellendaten verfügbar.</p>';
-    elements.resultSummary.textContent = 'Keine Tankstellen gefunden';
-    elements.stationCount.textContent = '0';
-  }
-}
-
-function useCurrentLocation() {
-  if (!navigator.geolocation) {
-    showStatus('Dein Browser unterstützt keine Standortbestimmung.', true);
-    return;
+  function getConfig() {
+    // config.js ist optional. Ein fehlerhaftes oder fehlendes APP_CONFIG darf
+    // die Initialisierung der App nicht abbrechen.
+    var candidate = window.APP_CONFIG;
+    return candidate && typeof candidate === 'object' ? candidate : {};
   }
 
-  elements.locateButton.disabled = true;
-  elements.locateButton.setAttribute('aria-busy', 'true');
-  showStatus('Standort wird ermittelt …');
-
-  try {
-    navigator.geolocation.getCurrentPosition(
-      (position) => {
-        currentLocation = {
-          lat: position.coords.latitude,
-          lng: position.coords.longitude
-        };
-        map.setView([currentLocation.lat, currentLocation.lng], zoomForRadius(getRadius()));
-        setUserMarker();
-        renderResults();
-        showStatus('Standort aktualisiert.');
-        resetLocationButton();
-      },
-      (error) => {
-        const message = error.code === error.PERMISSION_DENIED
-          ? 'Standortzugriff wurde abgelehnt. Bitte erlaube ihn im Browser oder nutze die Standardposition.'
-          : 'Standort konnte nicht ermittelt werden. Bitte versuche es erneut.';
-        showStatus(message, true);
-        resetLocationButton();
-      },
-      { enableHighAccuracy: true, timeout: 10000, maximumAge: 300000 }
-    );
-  } catch (error) {
-    console.error('Fehler bei der Standortbestimmung:', error);
-    showStatus('Bei der Standortbestimmung ist ein Fehler aufgetreten.', true);
-    resetLocationButton();
-  }
-}
-
-function renderResults() {
-  const fuel = VALID_FUELS.has(elements.fuelSelect.value) ? elements.fuelSelect.value : 'diesel';
-  const radius = getRadius();
-  elements.radiusInput.value = radius;
-  map.setView([currentLocation.lat, currentLocation.lng], zoomForRadius(radius), { animate: false });
-
-  const nearby = stations
-    .map((station) => ({ ...station, distance: haversineDistance(currentLocation, station) }))
-    .filter((station) => station.distance <= radius && Number.isFinite(Number(station[fuel])))
-    .sort((a, b) => Number(a[fuel]) - Number(b[fuel]) || a.distance - b.distance);
-
-  markerLayer.clearLayers();
-  nearby.forEach((station) => addStationMarker(station, fuel));
-  renderStationList(nearby, fuel);
-  elements.resultSummary.textContent = `${nearby.length} Tankstellen im Umkreis von ${formatNumber(radius)} km gefunden`;
-  elements.stationCount.textContent = String(nearby.length);
-}
-
-function addStationMarker(station, fuel) {
-  const marker = L.marker([station.lat, station.lng]).addTo(markerLayer);
-  marker.bindPopup(`<strong>${escapeHtml(station.name)}</strong><br>${fuelLabels[fuel]}: ${formatPrice(station[fuel])}<br>${formatDistance(station.distance)}`);
-}
-
-function renderStationList(nearby, fuel) {
-  elements.stationList.replaceChildren();
-  if (!nearby.length) {
-    const empty = document.createElement('p');
-    empty.className = 'empty-state';
-    empty.textContent = 'In diesem Umkreis wurden keine passenden Tankstellen gefunden.';
-    elements.stationList.appendChild(empty);
-    return;
+  function validCoordinate(value, min, max) {
+    return typeof value === 'number' && Number.isFinite(value) && value >= min && value <= max;
   }
 
-  nearby.forEach((station, index) => {
-    const article = document.createElement('article');
-    article.className = 'station-card';
-    article.innerHTML = `
-      <div class="station-rank">${index + 1}</div>
-      <div class="station-details">
-        <h3>${escapeHtml(station.name)}</h3>
-        <p class="station-meta">${escapeHtml(station.brand || 'Tankstelle')} · ${formatDistance(station.distance)}</p>
-        ${station.address ? `<p class="station-address">${escapeHtml(station.address)}</p>` : ''}
-      </div>
-      <strong class="station-price">${formatPrice(station[fuel])}</strong>`;
-    article.addEventListener('click', () => {
-      map.setView([station.lat, station.lng], 15);
-      markerLayer.eachLayer((marker) => {
-        if (marker.getLatLng().lat === station.lat && marker.getLatLng().lng === station.lng) marker.openPopup();
-      });
+  function validPrice(value) {
+    return typeof value === 'number' && Number.isFinite(value) && value > 0;
+  }
+
+  // Ungültige Datensätze werden bereits vor dem Filtern entfernt.
+  function isValidStation(station) {
+    if (!station || typeof station !== 'object') return false;
+    if (!validCoordinate(station.lat, -90, 90) || !validCoordinate(station.lng, -180, 180)) {
+      return false;
+    }
+    return FUEL_TYPES.some(function (fuel) {
+      return validPrice(station[fuel]);
     });
-    elements.stationList.appendChild(article);
-  });
-}
+  }
 
-function setUserMarker() {
-  if (userMarker) userMarker.remove();
-  userMarker = L.circleMarker([currentLocation.lat, currentLocation.lng], {
-    radius: 8, color: '#ffffff', weight: 3, fillColor: '#ef6c3b', fillOpacity: 1
-  }).bindTooltip('Dein Standort').addTo(map);
-}
+  function getSelectedFuel() {
+    var select = document.getElementById('fuel-select');
+    var value = select && select.value;
+    return FUEL_TYPES.indexOf(value) !== -1 ? value : selectedFuel;
+  }
 
-function isValidStation(station) {
-  return station && typeof station.name === 'string' &&
-    Number.isFinite(Number(station.lat)) && Number.isFinite(Number(station.lng));
-}
+  function getInitialFuel() {
+    var configured = config.defaultFuel;
+    var select = document.getElementById('fuel-select');
+    var existing = select && select.value;
+    if (FUEL_TYPES.indexOf(configured) !== -1) return configured;
+    if (FUEL_TYPES.indexOf(existing) !== -1) return existing;
+    return 'diesel';
+  }
 
-function haversineDistance(from, to) {
-  const earthRadiusKm = 6371;
-  const lat1 = toRadians(from.lat);
-  const lat2 = toRadians(Number(to.lat));
-  const deltaLat = lat2 - lat1;
-  const deltaLng = toRadians(Number(to.lng) - from.lng);
-  const a = Math.sin(deltaLat / 2) ** 2 + Math.cos(lat1) * Math.cos(lat2) * Math.sin(deltaLng / 2) ** 2;
-  return earthRadiusKm * 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
-}
+  function getInitialLocation() {
+    if (validCoordinate(config.defaultLat, -90, 90) && validCoordinate(config.defaultLng, -180, 180)) {
+      return { lat: config.defaultLat, lng: config.defaultLng };
+    }
+    return { lat: DEFAULT_LOCATION.lat, lng: DEFAULT_LOCATION.lng };
+  }
 
-function getRadius() {
-  const value = Number(elements.radiusInput.value);
-  return clamp(Number.isFinite(value) ? value : DEFAULT_RADIUS, 1, 200);
-}
-function zoomForRadius(radius) { return radius <= 5 ? 14 : radius <= 15 ? 12 : radius <= 40 ? 11 : 9; }
-function clamp(value, min, max) { return Math.min(Math.max(value, min), max); }
-function toRadians(value) { return value * Math.PI / 180; }
-function formatNumber(value) { return Number(value).toLocaleString('de-DE', { maximumFractionDigits: 1 }); }
-function formatDistance(value) { return `${formatNumber(value)} km entfernt`; }
-function formatPrice(value) { return `${Number(value).toLocaleString('de-DE', { minimumFractionDigits: 3, maximumFractionDigits: 3 })} €`; }
-function showStatus(message, isError = false) { elements.statusMessage.textContent = message; elements.statusMessage.classList.toggle('is-error', isError); }
-function resetLocationButton() { elements.locateButton.disabled = false; elements.locateButton.removeAttribute('aria-busy'); }
-function escapeHtml(value) { return String(value).replace(/[&<>'"]/g, (char) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', "'": '&#39;', '"': '&quot;' })[char]); }
+  function getRadiusKm() {
+    var value = Number(config.defaultRadiusKm);
+    return Number.isFinite(value) && value > 0 ? value : null;
+  }
+
+  function haversineDistanceKm(a, b) {
+    var earthRadiusKm = 6371;
+    var latDelta = (b.lat - a.lat) * Math.PI / 180;
+    var lngDelta = (b.lng - a.lng) * Math.PI / 180;
+    var lat1 = a.lat * Math.PI / 180;
+    var lat2 = b.lat * Math.PI / 180;
+    var sinLat = Math.sin(latDelta / 2);
+    var sinLng = Math.sin(lngDelta / 2);
+    var h = sinLat * sinLat + Math.cos(lat1) * Math.cos(lat2) * sinLng * sinLng;
+    return 2 * earthRadiusKm * Math.asin(Math.sqrt(h));
+  }
+
+  function escapeHtml(value) {
+    return String(value == null ? '' : value)
+      .replace(/&/g, '&amp;')
+      .replace(/</g, '&lt;')
+      .replace(/>/g, '&gt;')
+      .replace(/"/g, '&quot;')
+      .replace(/'/g, '&#039;');
+  }
+
+  function formatPrice(price) {
+    return Number(price).toLocaleString('de-DE', {
+      minimumFractionDigits: 3,
+      maximumFractionDigits: 3
+    }) + ' €';
+  }
+
+  function updateCount(count) {
+    var element = document.getElementById('station-count');
+    if (element) element.textContent = count + ' Tankstelle' + (count === 1 ? '' : 'n') + ' gefunden';
+  }
+
+  function filteredStations() {
+    var fuel = getSelectedFuel();
+    return stations.filter(function (station) {
+      if (!validPrice(station[fuel])) return false;
+      if (radiusKm !== null && currentLocation &&
+          haversineDistanceKm(currentLocation, station) > radiusKm) return false;
+      return true;
+    });
+  }
+
+  function renderMarkers() {
+    var visible = filteredStations();
+    updateCount(visible.length);
+    if (!markerLayer) return;
+
+    markerLayer.clearLayers();
+    visible.forEach(function (station) {
+      try {
+        var marker = window.L.marker([station.lat, station.lng]);
+        marker.bindPopup(
+          '<strong>' + escapeHtml(station.name || 'Tankstelle') + '</strong><br>' +
+          escapeHtml(getSelectedFuel().toUpperCase()) + ': ' + formatPrice(station[getSelectedFuel()])
+        );
+        marker.addTo(markerLayer);
+      } catch (error) {
+        console.error('Marker konnte nicht erstellt werden:', error, station);
+      }
+    });
+  }
+
+  function initMap() {
+    if (!window.L || typeof window.L.map !== 'function') {
+      console.error('Leaflet (window.L) ist nicht verfügbar. Karte kann nicht initialisiert werden.');
+      updateCount(0);
+      return false;
+    }
+    var mapElement = document.getElementById('map');
+    if (!mapElement) {
+      console.error('Kein Element mit id="map" gefunden.');
+      updateCount(0);
+      return false;
+    }
+    try {
+      currentLocation = getInitialLocation();
+      map = window.L.map(mapElement).setView([currentLocation.lat, currentLocation.lng], 12);
+      window.L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution: '&copy; OpenStreetMap contributors'
+      }).addTo(map);
+      markerLayer = window.L.layerGroup().addTo(map);
+      return true;
+    } catch (error) {
+      console.error('Karte konnte nicht initialisiert werden:', error);
+      return false;
+    }
+  }
+
+  function useLocation(position) {
+    var coords = position && position.coords;
+    if (!coords || !validCoordinate(coords.latitude, -90, 90) || !validCoordinate(coords.longitude, -180, 180)) {
+      console.warn('Geolocation lieferte ungültige Koordinaten; verwende Fallback.');
+      return false;
+    }
+    currentLocation = { lat: coords.latitude, lng: coords.longitude };
+    if (map) map.setView([currentLocation.lat, currentLocation.lng], 13);
+    renderMarkers();
+    console.log('Standort verwendet:', currentLocation);
+    return true;
+  }
+
+  function locateUser() {
+    if (!navigator.geolocation || typeof navigator.geolocation.getCurrentPosition !== 'function') {
+      console.warn('Geolocation API nicht verfügbar; Fallback wird verwendet.');
+      currentLocation = getInitialLocation();
+      if (map) map.setView([currentLocation.lat, currentLocation.lng], 12);
+      renderMarkers();
+      return;
+    }
+    navigator.geolocation.getCurrentPosition(useLocation, function (error) {
+      console.warn('Geolocation fehlgeschlagen (Fallback wird verwendet):', error && error.message);
+      currentLocation = getInitialLocation();
+      if (map) map.setView([currentLocation.lat, currentLocation.lng], 12);
+      renderMarkers();
+    }, { enableHighAccuracy: false, timeout: 10000, maximumAge: 300000 });
+  }
+
+  function bindControls() {
+    var fuelSelect = document.getElementById('fuel-select');
+    if (fuelSelect) {
+      fuelSelect.value = selectedFuel;
+      fuelSelect.addEventListener('change', function () {
+        selectedFuel = getSelectedFuel();
+        renderMarkers();
+      });
+    }
+    var locateButton = document.getElementById('locate-btn');
+    if (locateButton) locateButton.addEventListener('click', locateUser);
+  }
+
+  function loadStations() {
+    return fetch('data/prices.json', { cache: 'no-cache' })
+      .then(function (response) {
+        if (!response.ok) throw new Error('HTTP ' + response.status + ' beim Laden von data/prices.json');
+        return response.json();
+      })
+      .then(function (data) {
+        if (!data || !Array.isArray(data.stations)) throw new Error('Ungültiges JSON-Format: stations fehlt.');
+        stations = data.stations.filter(isValidStation);
+        console.log('Tankstellendaten geladen:', data.stations.length, 'gesamt,', stations.length, 'gültig.');
+      })
+      .catch(function (error) {
+        stations = [];
+        console.error('Tankstellendaten konnten nicht geladen werden:', error);
+      });
+  }
+
+  function init() {
+    try {
+      config = getConfig();
+      selectedFuel = getInitialFuel();
+      radiusKm = getRadiusKm();
+      bindControls();
+      initMap();
+      // Standort zuerst versuchen; bei Fehler setzt locateUser den Fallback.
+      locateUser();
+      loadStations().then(renderMarkers).catch(function (error) {
+        console.error('Unerwarteter Fehler beim Laden der Tankstellen:', error);
+        renderMarkers();
+      });
+    } catch (error) {
+      console.error('Unerwarteter Initialisierungsfehler:', error);
+      updateCount(0);
+    }
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', init);
+  } else {
+    init();
+  }
+}());
