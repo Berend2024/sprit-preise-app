@@ -147,7 +147,8 @@
     var visible = filteredStations();
     var fuel = getSelectedFuel();
     if (!visible.length) {
-      listElement.innerHTML = '<p class="empty-state">Keine Tankstellen im gewählten Umkreis gefunden.</p>';
+      listElement.innerHTML = '<p class="empty-state">Keine Tankstellen im gewählten Umkreis gefunden. '
+        + '<a href="config.html">Diagnose öffnen</a></p>';
       return;
     }
     listElement.innerHTML = '<ul id="stations">' + visible.map(function (station) {

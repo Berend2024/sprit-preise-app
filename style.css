@@ -138,6 +138,163 @@ main {
   color: #1a3c5e;
 }
 
+/* ----- Link zur Diagnoseseite ----- */
+
+.config-link {
+  display: inline-block;
+  margin-top: 0.5rem;
+  color: #cde;
+  font-size: 0.85rem;
+  text-decoration: none;
+}
+
+.config-link:hover {
+  text-decoration: underline;
+}
+
+/* ----- Konfigurations-/Diagnoseseite ----- */
+
+.config-shell {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.config-status {
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+.config-status.ok {
+  background: #e6f4e7;
+  color: #2e7d32;
+}
+
+.config-status.warn {
+  background: #fdeee0;
+  color: #ef6c00;
+}
+
+.config-status.fail {
+  background: #fdecea;
+  color: #c62828;
+}
+
+.card {
+  background: white;
+  border-radius: 8px;
+  padding: 1rem 1.25rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+.card h2 {
+  margin-top: 0;
+  font-size: 1.1rem;
+}
+
+.cfg-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem 0.75rem;
+  align-items: baseline;
+  padding: 0.5rem 0.6rem;
+  margin-bottom: 0.4rem;
+  border-radius: 6px;
+  background: #f7f7f7;
+}
+
+.cfg-row .cfg-name {
+  font-weight: bold;
+  min-width: 180px;
+}
+
+.cfg-row .cfg-value {
+  word-break: break-word;
+}
+
+.cfg-row .cfg-status {
+  margin-left: auto;
+  font-size: 0.75rem;
+  font-weight: bold;
+  padding: 0.1rem 0.5rem;
+  border-radius: 999px;
+}
+
+.cfg-row.ok {
+  border-left: 4px solid #2e7d32;
+}
+
+.cfg-row.ok .cfg-status {
+  color: #2e7d32;
+  background: #e6f4e7;
+}
+
+.cfg-row.warn {
+  border-left: 4px solid #ef6c00;
+}
+
+.cfg-row.warn .cfg-status {
+  color: #ef6c00;
+  background: #fdeee0;
+}
+
+.cfg-row.fail {
+  border-left: 4px solid #c62828;
+}
+
+.cfg-row.fail .cfg-status {
+  color: #c62828;
+  background: #fdecea;
+}
+
+.cfg-row.info {
+  border-left: 4px solid #1a3c5e;
+}
+
+.cfg-row.info .cfg-status {
+  color: #1a3c5e;
+  background: #eef3f8;
+}
+
+.cfg-hint {
+  flex-basis: 100%;
+  font-size: 0.85rem;
+  color: #555;
+}
+
+.cfg-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  align-items: center;
+  margin: 0.75rem 0;
+}
+
+.key-input {
+  flex: 1;
+  min-width: 220px;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-family: monospace;
+}
+
+.cfg-note {
+  font-size: 0.85rem;
+  color: #555;
+}
+
+.cfg-test-link {
+  display: inline-block;
+  margin: 0.5rem 0;
+  word-break: break-all;
+}
+
 @media (max-width: 700px) {
   .map-layout {
     flex-direction: column;

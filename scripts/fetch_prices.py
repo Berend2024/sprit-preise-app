@@ -1,4 +1,5 @@
 import requests, json, os
+from datetime import datetime, timezone
 
 API_KEY = os.environ["TANKERKOENIG_KEY"]
 
@@ -34,7 +35,11 @@ for loc in LOCATIONS:
 
 print(f"{len(all_stations)} Tankstellen insgesamt gefunden.")
 
-output = {"stations": list(all_stations.values())}
+output = {
+    "stations": list(all_stations.values()),
+    # Zeitstempel fuer die Diagnoseseite (Alter der Daten sichtbar machen)
+    "fetched_at": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
+}
 
 os.makedirs("data", exist_ok=True)
 with open("data/prices.json", "w", encoding="utf-8") as f:

@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
+  <title>Konfiguration &amp; Diagnose – Spritpreise</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="app-header">
+    <div class="header-inner">
+      <p class="eyebrow">TANKSTELLEN-FINDER</p>
+      <h1>Konfiguration &amp; Diagnose</h1>
+      <p class="intro">Prüft Einstellungen, Datenquelle und Workflow – ungültige Parameter werden hervorgehoben.</p>
+      <a class="config-link" href="index.html">← Zurück zur App</a>
+    </div>
+  </header>
+
+  <main class="config-shell">
+    <div id="overall" class="config-status">Diagnose läuft …</div>
+
+    <section class="card" aria-labelledby="cfg-heading-config">
+      <h2 id="cfg-heading-config">1. Konfiguration (config.js)</h2>
+      <div id="cfg-config"></div>
+      <p class="cfg-note">Zahlen brauchen einen Punkt als Dezimaltrennzeichen (z.&nbsp;B. 53.3513 statt 53,3513) –
+        Kommas erzeugen einen Syntaxfehler und die komplette config.js wird ignoriert.</p>
+    </section>
+
+    <section class="card" aria-labelledby="cfg-heading-data">
+      <h2 id="cfg-heading-data">2. Tankstellendaten (data/prices.json)</h2>
+      <div id="cfg-data"></div>
+    </section>
+
+    <section class="card" aria-labelledby="cfg-heading-coverage">
+      <h2 id="cfg-heading-coverage">3. Standort &amp; Abdeckung</h2>
+      <div id="cfg-coverage"></div>
+      <div class="cfg-actions">
+        <button id="geo-test" type="button">Aktuelle Position ermitteln</button>
+      </div>
+      <div id="cfg-geo"></div>
+      <p class="cfg-note">Zeigt keine Stationen, obwohl hier alles grün ist, prüfe den Umkreis (Abschnitt 1)
+        und ob die GitHub-Action frische Daten liefert (Abschnitt 4).</p>
+    </section>
+
+    <section class="card" aria-labelledby="cfg-heading-workflow">
+      <h2 id="cfg-heading-workflow">4. GitHub-Action (Daten-Update)</h2>
+      <div id="cfg-workflow"></div>
+      <p class="cfg-note">Schlägt der Workflow „Update Sprit Prices“ fehl, ist meist das Secret
+        <strong>TANKERKOENIG_KEY</strong> falsch oder fehlt: Repository → Settings → Secrets and variables → Actions.</p>
+    </section>
+
+    <section class="card" aria-labelledby="cfg-heading-key">
+      <h2 id="cfg-heading-key">5. Tankerkoenig-API-Key testen</h2>
+      <p class="cfg-note">Der Key liegt aus Sicherheitsgründen nur im GitHub-Secret und kann von hier nicht gelesen
+        werden. Zum Testen einmalig eingeben – er wird nur an tankerkönig.de gesendet und nicht gespeichert.
+        <strong>Niemals</strong> in config.js oder andere Dateien eintragen!</p>
+      <div class="cfg-actions">
+        <input id="tankerkoenig-key" class="key-input" type="password" autocomplete="off"
+          placeholder="API-Key einfügen (www.creativecommons.tankerkoenig.de)">
+        <button id="key-test" type="button">Key testen</button>
+      </div>
+      <div id="cfg-key"></div>
+      <div id="cfg-key-link"></div>
+    </section>
+  </main>
+
+  <!-- config.js wird bewusst geladen: fehlt es oder enthält Fehler, meldet das die Diagnose. -->
+  <script src="config.js"></script>
+  <script src="config-page.js"></script>
+</body>
+</html>
