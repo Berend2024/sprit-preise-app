@@ -63,9 +63,28 @@ main {
   height: calc(100vh - 130px);
 }
 
+.map-layout {
+  display: flex;
+  align-items: stretch;
+  flex: 1;
+  min-width: 0;
+}
+
+.station-panel {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  max-width: 350px;
+  min-width: 260px;
+}
+
+/* Explizite Hoehe/Breite: ohne sie kollabiert der Container und Leaflet
+   rendert nur fragmentierte Kacheln. */
 #map {
   flex: 2;
-  height: 100%;
+  height: 500px;
+  width: 100%;
+  min-width: 0;
 }
 
 #station-list {
@@ -121,6 +140,13 @@ main {
   main {
     flex-direction: column;
     height: auto;
+  }
+  .map-layout {
+    flex-direction: column;
+  }
+  .station-panel {
+    max-width: 100%;
+    min-width: 0;
   }
   #map {
     height: 400px;

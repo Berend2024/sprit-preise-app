@@ -10,6 +10,7 @@
   var map;
   var markerLayer;
   var stations = [];
+  var stationsLoaded = false;
   var currentLocation;
   var selectedFuel = 'diesel';
   var radiusKm = null;
@@ -18,8 +19,14 @@
   function getConfig() {
     // config.js ist optional. Ein fehlerhaftes oder fehlendes APP_CONFIG darf
     // die Initialisierung der App nicht abbrechen.
-    var candidate = window.APP_CONFIG;
-    return candidate && typeof candidate === 'object' ? candidate : {};
+    try {
+      var candidate = window.APP_CONFIG;
+      if (candidate && typeof candidate === 'object') return candidate;
+      console.warn('window.APP_CONFIG nicht gefunden (config.js fehlt oder enthält einen Syntaxfehler) – verwende Fallback-Werte.');
+    } catch (error) {
+      console.error('Konfiguration (config.js) konnte nicht gelesen werden:', error);
+    }
+    return {};
   }
 
   function validCoordinate(value, min, max) {
@@ -96,9 +103,23 @@
     }) + ' €';
   }
 
+  function setStatusMessage(text) {
+    var summary = document.getElementById('resultSummary');
+    if (summary) summary.textContent = text;
+  }
+
   function updateCount(count) {
     var element = document.getElementById('station-count');
-    if (element) element.textContent = count + ' Tankstelle' + (count === 1 ? '' : 'n') + ' gefunden';
+    if (element) {
+      element.textContent = stationsLoaded
+        ? count + ' Tankstelle' + (count === 1 ? '' : 'n') + ' gefunden'
+        : '—';
+    }
+    if (!stationsLoaded) return;
+    var radius = radiusKm !== null ? ' im Umkreis von ' + radiusKm + ' km' : '';
+    setStatusMessage(count === 0
+      ? 'Keine Tankstellen gefunden' + radius + '.'
+      : count + ' Tankstelle' + (count === 1 ? '' : 'n') + ' gefunden' + radius + '.');
   }
 
   function filteredStations() {
@@ -111,9 +132,35 @@
     });
   }
 
+  function renderStationList() {
+    var listElement = document.getElementById('station-list');
+    if (!listElement) return;
+    if (!stationsLoaded) {
+      listElement.innerHTML = '<p class="empty-state">Tankstellendaten werden geladen …</p>';
+      return;
+    }
+    var visible = filteredStations();
+    var fuel = getSelectedFuel();
+    if (!visible.length) {
+      listElement.innerHTML = '<p class="empty-state">Keine Tankstellen im gewählten Umkreis gefunden.</p>';
+      return;
+    }
+    listElement.innerHTML = '<ul id="stations">' + visible.map(function (station) {
+      var address = [station.street, station.houseNumber, station.postCode, station.place]
+        .filter(function (part) { return part; })
+        .join(', ');
+      return '<li>' +
+        '<span class="station-name">' + escapeHtml(station.name || 'Tankstelle') + '</span>' +
+        '<span class="price"><strong>' + formatPrice(station[fuel]) + '</strong>' +
+        (address ? ' – ' + escapeHtml(address) : '') + '</span>' +
+        '</li>';
+    }).join('') + '</ul>';
+  }
+
   function renderMarkers() {
     var visible = filteredStations();
     updateCount(visible.length);
+    renderStationList();
     if (!markerLayer) return;
 
     markerLayer.clearLayers();
@@ -132,6 +179,7 @@
   }
 
   function initMap() {
+    if (map) return true; // Karte nicht mehrfach initialisieren (z. B. bei erneutem Standort-Update)
     if (!window.L || typeof window.L.map !== 'function') {
       console.error('Leaflet (window.L) ist nicht verfügbar. Karte kann nicht initialisiert werden.');
       updateCount(0);
@@ -150,6 +198,11 @@
         attribution: '&copy; OpenStreetMap contributors'
       }).addTo(map);
       markerLayer = window.L.layerGroup().addTo(map);
+      // Rendering-Probleme bei verzögertem/dynamischem Layout ausgleichen:
+      map.invalidateSize();
+      setTimeout(function () {
+        if (map) map.invalidateSize();
+      }, 200);
       return true;
     } catch (error) {
       console.error('Karte konnte nicht initialisiert werden:', error);
@@ -208,11 +261,14 @@
       .then(function (data) {
         if (!data || !Array.isArray(data.stations)) throw new Error('Ungültiges JSON-Format: stations fehlt.');
         stations = data.stations.filter(isValidStation);
+        stationsLoaded = true;
         console.log('Tankstellendaten geladen:', data.stations.length, 'gesamt,', stations.length, 'gültig.');
       })
       .catch(function (error) {
         stations = [];
+        stationsLoaded = true;
         console.error('Tankstellendaten konnten nicht geladen werden:', error);
+        setStatusMessage('Fehler beim Laden der Tankstellendaten – bitte Seite neu laden (Strg+F5).');
       });
   }
 
