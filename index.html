@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>⛽ Spritpreise Karte</title>
+
+<!-- Leaflet CSS -->
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>⛽ Spritpreise in deiner Nähe</h1>
+  <div class="controls">
+    <button id="locate-btn">📍 Meinen Standort verwenden</button>
+
+    <label>
+      Kraftstoff:
+      <select id="fuel-filter">
+        <option value="all">Alle</option>
+        <option value="e5">Super E5</option>
+        <option value="e10">Super E10</option>
+        <option value="diesel">Diesel</option>
+      </select>
+    </label>
+
+    <label>
+      Umkreis (km):
+      <input type="number" id="radius-input" value="5" min="1" max="25">
+    </label>
+  </div>
+  <p id="status"></p>
+</header>
+
+<main>
+  <div id="map"></div>
+  <aside id="station-list">
+    <h2>Tankstellen</h2>
+    <ul id="stations"></ul>
+  </aside>
+</main>
+
+<!-- Leaflet JS -->
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
