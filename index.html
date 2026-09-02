@@ -1,50 +1,75 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="de">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>⛽ Spritpreise Karte</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Finde die günstigsten Tankstellen in deiner Nähe.">
+  <title>Spritpreise in deiner Nähe</title>
 
-<!-- Leaflet CSS -->
-<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
-
-<link rel="stylesheet" href="style.css">
+  <!-- Leaflet-Kartenbibliothek -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIINfQ3mZQ0G4s6Lw4XwK5q5p4f5n5p5W5E=" crossorigin="">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <header class="app-header">
+    <div class="header-inner">
+      <p class="eyebrow">TANKSTELLEN-FINDER</p>
+      <h1>Spritpreise in deiner Nähe</h1>
+      <p class="intro">Vergleiche aktuelle Preise in deinem gewählten Umkreis.</p>
+    </div>
+  </header>
 
-<header>
-  <h1>⛽ Spritpreise in deiner Nähe</h1>
-  <div class="controls">
-    <button id="locate-btn">📍 Meinen Standort verwenden</button>
+  <main class="app-shell">
+    <section class="controls" aria-labelledby="filter-heading">
+      <h2 id="filter-heading">Suche einstellen</h2>
+      <div id="statusMessage" class="status-message" role="status" aria-live="polite"></div>
 
-    <label>
-      Kraftstoff:
-      <select id="fuel-filter">
-        <option value="all">Alle</option>
-        <option value="e5">Super E5</option>
-        <option value="e10">Super E10</option>
-        <option value="diesel">Diesel</option>
-      </select>
-    </label>
+      <button id="locateButton" type="button" class="location-button">
+        <span aria-hidden="true">⌖</span> Meinen Standort verwenden
+      </button>
 
-    <label>
-      Umkreis (km):
-      <input type="number" id="radius-input" value="5" min="1" max="25">
-    </label>
-  </div>
-  <p id="status"></p>
-</header>
+      <div class="control-grid">
+        <label for="fuelSelect">
+          <span>Kraftstoffsorte</span>
+          <select id="fuelSelect" name="fuel">
+            <option value="diesel">Diesel</option>
+            <option value="e10">Super E10</option>
+            <option value="e5">Super E5</option>
+          </select>
+        </label>
 
-<main>
-  <div id="map"></div>
-  <aside id="station-list">
-    <h2>Tankstellen</h2>
-    <ul id="stations"></ul>
-  </aside>
-</main>
+        <label for="radiusInput">
+          <span>Umkreis (km)</span>
+          <input id="radiusInput" name="radius" type="number" min="1" max="200" step="1" inputmode="numeric">
+        </label>
+      </div>
 
-<!-- Leaflet JS -->
-<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-<script src="app.js"></script>
+      <p id="resultSummary" class="result-summary" aria-live="polite">
+        Tankstellen werden geladen …
+      </p>
+    </section>
+
+    <section class="map-layout" aria-label="Tankstellenkarte und Ergebnisliste">
+      <div id="map" class="map" aria-label="Karte mit Tankstellenmarkierungen"></div>
+
+      <aside class="station-panel" aria-labelledby="station-heading">
+        <div class="panel-heading">
+          <h2 id="station-heading">Tankstellen</h2>
+          <span id="stationCount" class="station-count" aria-hidden="true">—</span>
+        </div>
+        <div id="stationList" class="station-list">
+          <p class="empty-state">Tankstellendaten werden geladen …</p>
+        </div>
+      </aside>
+    </section>
+  </main>
+
+  <!-- Reihenfolge: Leaflet, danach Konfiguration, zuletzt die App-Logik. -->
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+  <script src="config.js"></script>
+  <script src="app.js"></script>
+<script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/v3d52b47920f24c319d37e2661827c42b1787588026925" integrity="sha512-d9sL6GJLXn6fInD1+TVXhTcQOsmxeHfmHAvwGDIxp5TO+uo1fiWW7mHomMj4MLRlCsJDTqXzWLHJFFlPCEIj/A==" data-cf-beacon='{"version":"2024.11.0","token":"8607d2a720d14b038279025b2b5a82e5"}' crossorigin="anonymous"></script>
 </body>
 </html>
