@@ -146,6 +146,8 @@
     }
     var visible = filteredStations();
     var fuel = getSelectedFuel();
+    // Guenstigste zuerst
+    visible.sort(function (a, b) { return a[fuel] - b[fuel]; });
     if (!visible.length) {
       listElement.innerHTML = '<p class="empty-state">Keine Tankstellen im gewählten Umkreis gefunden. '
         + '<a href="config.html">Diagnose öffnen</a></p>';
