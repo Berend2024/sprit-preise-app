@@ -11,6 +11,7 @@
   var markerLayer;
   var stations = [];
   var stationsLoaded = false;
+  var stationsError = false;
   var currentLocation;
   var selectedFuel = 'diesel';
   var radiusKm = null;
@@ -116,9 +117,13 @@
         : '—';
     }
     if (!stationsLoaded) return;
+    if (stationsError) {
+      setStatusMessage('Fehler beim Laden der Tankstellendaten – bitte Seite neu laden (Strg+F5).');
+      return;
+    }
     var radius = radiusKm !== null ? ' im Umkreis von ' + radiusKm + ' km' : '';
     setStatusMessage(count === 0
-      ? 'Keine Tankstellen gefunden' + radius + '.'
+      ? 'Keine Tankstellen gefunden' + radius + '. Umkreis erhöhen oder Standort ändern.'
       : count + ' Tankstelle' + (count === 1 ? '' : 'n') + ' gefunden' + radius + '.');
   }
 
@@ -248,6 +253,15 @@
         renderMarkers();
       });
     }
+    var radiusInput = document.getElementById('radiusInput');
+    if (radiusInput) {
+      radiusInput.value = radiusKm !== null ? radiusKm : '';
+      radiusInput.addEventListener('input', function () {
+        var value = Number(radiusInput.value);
+        radiusKm = Number.isFinite(value) && value > 0 ? value : null;
+        renderMarkers();
+      });
+    }
     var locateButton = document.getElementById('locate-btn');
     if (locateButton) locateButton.addEventListener('click', locateUser);
   }
@@ -267,6 +281,7 @@
       .catch(function (error) {
         stations = [];
         stationsLoaded = true;
+        stationsError = true;
         console.error('Tankstellendaten konnten nicht geladen werden:', error);
         setStatusMessage('Fehler beim Laden der Tankstellendaten – bitte Seite neu laden (Strg+F5).');
       });

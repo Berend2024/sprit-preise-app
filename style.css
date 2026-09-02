@@ -60,7 +60,7 @@ button:hover {
 
 main {
   display: flex;
-  height: calc(100vh - 130px);
+  flex-direction: column;
 }
 
 .map-layout {
@@ -76,6 +76,8 @@ main {
   flex-direction: column;
   max-width: 350px;
   min-width: 260px;
+  /* auf Kartenhoehe begrenzen, Liste scrollt intern */
+  height: 500px;
 }
 
 /* Explizite Hoehe/Breite: ohne sie kollabiert der Container und Leaflet
@@ -137,18 +139,16 @@ main {
 }
 
 @media (max-width: 700px) {
-  main {
-    flex-direction: column;
-    height: auto;
-  }
   .map-layout {
     flex-direction: column;
   }
   .station-panel {
     max-width: 100%;
     min-width: 0;
+    height: auto;
   }
   #map {
+    flex: none; /* im Spalten-Layout wuerde flex-basis 0% die Hoehe kollabieren lassen */
     height: 400px;
   }
   #station-list {
