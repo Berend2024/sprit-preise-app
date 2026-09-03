@@ -1404,7 +1404,7 @@
       "diesel": 2.259,
       "e5": 2.239,
       "e10": 2.179,
-      "isOpen": false,
+      "isOpen": true,
       "houseNumber": "199",
       "postCode": 13088
     },
@@ -1740,7 +1740,7 @@
       "diesel": 2.259,
       "e5": 2.239,
       "e10": 2.179,
-      "isOpen": false,
+      "isOpen": true,
       "houseNumber": "10",
       "postCode": 13053
     },
@@ -2588,7 +2588,7 @@
       "diesel": 2.259,
       "e5": 2.239,
       "e10": 2.179,
-      "isOpen": false,
+      "isOpen": true,
       "houseNumber": "6061",
       "postCode": 13127
     },
@@ -3916,7 +3916,7 @@
       "diesel": 2.259,
       "e5": 2.249,
       "e10": 2.189,
-      "isOpen": false,
+      "isOpen": true,
       "houseNumber": "1",
       "postCode": 16341
     },
@@ -6604,7 +6604,7 @@
       "diesel": 2.289,
       "e5": 2.279,
       "e10": 2.219,
-      "isOpen": false,
+      "isOpen": true,
       "houseNumber": "57",
       "postCode": 22869
     },
@@ -7500,7 +7500,7 @@
       "diesel": 2.329,
       "e5": 2.129,
       "e10": 2.069,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "6",
       "postCode": 80469
     },
@@ -10508,7 +10508,7 @@
       "diesel": 2.289,
       "e5": 2.249,
       "e10": 2.189,
-      "isOpen": false,
+      "isOpen": true,
       "houseNumber": "420",
       "postCode": 51105
     },
@@ -14732,7 +14732,7 @@
       "diesel": 2.309,
       "e5": 2.399,
       "e10": 2.339,
-      "isOpen": false,
+      "isOpen": true,
       "houseNumber": "",
       "postCode": 65926
     },
@@ -15724,7 +15724,7 @@
       "diesel": 2.259,
       "e5": 2.329,
       "e10": 2.269,
-      "isOpen": false,
+      "isOpen": true,
       "houseNumber": "2",
       "postCode": 26725
     },
@@ -15868,7 +15868,7 @@
       "diesel": 2.269,
       "e5": 2.339,
       "e10": 2.279,
-      "isOpen": false,
+      "isOpen": true,
       "houseNumber": "216",
       "postCode": 26721
     },
@@ -16188,7 +16188,7 @@
       "diesel": 2.249,
       "e5": 2.339,
       "e10": 2.279,
-      "isOpen": false,
+      "isOpen": true,
       "houseNumber": "50 B",
       "postCode": 26529
     },
@@ -19313,5 +19313,5 @@
       "postCode": 27339
     }
   ],
-  "fetched_at": "2026-09-02T23:44:27Z"
+  "fetched_at": "2026-09-03T02:24:53Z"
 }
