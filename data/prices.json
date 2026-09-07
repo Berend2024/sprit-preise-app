@@ -4844,7 +4844,7 @@
       "diesel": 2.299,
       "e5": 2.329,
       "e10": 2.269,
-      "isOpen": false,
+      "isOpen": true,
       "houseNumber": "206",
       "postCode": 22525
     },
@@ -7500,7 +7500,7 @@
       "diesel": 2.319,
       "e5": 2.159,
       "e10": 2.099,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "6",
       "postCode": 80469
     },
@@ -10092,7 +10092,7 @@
       "diesel": 2.299,
       "e5": 2.239,
       "e10": 2.179,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "174",
       "postCode": 85757
     },
@@ -19313,5 +19313,5 @@
       "postCode": 27339
     }
   ],
-  "fetched_at": "2026-09-06T22:36:48Z"
+  "fetched_at": "2026-09-07T00:34:43Z"
 }
