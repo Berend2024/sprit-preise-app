@@ -1404,7 +1404,7 @@
       "diesel": 2.379,
       "e5": 2.269,
       "e10": 2.209,
-      "isOpen": false,
+      "isOpen": true,
       "houseNumber": "199",
       "postCode": 13088
     },
@@ -7500,7 +7500,7 @@
       "diesel": 2.309,
       "e5": 2.219,
       "e10": 2.159,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "6",
       "postCode": 80469
     },
@@ -13881,7 +13881,7 @@
       "lat": 50.087478,
       "lng": 8.763939,
       "dist": 6.4,
-      "diesel": 2.349,
+      "diesel": 2.319,
       "e5": 2.239,
       "e10": 2.199,
       "isOpen": true,
@@ -14732,7 +14732,7 @@
       "diesel": 2.399,
       "e5": 2.339,
       "e10": 2.279,
-      "isOpen": false,
+      "isOpen": true,
       "houseNumber": "",
       "postCode": 65926
     },
@@ -15724,7 +15724,7 @@
       "diesel": 2.359,
       "e5": 2.289,
       "e10": 2.229,
-      "isOpen": false,
+      "isOpen": true,
       "houseNumber": "2",
       "postCode": 26725
     },
@@ -15868,7 +15868,7 @@
       "diesel": 2.369,
       "e5": 2.309,
       "e10": 2.249,
-      "isOpen": false,
+      "isOpen": true,
       "houseNumber": "216",
       "postCode": 26721
     },
@@ -19313,5 +19313,5 @@
       "postCode": 27339
     }
   ],
-  "fetched_at": "2026-09-12T23:50:42Z"
+  "fetched_at": "2026-09-13T02:29:37Z"
 }
