@@ -7228,7 +7228,7 @@
       "diesel": 2.379,
       "e5": 2.299,
       "e10": 2.239,
-      "isOpen": false,
+      "isOpen": true,
       "houseNumber": "8",
       "postCode": 25469
     },
@@ -7500,7 +7500,7 @@
       "diesel": 2.359,
       "e5": 2.219,
       "e10": 2.159,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "6",
       "postCode": 80469
     },
@@ -9145,9 +9145,9 @@
       "lat": 48.177877,
       "lng": 11.497085,
       "dist": 7.9,
-      "diesel": 2.369,
-      "e5": 2.249,
-      "e10": 2.189,
+      "diesel": 2.359,
+      "e5": 2.239,
+      "e10": 2.179,
       "isOpen": false,
       "houseNumber": "78",
       "postCode": 80997
@@ -19297,5 +19297,5 @@
       "postCode": 27339
     }
   ],
-  "fetched_at": "2026-09-22T23:06:53Z"
+  "fetched_at": "2026-09-23T01:36:40Z"
 }
