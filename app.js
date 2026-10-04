@@ -16,6 +16,8 @@
   var selectedFuel = 'diesel';
   var radiusKm = null;
   var config = {};
+  var selectedStationId = null;
+  var markersById = {};
 
   function getConfig() {
     // config.js ist optional. Ein fehlerhaftes oder fehlendes APP_CONFIG darf
@@ -36,6 +38,13 @@
 
   function validPrice(value) {
     return typeof value === 'number' && Number.isFinite(value) && value > 0;
+  }
+
+  // Eindeutiger Schluessel zur Zuordnung von Listeneintrag und Marker.
+  function stationKey(station) {
+    if (station && station.id != null) return String(station.id);
+    var index = stations.indexOf(station);
+    return index !== -1 ? 'index-' + index : '';
   }
 
   // Ungültige Datensätze werden bereits vor dem Filtern entfernt.
@@ -157,7 +166,9 @@
       var address = [station.street, station.houseNumber, station.postCode, station.place]
         .filter(function (part) { return part; })
         .join(', ');
-      return '<li>' +
+      var key = stationKey(station);
+      return '<li class="station-item' + (key && key === selectedStationId ? ' active' : '') +
+        '" data-station-id="' + escapeHtml(key) + '">' +
         '<span class="station-name">' + escapeHtml(station.name || 'Tankstelle') + '</span>' +
         '<span class="price"><strong>' + formatPrice(station[fuel]) + '</strong>' +
         (address ? ' – ' + escapeHtml(address) : '') + '</span>' +
@@ -172,6 +183,7 @@
     if (!markerLayer) return;
 
     markerLayer.clearLayers();
+    markersById = {};
     visible.forEach(function (station) {
       try {
         var marker = window.L.marker([station.lat, station.lng]);
@@ -180,10 +192,36 @@
           escapeHtml(getSelectedFuel().toUpperCase()) + ': ' + formatPrice(station[getSelectedFuel()])
         );
         marker.addTo(markerLayer);
+        markersById[stationKey(station)] = marker;
       } catch (error) {
         console.error('Marker konnte nicht erstellt werden:', error, station);
       }
     });
+  }
+
+  function updateListSelection(key) {
+    var listElement = document.getElementById('station-list');
+    if (!listElement) return;
+    var items = listElement.querySelectorAll('li[data-station-id]');
+    Array.prototype.forEach.call(items, function (item) {
+      item.classList.toggle('active', item.getAttribute('data-station-id') === key);
+    });
+  }
+
+  function focusStation(key) {
+    var station = stations.filter(function (candidate) {
+      return stationKey(candidate) === key;
+    })[0];
+    selectedStationId = key;
+    updateListSelection(key);
+    if (!station) return;
+    var marker = markersById[key];
+    if (marker && typeof marker.openPopup === 'function') marker.openPopup();
+    if (map) {
+      // Nicht herauszoomen, wenn bereits naeher an die Karte herangezoomt wurde.
+      var targetZoom = Math.max(map.getZoom(), 15);
+      map.flyTo([station.lat, station.lng], targetZoom, { duration: 0.8 });
+    }
   }
 
   function initMap() {
@@ -267,6 +305,14 @@
     }
     var locateButton = document.getElementById('locate-btn');
     if (locateButton) locateButton.addEventListener('click', locateUser);
+    // Event-Delegation: ueberlebt das regelmaessige Neu-Rendern der Liste.
+    var stationList = document.getElementById('station-list');
+    if (stationList) {
+      stationList.addEventListener('click', function (event) {
+        var item = event.target.closest('li[data-station-id]');
+        if (item) focusStation(item.getAttribute('data-station-id'));
+      });
+    }
   }
 
   function loadStations() {

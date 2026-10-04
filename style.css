@@ -123,6 +123,12 @@ main {
   background: #eef3f8;
 }
 
+/* Ausgewaehlter Listeneintrag (Klick zentriert die Karte auf die Tankstelle) */
+.station-item.active {
+  background: #fff7e0;
+  border-left-color: #ffb703;
+}
+
 #stations li .station-name {
   font-weight: bold;
   display: block;
