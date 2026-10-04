@@ -47,6 +47,20 @@
         </label>
       </div>
 
+      <div class="settings-row" aria-label="Smart-Tanken: Verbrauch und Tankmenge">
+        <label for="fuel-consumption">
+          <span>Verbrauch (L/100km)</span>
+          <input id="fuel-consumption" name="fuelConsumption" type="number" step="0.1" min="1" max="30" placeholder="z.B. 7.5" inputmode="decimal">
+        </label>
+
+        <label for="tank-amount">
+          <span>Tankmenge (L)</span>
+          <input id="tank-amount" name="tankAmount" type="number" step="1" min="5" max="150" placeholder="z.B. 40" inputmode="numeric">
+        </label>
+
+        <button id="calculate-costs-btn" type="button">Gesamtkosten berechnen</button>
+      </div>
+
       <p id="resultSummary" class="result-summary" aria-live="polite">
         Tankstellen werden geladen …
       </p>
@@ -60,9 +74,13 @@
           <h2 id="station-heading">Tankstellen</h2>
           <span id="station-count" class="station-count" aria-hidden="true">—</span>
         </div>
+        <p id="station-list-header" class="sort-hint"></p>
         <div id="station-list" class="station-list">
           <p class="empty-state">Tankstellendaten werden geladen …</p>
         </div>
+        <p id="distance-hint" class="distance-hint">
+          Hinweis: Entfernung = Luftlinie. Tatsächliche Strecke in der Regel 20-40% länger.
+        </p>
       </aside>
     </section>
   </main>

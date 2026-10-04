@@ -129,6 +129,80 @@ main {
   border-left-color: #ffb703;
 }
 
+/* ----- Smart-Tanken: Verbrauch, Tankmenge, Gesamtkosten ----- */
+
+.settings-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1rem;
+  align-items: flex-end;
+}
+
+.settings-row label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  font-size: 0.9rem;
+}
+
+.station-distance {
+  display: block;
+  color: #666;
+  font-size: 0.9em;
+}
+
+.station-total-cost {
+  display: block;
+  font-weight: bold;
+  color: #155724;
+}
+
+/* Guenstigste Tankstelle nach Gesamtkosten (ueber .active, damit gruen gewinnt) */
+.station-item.best-deal {
+  background-color: #d4edda;
+  border-left: 4px solid #28a745;
+}
+
+.best-deal-badge {
+  display: inline-block;
+  margin-bottom: 0.3rem;
+  padding: 0.15rem 0.5rem;
+  border-radius: 999px;
+  background: #28a745;
+  color: #fff;
+  font-size: 0.75rem;
+  font-weight: bold;
+}
+
+/* Gruener Marker fuer das beste Gesamtpaket */
+.best-deal-marker {
+  background: transparent;
+  border: none;
+}
+
+.best-deal-pin {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: #28a745;
+  border: 3px solid #fff;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.5);
+}
+
+.sort-hint {
+  margin: 0;
+  padding: 0 1rem;
+  font-size: 0.8rem;
+  color: #555;
+}
+
+.distance-hint {
+  margin: 0;
+  padding: 0.5rem 1rem;
+  font-size: 0.75rem;
+  color: #777;
+}
+
 #stations li .station-name {
   font-weight: bold;
   display: block;

@@ -18,6 +18,13 @@
   var config = {};
   var selectedStationId = null;
   var markersById = {};
+  // Smart-Tanken: Verbrauch, Tankmenge und Kostenmodell
+  var TRIP_CORRECTION_FACTOR = 1.3; // Strassenweg statt Luftlinie: ca. 30 % zusaetzlich
+  var ROUND_TRIPS = 2;              // Hin- und Rueckfahrt
+  var CONSUMPTION_LIMITS = { min: 1, max: 30 };   // L/100km
+  var TANK_LIMITS = { min: 5, max: 150 };         // Liter
+  var consumptionLPer100 = null;
+  var tankLiters = null;
 
   function getConfig() {
     // config.js ist optional. Ein fehlerhaftes oder fehlendes APP_CONFIG darf
@@ -85,15 +92,16 @@
     return Number.isFinite(value) && value > 0 ? value : null;
   }
 
-  function haversineDistanceKm(a, b) {
+  // Haversine-Formel: Luftlinien-Entfernung zwischen zwei Koordinaten (km).
+  function haversine(lat1, lng1, lat2, lng2) {
     var earthRadiusKm = 6371;
-    var latDelta = (b.lat - a.lat) * Math.PI / 180;
-    var lngDelta = (b.lng - a.lng) * Math.PI / 180;
-    var lat1 = a.lat * Math.PI / 180;
-    var lat2 = b.lat * Math.PI / 180;
+    var latDelta = (lat2 - lat1) * Math.PI / 180;
+    var lngDelta = (lng2 - lng1) * Math.PI / 180;
+    var lat1Rad = lat1 * Math.PI / 180;
+    var lat2Rad = lat2 * Math.PI / 180;
     var sinLat = Math.sin(latDelta / 2);
     var sinLng = Math.sin(lngDelta / 2);
-    var h = sinLat * sinLat + Math.cos(lat1) * Math.cos(lat2) * sinLng * sinLng;
+    var h = sinLat * sinLat + Math.cos(lat1Rad) * Math.cos(lat2Rad) * sinLng * sinLng;
     return 2 * earthRadiusKm * Math.asin(Math.sqrt(h));
   }
 
@@ -111,6 +119,79 @@
       minimumFractionDigits: 3,
       maximumFractionDigits: 3
     }) + ' €';
+  }
+
+  function formatCost(value) {
+    return Number(value).toLocaleString('de-DE', {
+      minimumFractionDigits: 2,
+      maximumFractionDigits: 2
+    }) + ' €';
+  }
+
+  function formatDistance(km) {
+    return Number(km).toLocaleString('de-DE', {
+      minimumFractionDigits: 1,
+      maximumFractionDigits: 1
+    }) + ' km';
+  }
+
+  // ----- Smart-Tanken: Eingaben, Speicherung und Kostenmodell -----
+
+  // Deutsche Eingabe mit Komma (z. B. "7,5") wird akzeptiert.
+  function parseNumberInput(raw) {
+    if (raw == null) return NaN;
+    return Number(String(raw).trim().replace(',', '.'));
+  }
+
+  function validWithinLimits(value, limits) {
+    return Number.isFinite(value) && value >= limits.min && value <= limits.max;
+  }
+
+  function hasCostInputs() {
+    return consumptionLPer100 !== null && tankLiters !== null;
+  }
+
+  // Gesamtkosten: Anfahrt (Hin + Rueck, Korrekturfaktor fuer echte Strasse)
+  // plus Tankfuellung zum Preis vor Ort.
+  function totalCostEur(distanceKm, pricePerLiter) {
+    var tripLiters = distanceKm * TRIP_CORRECTION_FACTOR * ROUND_TRIPS * consumptionLPer100 / 100;
+    return (tripLiters + tankLiters) * pricePerLiter;
+  }
+
+  function loadStoredNumber(key, limits) {
+    try {
+      var raw = window.localStorage.getItem(key);
+      if (raw === null) return null;
+      var value = parseNumberInput(raw);
+      return validWithinLimits(value, limits) ? value : null;
+    } catch (error) {
+      return null;
+    }
+  }
+
+  function storeNumber(key, value) {
+    try {
+      if (value === null) window.localStorage.removeItem(key);
+      else window.localStorage.setItem(key, String(value));
+    } catch (error) {
+      // localStorage kann z. B. im privaten Modus blockiert sein – nicht kritisch.
+    }
+  }
+
+  function loadCostSettings() {
+    consumptionLPer100 = loadStoredNumber('fuelConsumption', CONSUMPTION_LIMITS);
+    tankLiters = loadStoredNumber('tankAmount', TANK_LIMITS);
+  }
+
+  function readCostInputs() {
+    var consumptionInput = document.getElementById('fuel-consumption');
+    var tankInput = document.getElementById('tank-amount');
+    var consumption = consumptionInput ? parseNumberInput(consumptionInput.value) : NaN;
+    var tank = tankInput ? parseNumberInput(tankInput.value) : NaN;
+    consumptionLPer100 = validWithinLimits(consumption, CONSUMPTION_LIMITS) ? consumption : null;
+    tankLiters = validWithinLimits(tank, TANK_LIMITS) ? tank : null;
+    storeNumber('fuelConsumption', consumptionLPer100);
+    storeNumber('tankAmount', tankLiters);
   }
 
   function setStatusMessage(text) {
@@ -141,55 +222,123 @@
     return stations.filter(function (station) {
       if (!validPrice(station[fuel])) return false;
       if (radiusKm !== null && currentLocation &&
-          haversineDistanceKm(currentLocation, station) > radiusKm) return false;
+          haversine(currentLocation.lat, currentLocation.lng, station.lat, station.lng) > radiusKm) return false;
       return true;
     });
   }
 
-  function renderStationList() {
+  // Smart-Tanken: pro sichtbarer Tankstelle Entfernung und (moegliche)
+  // Gesamtkosten berechnen und danach sortieren.
+  function computeDecoratedStations() {
+    var fuel = getSelectedFuel();
+    var costsAvailable = hasCostInputs();
+    return filteredStations().map(function (station) {
+      var distanceKm = currentLocation
+        ? haversine(currentLocation.lat, currentLocation.lng, station.lat, station.lng)
+        : null;
+      var totalCost = (costsAvailable && distanceKm !== null)
+        ? totalCostEur(distanceKm, station[fuel])
+        : null;
+      return { station: station, distanceKm: distanceKm, totalCost: totalCost };
+    }).sort(function (a, b) {
+      // Primaer nach Gesamtkosten, sekundaer nach Preis pro Liter.
+      if (a.totalCost !== null && b.totalCost !== null && a.totalCost !== b.totalCost) {
+        return a.totalCost - b.totalCost;
+      }
+      return a.station[fuel] - b.station[fuel];
+    });
+  }
+
+  function updateSortHint() {
+    var header = document.getElementById('station-list-header');
+    if (!header) return;
+    header.textContent = hasCostInputs()
+      ? 'Sortiert nach: Gesamtkosten (inkl. Anfahrt)'
+      : 'Verbrauch & Tankmenge eingeben für Gesamtkosten – Sortierung: Preis pro Liter';
+  }
+
+  function renderStationList(decorated) {
     var listElement = document.getElementById('station-list');
     if (!listElement) return;
     if (!stationsLoaded) {
       listElement.innerHTML = '<p class="empty-state">Tankstellendaten werden geladen …</p>';
       return;
     }
-    var visible = filteredStations();
-    var fuel = getSelectedFuel();
-    // Guenstigste zuerst
-    visible.sort(function (a, b) { return a[fuel] - b[fuel]; });
-    if (!visible.length) {
+    updateSortHint();
+    if (!decorated.length) {
       listElement.innerHTML = '<p class="empty-state">Keine Tankstellen im gewählten Umkreis gefunden. '
         + '<a href="config.html">Diagnose öffnen</a></p>';
       return;
     }
-    listElement.innerHTML = '<ul id="stations">' + visible.map(function (station) {
+    var fuel = getSelectedFuel();
+    var costsAvailable = hasCostInputs();
+    listElement.innerHTML = '<ul id="stations">' + decorated.map(function (entry, index) {
+      var station = entry.station;
       var address = [station.street, station.houseNumber, station.postCode, station.place]
         .filter(function (part) { return part; })
         .join(', ');
       var key = stationKey(station);
-      return '<li class="station-item' + (key && key === selectedStationId ? ' active' : '') +
-        '" data-station-id="' + escapeHtml(key) + '">' +
+      // Die nach Sortierung guenstigste Tankstelle bekommt das Best-Deal-Siegel.
+      var isBestDeal = costsAvailable && index === 0;
+      var classes = 'station-item'
+        + (key && key === selectedStationId ? ' active' : '')
+        + (isBestDeal ? ' best-deal' : '');
+      return '<li class="' + classes + '" data-station-id="' + escapeHtml(key) + '">' +
+        (isBestDeal ? '<span class="best-deal-badge">💰 Bestes Gesamtpaket</span>' : '') +
         '<span class="station-name">' + escapeHtml(station.name || 'Tankstelle') + '</span>' +
         '<span class="price"><strong>' + formatPrice(station[fuel]) + '</strong>' +
         (address ? ' – ' + escapeHtml(address) : '') + '</span>' +
+        (entry.distanceKm !== null
+          ? '<span class="station-distance">' + formatDistance(entry.distanceKm) + ' Luftlinie</span>'
+          : '') +
+        (entry.totalCost !== null
+          ? '<span class="station-total-cost">Gesamtkosten: ' + formatCost(entry.totalCost) + ' (inkl. Anfahrt)</span>'
+          : '') +
         '</li>';
     }).join('') + '</ul>';
   }
 
+  function createBestDealIcon() {
+    return window.L.divIcon({
+      className: 'best-deal-marker',
+      html: '<div class="best-deal-pin" title="Bestes Gesamtpaket"></div>',
+      iconSize: [30, 30],
+      iconAnchor: [15, 15],
+      popupAnchor: [0, -18]
+    });
+  }
+
   function renderMarkers() {
-    var visible = filteredStations();
-    updateCount(visible.length);
-    renderStationList();
+    var decorated = computeDecoratedStations();
+    updateCount(decorated.length);
+    renderStationList(decorated);
+    renderMapMarkers(decorated);
+  }
+
+  function renderMapMarkers(decorated) {
     if (!markerLayer) return;
+    var fuel = getSelectedFuel();
+    var costsAvailable = hasCostInputs();
 
     markerLayer.clearLayers();
     markersById = {};
-    visible.forEach(function (station) {
+    decorated.forEach(function (entry, index) {
+      var station = entry.station;
       try {
-        var marker = window.L.marker([station.lat, station.lng]);
+        var isBestDeal = costsAvailable && index === 0;
+        var marker = window.L.marker([station.lat, station.lng],
+          isBestDeal ? { icon: createBestDealIcon() } : undefined);
+        var details = '';
+        if (entry.distanceKm !== null) {
+          details += '<br>Luftlinie: ' + formatDistance(entry.distanceKm);
+        }
+        if (entry.totalCost !== null) {
+          details += '<br><strong>Gesamt: ' + formatCost(entry.totalCost) + ' (inkl. Anfahrt)</strong>';
+        }
         marker.bindPopup(
           '<strong>' + escapeHtml(station.name || 'Tankstelle') + '</strong><br>' +
-          escapeHtml(getSelectedFuel().toUpperCase()) + ': ' + formatPrice(station[getSelectedFuel()])
+          escapeHtml(fuel.toUpperCase()) + ': ' + formatPrice(station[fuel]) +
+          details
         );
         marker.addTo(markerLayer);
         markersById[stationKey(station)] = marker;
@@ -305,6 +454,31 @@
     }
     var locateButton = document.getElementById('locate-btn');
     if (locateButton) locateButton.addEventListener('click', locateUser);
+
+    // Smart-Tanken: Verbrauch & Tankmenge – live berechnen und speichern.
+    var consumptionInput = document.getElementById('fuel-consumption');
+    if (consumptionInput) {
+      if (consumptionLPer100 !== null) consumptionInput.value = String(consumptionLPer100);
+      consumptionInput.addEventListener('input', function () {
+        readCostInputs();
+        renderMarkers();
+      });
+    }
+    var tankInput = document.getElementById('tank-amount');
+    if (tankInput) {
+      if (tankLiters !== null) tankInput.value = String(tankLiters);
+      tankInput.addEventListener('input', function () {
+        readCostInputs();
+        renderMarkers();
+      });
+    }
+    var calculateButton = document.getElementById('calculate-costs-btn');
+    if (calculateButton) {
+      calculateButton.addEventListener('click', function () {
+        readCostInputs();
+        renderMarkers();
+      });
+    }
     // Event-Delegation: ueberlebt das regelmaessige Neu-Rendern der Liste.
     var stationList = document.getElementById('station-list');
     if (stationList) {
@@ -341,6 +515,7 @@
       config = getConfig();
       selectedFuel = getInitialFuel();
       radiusKm = getRadiusKm();
+      loadCostSettings();
       bindControls();
       initMap();
       // Standort zuerst versuchen; bei Fehler setzt locateUser den Fallback.
