@@ -219,7 +219,7 @@
     if (marker && typeof marker.openPopup === 'function') marker.openPopup();
     if (map) {
       // Nicht herauszoomen, wenn bereits naeher an die Karte herangezoomt wurde.
-      var targetZoom = Math.max(map.getZoom(), 15);
+      var targetZoom = Math.max(map.getZoom(), 16);
       map.flyTo([station.lat, station.lng], targetZoom, { duration: 0.8 });
     }
   }
