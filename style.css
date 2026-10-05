@@ -157,6 +157,29 @@ main {
   color: #155724;
 }
 
+/* Adresszeile mit Google-Maps-Verlinkung */
+.station-address {
+  display: block;
+  margin-bottom: 4px;
+}
+
+.station-maps-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  color: #1a73e8;
+  font-size: 0.85em;
+  text-decoration: none;
+}
+
+.station-maps-link:hover {
+  text-decoration: underline;
+}
+
+.station-maps-link::before {
+  content: "🗺️";
+}
+
 /* Guenstigste Tankstelle nach Gesamtkosten (ueber .active, damit gruen gewinnt) */
 .station-item.best-deal {
   background-color: #d4edda;

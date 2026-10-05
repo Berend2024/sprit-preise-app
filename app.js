@@ -135,6 +135,33 @@
     }) + ' km';
   }
 
+  // Adresse einer Tankstelle als einzeilige Zeichenkette.
+  function stationAddress(station) {
+    return [station.street, station.houseNumber, station.postCode, station.place]
+      .filter(function (part) { return part; })
+      .join(', ');
+  }
+
+  // Google-Maps-Route-Link: mit Startpunkt, wenn ein Standort bekannt ist,
+  // sonst reine Zielsuche. Reine Weiterleitung, keine API-Anfrage.
+  function googleMapsUrl(station) {
+    var destination = station.lat + ',' + station.lng;
+    if (currentLocation && validCoordinate(currentLocation.lat, -90, 90) && validCoordinate(currentLocation.lng, -180, 180)) {
+      return 'https://www.google.com/maps/dir/?api=1&origin=' + currentLocation.lat + ',' + currentLocation.lng +
+        '&destination=' + destination + '&travelmode=driving';
+    }
+    return 'https://www.google.com/maps/search/?api=1&query=' + destination;
+  }
+
+  // Verlinkte Adresszeile, oeffnet Google Maps in neuem Tab.
+  function mapsLinkHtml(station) {
+    var address = stationAddress(station);
+    return '<span class="station-address">📍 ' +
+      (address ? escapeHtml(address) + ' → ' : '') +
+      '<a class="station-maps-link" href="' + escapeHtml(googleMapsUrl(station)) + '" target="_blank" rel="noopener noreferrer">Google Maps öffnen</a>' +
+      '</span>';
+  }
+
   // ----- Smart-Tanken: Eingaben, Speicherung und Kostenmodell -----
 
   // Deutsche Eingabe mit Komma (z. B. "7,5") wird akzeptiert.
@@ -274,9 +301,6 @@
     var costsAvailable = hasCostInputs();
     listElement.innerHTML = '<ul id="stations">' + decorated.map(function (entry, index) {
       var station = entry.station;
-      var address = [station.street, station.houseNumber, station.postCode, station.place]
-        .filter(function (part) { return part; })
-        .join(', ');
       var key = stationKey(station);
       // Die nach Sortierung guenstigste Tankstelle bekommt das Best-Deal-Siegel.
       var isBestDeal = costsAvailable && index === 0;
@@ -286,8 +310,8 @@
       return '<li class="' + classes + '" data-station-id="' + escapeHtml(key) + '">' +
         (isBestDeal ? '<span class="best-deal-badge">💰 Bestes Gesamtpaket</span>' : '') +
         '<span class="station-name">' + escapeHtml(station.name || 'Tankstelle') + '</span>' +
-        '<span class="price"><strong>' + formatPrice(station[fuel]) + '</strong>' +
-        (address ? ' – ' + escapeHtml(address) : '') + '</span>' +
+        '<span class="price"><strong>' + formatPrice(station[fuel]) + '</strong></span>' +
+        mapsLinkHtml(station) +
         (entry.distanceKm !== null
           ? '<span class="station-distance">' + formatDistance(entry.distanceKm) + ' Luftlinie</span>'
           : '') +
@@ -338,7 +362,8 @@
         marker.bindPopup(
           '<strong>' + escapeHtml(station.name || 'Tankstelle') + '</strong><br>' +
           escapeHtml(fuel.toUpperCase()) + ': ' + formatPrice(station[fuel]) +
-          details
+          details +
+          '<br>' + mapsLinkHtml(station)
         );
         marker.addTo(markerLayer);
         markersById[stationKey(station)] = marker;
@@ -483,6 +508,8 @@
     var stationList = document.getElementById('station-list');
     if (stationList) {
       stationList.addEventListener('click', function (event) {
+        // Klick auf den Maps-Link oeffnet Google Maps und loest keinen Zoom aus.
+        if (event.target.closest('a.station-maps-link')) return;
         var item = event.target.closest('li[data-station-id]');
         if (item) focusStation(item.getAttribute('data-station-id'));
       });
