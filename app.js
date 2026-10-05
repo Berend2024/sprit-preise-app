@@ -249,13 +249,18 @@
       : count + ' Tankstelle' + (count === 1 ? '' : 'n') + ' gefunden' + radius + '.');
   }
 
+  // Umkreis-Praedikat, gemeinsam fuer Tankstellen und Ladesaeulen:
+  // ohne Standort oder ohne gesetzten Umkreis ist alles sichtbar.
+  function withinRadius(lat, lng) {
+    return radiusKm === null || !currentLocation ||
+      haversine(currentLocation.lat, currentLocation.lng, lat, lng) <= radiusKm;
+  }
+
   function filteredStations() {
     var fuel = getSelectedFuel();
     return stations.filter(function (station) {
       if (!validPrice(station[fuel])) return false;
-      if (radiusKm !== null && currentLocation &&
-          haversine(currentLocation.lat, currentLocation.lng, station.lat, station.lng) > radiusKm) return false;
-      return true;
+      return withinRadius(station.lat, station.lng);
     });
   }
 
@@ -492,6 +497,7 @@
     currentLocation = { lat: coords.latitude, lng: coords.longitude };
     if (map) map.setView([currentLocation.lat, currentLocation.lng], 13);
     renderMarkers();
+    renderChargingMarkers();
     console.log('Standort verwendet:', currentLocation);
     return true;
   }
@@ -502,6 +508,7 @@
       currentLocation = getInitialLocation();
       if (map) map.setView([currentLocation.lat, currentLocation.lng], 12);
       renderMarkers();
+      renderChargingMarkers();
       return;
     }
     navigator.geolocation.getCurrentPosition(useLocation, function (error) {
@@ -509,6 +516,7 @@
       currentLocation = getInitialLocation();
       if (map) map.setView([currentLocation.lat, currentLocation.lng], 12);
       renderMarkers();
+      renderChargingMarkers();
     }, { enableHighAccuracy: false, timeout: 10000, maximumAge: 300000 });
   }
 
@@ -528,6 +536,7 @@
         var value = Number(radiusInput.value);
         radiusKm = Number.isFinite(value) && value > 0 ? value : null;
         renderMarkers();
+        renderChargingMarkers();
       });
     }
     var locateButton = document.getElementById('locate-btn');
@@ -624,11 +633,14 @@
 
   // ===================================================================
   // E-Ladesaeulen: eigene Marker-Kategorie, unabhaengig von der
-  // Tankstellen-Logik. Lädt data/charging_stations.json einmalig und
-  // zeigt die Marker nur bei aktivierter Checkbox an.
+  // Tankstellen-Logik. Laedt data/charging_stations.json einmalig in
+  // den Speicher; Marker werden nur bei aktivierter Checkbox angezeigt
+  // und analog zu den Tankstellen auf den gewaehlten Umkreis gefiltert.
   // ===================================================================
 
   var chargingLayer = null;
+  var chargingStations = []; // einmalig geladen, Marker folgen erst beim Rendern
+  var chargingLoaded = false;
 
   function ensureChargingLayer() {
     if (!chargingLayer && map && window.L && typeof window.L.layerGroup === 'function') {
@@ -647,9 +659,31 @@
     });
   }
 
-  function loadChargingStations() {
+  function filteredChargingStations() {
+    return chargingStations.filter(function (station) {
+      return withinRadius(station.lat, station.lon);
+    });
+  }
+
+  function renderChargingMarkers() {
     var layer = ensureChargingLayer();
-    if (!layer) return; // Karte nicht verfügbar (z. B. Leaflet fehlt)
+    if (!layer || !chargingLoaded) return;
+    layer.clearLayers();
+    filteredChargingStations().forEach(function (station) {
+      var details = [];
+      if (station.power_kw != null) details.push('Leistung: ' + escapeHtml(station.power_kw) + ' kW');
+      if (station.connector_type) details.push('Steckertyp: ' + escapeHtml(station.connector_type));
+      if (station.operator) details.push('Betreiber: ' + escapeHtml(station.operator));
+      window.L.marker([station.lat, station.lon], { icon: createChargingIcon() })
+        .bindPopup(
+          '<strong>' + escapeHtml(station.name || 'Ladesäule') + '</strong>' +
+          (details.length ? '<br>' + details.join('<br>') : '')
+        )
+        .addTo(layer);
+    });
+  }
+
+  function loadChargingStations() {
     fetch('data/charging_stations.json', { cache: 'no-cache' })
       .then(function (response) {
         if (!response.ok) throw new Error('HTTP ' + response.status + ' beim Laden von data/charging_stations.json');
@@ -657,20 +691,12 @@
       })
       .then(function (data) {
         if (!data || !Array.isArray(data.stations)) throw new Error('Ungültiges JSON-Format: stations fehlt.');
-        data.stations.forEach(function (station) {
-          if (!validCoordinate(station.lat, -90, 90) || !validCoordinate(station.lon, -180, 180)) return;
-          var details = [];
-          if (station.power_kw != null) details.push('Leistung: ' + escapeHtml(station.power_kw) + ' kW');
-          if (station.connector_type) details.push('Steckertyp: ' + escapeHtml(station.connector_type));
-          if (station.operator) details.push('Betreiber: ' + escapeHtml(station.operator));
-          window.L.marker([station.lat, station.lon], { icon: createChargingIcon() })
-            .bindPopup(
-              '<strong>' + escapeHtml(station.name || 'Ladesäule') + '</strong>' +
-              (details.length ? '<br>' + details.join('<br>') : '')
-            )
-            .addTo(layer);
+        chargingStations = data.stations.filter(function (station) {
+          return validCoordinate(station.lat, -90, 90) && validCoordinate(station.lon, -180, 180);
         });
-        console.log('Ladesäulen geladen:', data.stations.length);
+        chargingLoaded = true;
+        console.log('Ladesäulen geladen:', data.stations.length, 'gesamt,', chargingStations.length, 'gültig.');
+        renderChargingMarkers();
       })
       .catch(function (error) {
         console.warn('Ladesäulen konnten nicht geladen werden:', error);
@@ -683,8 +709,13 @@
     checkbox.addEventListener('change', function () {
       var layer = ensureChargingLayer();
       if (!layer || !map) return;
-      if (checkbox.checked) map.addLayer(layer);
-      else map.removeLayer(layer);
+      if (checkbox.checked) {
+        // Marker anhand des aktuellen Standorts/Umkreises aufbauen, dann einblenden.
+        renderChargingMarkers();
+        map.addLayer(layer);
+      } else {
+        map.removeLayer(layer);
+      }
     });
   }
 
