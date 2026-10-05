@@ -91,6 +91,39 @@ h1 {
   grid-column: 1 / -1;
 }
 
+/* Zeile unter dem Standort-Button: Kartenebenen links, Umkreis rechts.
+   flex-wrap sorgt dafuer, dass bei schmalen Screens untereinander fällt. */
+.control-columns {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem 1.5rem;
+  align-items: flex-start;
+}
+
+.control-columns .layer-box {
+  flex: 1 1 280px;
+  padding: 0.4rem 0.7rem 0.6rem;
+  /* Checkboxen nebeneinander statt untereinander (.control-box waere column);
+     flex-wrap bricht bei schmalen Screens in die naechste Zeile um. */
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 0.4rem 1.25rem;
+  align-items: center;
+}
+
+.control-columns .radius-field {
+  flex: 0 1 180px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  align-items: stretch;
+  font-size: 0.9rem;
+}
+
+.control-columns .radius-field input {
+  width: 100%;
+}
+
 .panel-content {
   display: flex;
   flex-wrap: wrap;
@@ -104,9 +137,12 @@ h1 {
   color: #555;
 }
 
-/* Ein-/Ausblenden der Panels (gesteuert vom Snippet vor </body>) */
+/* Ein-/Ausblenden der Ebenen-Anhaenge (Panels, Ergebnisliste, Statuszeile;
+   gesteuert vom Snippet vor </body> und app.js). !important noetig, weil
+   z. B. .station-panel weiter unten display:flex setzt und display:none
+   sonst ueberschrieben werden wuerde. */
 .hidden {
-  display: none;
+  display: none !important;
 }
 
 .controls label {
@@ -558,6 +594,14 @@ main {
 @media (max-width: 700px) {
   .map-layout {
     flex-direction: column;
+  }
+  .control-columns {
+    flex-direction: column;
+  }
+  .control-columns .layer-box,
+  .control-columns .radius-field {
+    flex: 1 1 auto;
+    width: 100%;
   }
   .station-panel {
     max-width: 100%;

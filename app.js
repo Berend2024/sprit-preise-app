@@ -608,10 +608,14 @@
   function initFuelControls() {
     var checkbox = document.getElementById('toggle-stations');
     var listPanel = document.getElementById('station-panel');
+    var summary = document.getElementById('resultSummary');
     if (!checkbox) return;
     checkbox.addEventListener('change', function () {
-      // Ergebnisliste rechts ein-/ausblenden (gleiche hidden-Klasse wie Panels).
-      if (listPanel) listPanel.classList.toggle('hidden', !checkbox.checked);
+      var hide = !checkbox.checked;
+      // Ergebnisliste rechts UND Statuszeile ("X Tankstellen gefunden")
+      // ein-/ausblenden (gleiche hidden-Klasse wie Panels).
+      if (listPanel) listPanel.classList.toggle('hidden', hide);
+      if (summary) summary.classList.toggle('hidden', hide);
       if (!map || !markerLayer) return;
       if (checkbox.checked) map.addLayer(markerLayer);
       else map.removeLayer(markerLayer);

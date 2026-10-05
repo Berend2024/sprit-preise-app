@@ -32,27 +32,29 @@
         <button id="locate-btn" type="button" class="location-button">
           <span aria-hidden="true">⌖</span> Meinen Standort verwenden
         </button>
-        <label for="radiusInput">
-          <span>Umkreis (km)</span>
-          <input id="radiusInput" name="radius" type="number" min="1" max="200" step="1" inputmode="numeric">
-        </label>
-      </fieldset>
-
-      <fieldset class="control-box">
-        <legend>Kartenebenen</legend>
-        <label class="layer-option" for="toggle-stations">
-          <input id="toggle-stations" name="toggleStations" type="checkbox" checked>
-          <span>⛽ Tankstellen anzeigen</span>
-        </label>
-        <label class="layer-option" for="toggle-charging">
-          <input id="toggle-charging" name="toggleCharging" type="checkbox">
-          <span>⚡ E-Ladesäulen anzeigen</span>
-        </label>
-        <label class="layer-option" for="toggle-camping">
-          <input id="toggle-camping" name="toggleCamping" type="checkbox" disabled>
-          <span>🏕️ Wohnmobilstellplätze anzeigen</span>
-          <span class="layer-hint">bald verfügbar</span>
-        </label>
+        <div class="control-columns">
+          <!-- Keine sichtbare Ueberschrift: Checkboxen sprechen fuer sich
+               selbst; aria-label haelt die Gruppensemantik fuer Screenreader. -->
+          <fieldset class="control-box layer-box" aria-label="Kartenebenen">
+            <label class="layer-option" for="toggle-stations">
+              <input id="toggle-stations" name="toggleStations" type="checkbox" checked>
+              <span>⛽ Tankstellen anzeigen</span>
+            </label>
+            <label class="layer-option" for="toggle-charging">
+              <input id="toggle-charging" name="toggleCharging" type="checkbox">
+              <span>⚡ E-Ladesäulen anzeigen</span>
+            </label>
+            <label class="layer-option" for="toggle-camping">
+              <input id="toggle-camping" name="toggleCamping" type="checkbox" disabled>
+              <span>🏕️ Wohnmobilstellplätze anzeigen</span>
+              <span class="layer-hint">bald verfügbar</span>
+            </label>
+          </fieldset>
+          <label class="radius-field" for="radiusInput">
+            <span>Umkreis (km)</span>
+            <input id="radiusInput" name="radius" type="number" min="1" max="200" step="1" inputmode="numeric">
+          </label>
+        </div>
       </fieldset>
 
       <!-- Panel der Ebene "Tankstellen": sichtbar, solange toggle-stations angehakt ist -->
@@ -91,7 +93,7 @@
         <p class="panel-hint">Ladesäulen werden auf der Karte angezeigt.</p>
       </fieldset>
 
-      <p id="resultSummary" class="result-summary" aria-live="polite">
+      <p id="resultSummary" class="result-summary" data-layer-panel="toggle-stations" aria-live="polite">
         Tankstellen werden geladen …
       </p>
     </section>
