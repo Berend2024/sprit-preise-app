@@ -20,10 +20,93 @@ h1 {
 }
 
 .controls {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 0.75rem;
+  align-items: stretch;
+}
+
+/* Kopf- und Statuszeilen laufen ueber die volle Breite */
+.controls h2,
+.controls #statusMessage,
+.controls #resultSummary {
+  grid-column: 1 / -1;
+}
+
+/* Bediengruppen als Karten mit Ueberschrift */
+.control-box {
+  margin: 0;
+  padding: 0.6rem 0.9rem 0.8rem;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  min-inline-size: 0;
+}
+
+.control-box legend {
+  font-weight: bold;
+  font-size: 0.9rem;
+  padding: 0 0.35rem;
+}
+
+/* Checkboxen der Kartenebenen */
+.layer-option {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.9rem;
+}
+
+.layer-option input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+  padding: 0;
+  margin: 0;
+}
+
+.layer-option input:disabled {
+  cursor: not-allowed;
+}
+
+.layer-option input:disabled + span {
+  color: #999;
+}
+
+.layer-hint {
+  font-size: 0.75rem;
+  color: #888;
+}
+
+/* Ebenen-Panels: eigene volle Breite, gleiche Box-Optik wie control-box */
+.layer-panel {
+  grid-column: 1 / -1;
+}
+
+/* Immer sichtbare Global-Gruppe oben */
+.control-top {
+  grid-column: 1 / -1;
+}
+
+.panel-content {
   display: flex;
   flex-wrap: wrap;
-  gap: 1rem;
-  align-items: center;
+  gap: 0.75rem 1.5rem;
+  align-items: flex-end;
+}
+
+.panel-hint {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+/* Ein-/Ausblenden der Panels (gesteuert vom Snippet vor </body>) */
+.hidden {
+  display: none;
 }
 
 .controls label {
@@ -255,6 +338,26 @@ main {
 .best-deal-marker {
   background: transparent;
   border: none;
+}
+
+/* E-Ladesaeulen: eigene Marker-Kategorie */
+.charging-marker {
+  background: transparent;
+  border: none;
+}
+
+.charging-pin {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background: #17a2b8;
+  border: 3px solid #fff;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 13px;
+  line-height: 1;
 }
 
 .best-deal-pin {

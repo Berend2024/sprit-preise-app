@@ -27,40 +27,69 @@
       <h2 id="filter-heading">Suche einstellen</h2>
       <div id="statusMessage" class="status-message" role="status" aria-live="polite"></div>
 
-      <button id="locate-btn" type="button" class="location-button">
-        <span aria-hidden="true">⌖</span> Meinen Standort verwenden
-      </button>
-
-      <div class="control-grid">
-        <label for="fuel-select">
-          <span>Kraftstoffsorte</span>
-          <select id="fuel-select" name="fuel">
-            <option value="diesel">Diesel</option>
-            <option value="e10">Super E10</option>
-            <option value="e5">Super E5</option>
-            <option value="superplus">SuperPlus</option>
-          </select>
-        </label>
-
+      <fieldset class="control-box control-top">
+        <legend>Standort &amp; Umkreis</legend>
+        <button id="locate-btn" type="button" class="location-button">
+          <span aria-hidden="true">⌖</span> Meinen Standort verwenden
+        </button>
         <label for="radiusInput">
           <span>Umkreis (km)</span>
           <input id="radiusInput" name="radius" type="number" min="1" max="200" step="1" inputmode="numeric">
         </label>
-      </div>
+      </fieldset>
 
-      <div class="settings-row" aria-label="Smart-Tanken: Verbrauch und Tankmenge">
-        <label for="fuel-consumption">
-          <span>Verbrauch (L/100km)</span>
-          <input id="fuel-consumption" name="fuelConsumption" type="number" step="0.1" min="1" max="30" placeholder="z.B. 7.5" inputmode="decimal">
+      <fieldset class="control-box">
+        <legend>Kartenebenen</legend>
+        <label class="layer-option" for="toggle-stations">
+          <input id="toggle-stations" name="toggleStations" type="checkbox" checked>
+          <span>⛽ Tankstellen anzeigen</span>
         </label>
-
-        <label for="tank-amount">
-          <span>Tankmenge (L)</span>
-          <input id="tank-amount" name="tankAmount" type="number" step="1" min="5" max="150" placeholder="z.B. 40" inputmode="numeric">
+        <label class="layer-option" for="toggle-charging">
+          <input id="toggle-charging" name="toggleCharging" type="checkbox">
+          <span>⚡ E-Ladesäulen anzeigen</span>
         </label>
+        <label class="layer-option" for="toggle-camping">
+          <input id="toggle-camping" name="toggleCamping" type="checkbox" disabled>
+          <span>🏕️ Wohnmobilstellplätze anzeigen</span>
+          <span class="layer-hint">bald verfügbar</span>
+        </label>
+      </fieldset>
 
-        <button id="calculate-costs-btn" type="button">Gesamtkosten berechnen</button>
-      </div>
+      <!-- Panel der Ebene "Tankstellen": sichtbar, solange toggle-stations angehakt ist -->
+      <fieldset class="control-box layer-panel" id="panel-stations" data-layer-panel="toggle-stations">
+        <legend>⛽ Tankstellen</legend>
+        <div class="panel-content">
+          <label for="fuel-select">
+            <span>Kraftstoffsorte</span>
+            <select id="fuel-select" name="fuel">
+              <option value="diesel">Diesel</option>
+              <option value="e10">Super E10</option>
+              <option value="e5">Super E5</option>
+              <option value="superplus">SuperPlus</option>
+            </select>
+          </label>
+
+          <div class="settings-row" aria-label="Smart-Tanken: Verbrauch und Tankmenge">
+            <label for="fuel-consumption">
+              <span>Verbrauch (L/100km)</span>
+              <input id="fuel-consumption" name="fuelConsumption" type="number" step="0.1" min="1" max="30" placeholder="z.B. 7.5" inputmode="decimal">
+            </label>
+
+            <label for="tank-amount">
+              <span>Tankmenge (L)</span>
+              <input id="tank-amount" name="tankAmount" type="number" step="1" min="5" max="150" placeholder="z.B. 40" inputmode="numeric">
+            </label>
+
+            <button id="calculate-costs-btn" type="button">Gesamtkosten berechnen</button>
+          </div>
+        </div>
+      </fieldset>
+
+      <!-- Panel der Ebene "E-Ladesäulen": erscheint nur bei angehakter Checkbox -->
+      <fieldset class="control-box layer-panel hidden" id="panel-charging" data-layer-panel="toggle-charging">
+        <legend>⚡ E-Ladesäulen</legend>
+        <p class="panel-hint">Ladesäulen werden auf der Karte angezeigt.</p>
+      </fieldset>
 
       <p id="resultSummary" class="result-summary" aria-live="polite">
         Tankstellen werden geladen …
@@ -70,7 +99,7 @@
     <section class="map-layout" aria-label="Tankstellenkarte und Ergebnisliste">
       <div id="map" class="map" aria-label="Karte mit Tankstellenmarkierungen"></div>
 
-      <aside class="station-panel" aria-labelledby="station-heading">
+      <aside class="station-panel" id="station-panel" data-layer-panel="toggle-stations" aria-labelledby="station-heading">
         <div class="panel-heading">
           <h2 id="station-heading">Tankstellen</h2>
           <span id="station-count" class="station-count" aria-hidden="true">—</span>
@@ -91,5 +120,29 @@
     integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
   <script src="config.js"></script>
   <script src="app.js"></script>
+
+  <!--
+    Sichtbarkeits-Logik der Ebenen-Panels (rein UI, unabhaengig von app.js):
+    Jedes Element mit data-layer-panel="<checkbox-id>" (Panels UND Ergebnis-
+    liste der Tankstellen) wird ein-/ausgeblendet, je nachdem, ob die
+    zugehoerige Checkbox angehakt ist. Keine Karte, keine Tankstellen-Logik -
+    nur display:none ueber die CSS-Klasse "hidden".
+  -->
+  <script>
+    (function () {
+      'use strict';
+      function syncPanels() {
+        document.querySelectorAll('[data-layer-panel]').forEach(function (panel) {
+          var toggle = document.getElementById(panel.getAttribute('data-layer-panel'));
+          if (toggle) panel.classList.toggle('hidden', !toggle.checked);
+        });
+      }
+      document.querySelectorAll('[data-layer-panel]').forEach(function (panel) {
+        var toggle = document.getElementById(panel.getAttribute('data-layer-panel'));
+        if (toggle) toggle.addEventListener('change', syncPanels);
+      });
+      syncPanels();
+    }());
+  </script>
 </body>
 </html>

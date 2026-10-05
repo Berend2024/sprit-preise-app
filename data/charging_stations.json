@@ -1,0 +1,36 @@
+{
+  "stations": [
+    {
+      "name": "Testladesäule Berlin Mitte",
+      "lat": 52.5200,
+      "lon": 13.4050,
+      "power_kw": 150,
+      "connector_type": "CCS",
+      "operator": "Testbetreiber"
+    },
+    {
+      "name": "Testladesäule Potsdam",
+      "lat": 52.3906,
+      "lon": 13.0645,
+      "power_kw": 50,
+      "connector_type": "CCS",
+      "operator": "Testbetreiber"
+    },
+    {
+      "name": "Testladesäule Schönefeld (BER)",
+      "lat": 52.3667,
+      "lon": 13.5033,
+      "power_kw": 300,
+      "connector_type": "CCS",
+      "operator": "Testbetreiber"
+    },
+    {
+      "name": "Testladesäule Bernau",
+      "lat": 52.6798,
+      "lon": 13.5867,
+      "power_kw": 22,
+      "connector_type": "Type 2",
+      "operator": "Testbetreiber"
+    }
+  ]
+}

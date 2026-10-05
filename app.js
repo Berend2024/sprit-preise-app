@@ -596,6 +596,94 @@
       });
   }
 
+  // ===================================================================
+  // Tankstellen-Ebene: Marker-Layer (markerLayer ist bereits eine
+  // LayerGroup) ueber die Checkbox ein-/ausschalten. Die Berechnungs-
+  // logik (renderMarkers) bleibt unangetastet - nur die Sichtbarkeit
+  // der Kartenmarker und der Ergebnisliste rechts wird gekoppelt.
+  // Beim Wieder-Aktivieren erscheinen die bereits geladenen Marker
+  // ohne neuen Datenabruf wieder.
+  // ===================================================================
+
+  function initFuelControls() {
+    var checkbox = document.getElementById('toggle-stations');
+    var listPanel = document.getElementById('station-panel');
+    if (!checkbox) return;
+    checkbox.addEventListener('change', function () {
+      // Ergebnisliste rechts ein-/ausblenden (gleiche hidden-Klasse wie Panels).
+      if (listPanel) listPanel.classList.toggle('hidden', !checkbox.checked);
+      if (!map || !markerLayer) return;
+      if (checkbox.checked) map.addLayer(markerLayer);
+      else map.removeLayer(markerLayer);
+    });
+  }
+
+  // ===================================================================
+  // E-Ladesaeulen: eigene Marker-Kategorie, unabhaengig von der
+  // Tankstellen-Logik. Lädt data/charging_stations.json einmalig und
+  // zeigt die Marker nur bei aktivierter Checkbox an.
+  // ===================================================================
+
+  var chargingLayer = null;
+
+  function ensureChargingLayer() {
+    if (!chargingLayer && map && window.L && typeof window.L.layerGroup === 'function') {
+      chargingLayer = window.L.layerGroup();
+    }
+    return chargingLayer;
+  }
+
+  function createChargingIcon() {
+    return window.L.divIcon({
+      className: 'charging-marker',
+      html: '<div class="charging-pin" title="E-Ladesäule">⚡</div>',
+      iconSize: [26, 26],
+      iconAnchor: [13, 13],
+      popupAnchor: [0, -14]
+    });
+  }
+
+  function loadChargingStations() {
+    var layer = ensureChargingLayer();
+    if (!layer) return; // Karte nicht verfügbar (z. B. Leaflet fehlt)
+    fetch('data/charging_stations.json', { cache: 'no-cache' })
+      .then(function (response) {
+        if (!response.ok) throw new Error('HTTP ' + response.status + ' beim Laden von data/charging_stations.json');
+        return response.json();
+      })
+      .then(function (data) {
+        if (!data || !Array.isArray(data.stations)) throw new Error('Ungültiges JSON-Format: stations fehlt.');
+        data.stations.forEach(function (station) {
+          if (!validCoordinate(station.lat, -90, 90) || !validCoordinate(station.lon, -180, 180)) return;
+          var details = [];
+          if (station.power_kw != null) details.push('Leistung: ' + escapeHtml(station.power_kw) + ' kW');
+          if (station.connector_type) details.push('Steckertyp: ' + escapeHtml(station.connector_type));
+          if (station.operator) details.push('Betreiber: ' + escapeHtml(station.operator));
+          window.L.marker([station.lat, station.lon], { icon: createChargingIcon() })
+            .bindPopup(
+              '<strong>' + escapeHtml(station.name || 'Ladesäule') + '</strong>' +
+              (details.length ? '<br>' + details.join('<br>') : '')
+            )
+            .addTo(layer);
+        });
+        console.log('Ladesäulen geladen:', data.stations.length);
+      })
+      .catch(function (error) {
+        console.warn('Ladesäulen konnten nicht geladen werden:', error);
+      });
+  }
+
+  function initChargingControls() {
+    var checkbox = document.getElementById('toggle-charging');
+    if (!checkbox) return;
+    checkbox.addEventListener('change', function () {
+      var layer = ensureChargingLayer();
+      if (!layer || !map) return;
+      if (checkbox.checked) map.addLayer(layer);
+      else map.removeLayer(layer);
+    });
+  }
+
   function init() {
     try {
       config = getConfig();
@@ -604,6 +692,11 @@
       loadCostSettings();
       bindControls();
       initMap();
+      // E-Ladesaeulen: Checkbox verdrahten und Daten einmalig laden;
+      // sichtbar wird die Ebene erst bei aktivierter Checkbox.
+      initFuelControls();
+      initChargingControls();
+      loadChargingStations();
       // Standort zuerst versuchen; bei Fehler setzt locateUser den Fallback.
       locateUser();
       loadStations().then(renderMarkers).catch(function (error) {
