@@ -6,7 +6,7 @@
   'use strict';
 
   var DEFAULT_LOCATION = { lat: 52.52, lng: 13.405 }; // Berlin
-  var FUEL_TYPES = ['diesel', 'e5', 'e10'];
+  var FUEL_TYPES = ['diesel', 'e5', 'e10', 'superplus'];
   var map;
   var markerLayer;
   var stations = [];
@@ -153,12 +153,17 @@
     return 'https://www.google.com/maps/search/?api=1&query=' + destination;
   }
 
-  // Verlinkte Adresszeile, oeffnet Google Maps in neuem Tab.
+  // Adresszeile plus Aktionszeile: Route-Link und Koordinaten-Kopierbutton.
   function mapsLinkHtml(station) {
     var address = stationAddress(station);
-    return '<span class="station-address">📍 ' +
-      (address ? escapeHtml(address) + ' → ' : '') +
-      '<a class="station-maps-link" href="' + escapeHtml(googleMapsUrl(station)) + '" target="_blank" rel="noopener noreferrer">Google Maps öffnen</a>' +
+    var coords = station.lat + ', ' + station.lng;
+    var copyText = 'Lat,Lng: ' + coords + (address ? ' – ' + address : '');
+    return '<span class="station-address">📍 ' + (address ? escapeHtml(address) : escapeHtml(coords)) + '</span>' +
+      '<span class="station-actions">' +
+      '<a class="maps-link" href="' + escapeHtml(googleMapsUrl(station)) + '" target="_blank" rel="noopener noreferrer">🗺️ Route</a>' +
+      '<button type="button" class="copy-coords-btn" title="Koordinaten kopieren" data-copy="' + escapeHtml(copyText) + '">📋' +
+      '<span class="copy-tooltip" aria-live="polite">Kopiert!</span>' +
+      '</button>' +
       '</span>';
   }
 
@@ -281,7 +286,50 @@
     if (!header) return;
     header.textContent = hasCostInputs()
       ? 'Sortiert nach: Gesamtkosten (inkl. Anfahrt)'
-      : 'Verbrauch & Tankmenge eingeben für Gesamtkosten – Sortierung: Preis pro Liter';
+      : 'Verbrauch & Tankmenge eingeben für Gesamtkosten – günstigster Preis pro Liter ist markiert';
+  }
+
+  // ----- Koordinaten in die Zwischenablage kopieren -----
+
+  function handleCopyCoords(button) {
+    var text = button.getAttribute('data-copy');
+    if (!text) return;
+    copyToClipboard(text, function () {
+      var tooltip = button.querySelector('.copy-tooltip');
+      if (!tooltip) return;
+      tooltip.classList.add('show');
+      setTimeout(function () {
+        tooltip.classList.remove('show');
+      }, 1500);
+    });
+  }
+
+  function copyToClipboard(text, onSuccess) {
+    if (navigator.clipboard && typeof navigator.clipboard.writeText === 'function') {
+      navigator.clipboard.writeText(text).then(onSuccess, function () {
+        copyViaTextarea(text, onSuccess);
+      });
+      return;
+    }
+    copyViaTextarea(text, onSuccess);
+  }
+
+  // Fallback fuer aeltere Browser bzw. unsichere Kontexte (z. B. file://).
+  function copyViaTextarea(text, onSuccess) {
+    try {
+      var textarea = document.createElement('textarea');
+      textarea.value = text;
+      textarea.setAttribute('readonly', '');
+      textarea.style.position = 'absolute';
+      textarea.style.left = '-9999px';
+      document.body.appendChild(textarea);
+      textarea.select();
+      document.execCommand('copy');
+      document.body.removeChild(textarea);
+      onSuccess();
+    } catch (error) {
+      console.warn('Koordinaten konnten nicht kopiert werden:', error);
+    }
   }
 
   function renderStationList(decorated) {
@@ -298,19 +346,20 @@
       return;
     }
     var fuel = getSelectedFuel();
-    var costsAvailable = hasCostInputs();
     listElement.innerHTML = '<ul id="stations">' + decorated.map(function (entry, index) {
       var station = entry.station;
       var key = stationKey(station);
-      // Die nach Sortierung guenstigste Tankstelle bekommt das Best-Deal-Siegel.
-      var isBestDeal = costsAvailable && index === 0;
+      // Index 0 ist nach Sortierung guenstigst: bei gesetzten Eingaben nach
+      // Gesamtkosten, sonst (Fallback) nach Preis pro Liter.
+      var isBestDeal = index === 0;
       var classes = 'station-item'
         + (key && key === selectedStationId ? ' active' : '')
         + (isBestDeal ? ' best-deal' : '');
       return '<li class="' + classes + '" data-station-id="' + escapeHtml(key) + '">' +
-        (isBestDeal ? '<span class="best-deal-badge">💰 Bestes Gesamtpaket</span>' : '') +
+        (isBestDeal ? '<span class="best-deal-badge">🏆 Günstigste Wahl</span>' : '') +
         '<span class="station-name">' + escapeHtml(station.name || 'Tankstelle') + '</span>' +
-        '<span class="price"><strong>' + formatPrice(station[fuel]) + '</strong></span>' +
+        '<span class="price' + (entry.totalCost !== null ? '' : ' station-price-only') + '"><strong>' +
+        formatPrice(station[fuel]) + '</strong></span>' +
         mapsLinkHtml(station) +
         (entry.distanceKm !== null
           ? '<span class="station-distance">' + formatDistance(entry.distanceKm) + ' Luftlinie</span>'
@@ -320,12 +369,17 @@
           : '') +
         '</li>';
     }).join('') + '</ul>';
+    // Bestes Angebot in den sichtbaren Bereich der Liste scrollen.
+    var bestItem = listElement.querySelector('li.best-deal');
+    if (bestItem && typeof bestItem.scrollIntoView === 'function') {
+      bestItem.scrollIntoView({ block: 'nearest' });
+    }
   }
 
   function createBestDealIcon() {
     return window.L.divIcon({
       className: 'best-deal-marker',
-      html: '<div class="best-deal-pin" title="Bestes Gesamtpaket"></div>',
+      html: '<div class="best-deal-pin" title="Günstigste Wahl"></div>',
       iconSize: [30, 30],
       iconAnchor: [15, 15],
       popupAnchor: [0, -18]
@@ -342,14 +396,13 @@
   function renderMapMarkers(decorated) {
     if (!markerLayer) return;
     var fuel = getSelectedFuel();
-    var costsAvailable = hasCostInputs();
 
     markerLayer.clearLayers();
     markersById = {};
     decorated.forEach(function (entry, index) {
       var station = entry.station;
       try {
-        var isBestDeal = costsAvailable && index === 0;
+        var isBestDeal = index === 0;
         var marker = window.L.marker([station.lat, station.lng],
           isBestDeal ? { icon: createBestDealIcon() } : undefined);
         var details = '';
@@ -508,12 +561,18 @@
     var stationList = document.getElementById('station-list');
     if (stationList) {
       stationList.addEventListener('click', function (event) {
-        // Klick auf den Maps-Link oeffnet Google Maps und loest keinen Zoom aus.
-        if (event.target.closest('a.station-maps-link')) return;
+        // Route-Link und Kopierbutton loesen keinen Zoom auf die Karte aus.
+        if (event.target.closest('.copy-coords-btn')) return;
+        if (event.target.closest('a.maps-link')) return;
         var item = event.target.closest('li[data-station-id]');
         if (item) focusStation(item.getAttribute('data-station-id'));
       });
     }
+    // Kopieren global abfangen, damit es auch im Karten-Popup funktioniert.
+    document.addEventListener('click', function (event) {
+      var copyButton = event.target.closest('.copy-coords-btn');
+      if (copyButton) handleCopyCoords(copyButton);
+    });
   }
 
   function loadStations() {

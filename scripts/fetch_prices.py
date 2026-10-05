@@ -36,6 +36,12 @@ for loc in LOCATIONS:
 
 print(f"{len(all_stations)} Tankstellen insgesamt gefunden.")
 
+# Tankerkoenig liefert im List-Endpoint keine SuperPlus-Preise.
+# SuperPlus wird als E5 + 10 Cent geschaetzt, damit die App alle vier Sorten fuehrt.
+for station in all_stations.values():
+    e5 = station.get("e5")
+    station["superplus"] = round(e5 + 0.10, 3) if isinstance(e5, (int, float)) and e5 > 0 else None
+
 output = {
     "stations": list(all_stations.values()),
     # Zeitstempel fuer die Diagnoseseite (Alter der Daten sichtbar machen)

@@ -157,27 +157,75 @@ main {
   color: #155724;
 }
 
-/* Adresszeile mit Google-Maps-Verlinkung */
+/* Adresszeile mit Route-Link und Koordinaten-Kopierbutton */
 .station-address {
   display: block;
   margin-bottom: 4px;
 }
 
-.station-maps-link {
-  display: inline-flex;
+.station-actions {
+  display: flex;
+  gap: 8px;
   align-items: center;
-  gap: 4px;
+  margin-top: 4px;
+}
+
+.maps-link {
   color: #1a73e8;
   font-size: 0.85em;
   text-decoration: none;
 }
 
-.station-maps-link:hover {
+.maps-link:hover {
   text-decoration: underline;
 }
 
-.station-maps-link::before {
-  content: "🗺️";
+.copy-coords-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1em;
+  padding: 2px 4px;
+  position: relative;
+  line-height: 1;
+}
+
+.copy-coords-btn:hover {
+  background: #f0f0f0;
+  border-radius: 4px;
+}
+
+.copy-tooltip {
+  position: absolute;
+  bottom: calc(100% + 4px);
+  left: 50%;
+  transform: translateX(-50%);
+  background: #333;
+  color: white;
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-size: 0.75em;
+  white-space: nowrap;
+  opacity: 0;
+  transition: opacity 0.3s;
+  pointer-events: none;
+}
+
+.copy-tooltip.show {
+  opacity: 1;
+}
+
+/* Preis ohne Gesamtkosten-Ausweis */
+.station-price-only {
+  font-weight: 500;
+  color: #333;
+}
+
+#distance-hint {
+  font-size: 0.8em;
+  color: #888;
+  font-style: italic;
+  margin-top: 8px;
 }
 
 /* Guenstigste Tankstelle nach Gesamtkosten (ueber .active, damit gruen gewinnt) */
@@ -191,10 +239,16 @@ main {
   margin-bottom: 0.3rem;
   padding: 0.15rem 0.5rem;
   border-radius: 999px;
-  background: #28a745;
-  color: #fff;
-  font-size: 0.75rem;
+  background: #d4edda;
+  color: #155724;
+  font-size: 0.85em;
   font-weight: bold;
+}
+
+.station-item.best-deal .best-deal-badge {
+  color: #155724;
+  font-weight: bold;
+  font-size: 0.85em;
 }
 
 /* Gruener Marker fuer das beste Gesamtpaket */
