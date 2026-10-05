@@ -644,7 +644,19 @@
 
   function ensureChargingLayer() {
     if (!chargingLayer && map && window.L && typeof window.L.layerGroup === 'function') {
-      chargingLayer = window.L.layerGroup();
+      // Clustering, wenn das Plugin geladen ist; sonst einfacher
+      // Fallback-Layer, damit die App ohne CDN nicht bricht.
+      if (typeof window.L.markerClusterGroup === 'function') {
+        chargingLayer = window.L.markerClusterGroup({
+          chunkedLoading: true,
+          maxClusterRadius: 50,
+          showCoverageOnHover: false,
+          spiderfyOnMaxZoom: true,
+          disableClusteringAtZoom: 16
+        });
+      } else {
+        chargingLayer = window.L.layerGroup();
+      }
     }
     return chargingLayer;
   }

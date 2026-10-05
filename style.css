@@ -396,6 +396,30 @@ main {
   line-height: 1;
 }
 
+/* ----- Ladesaehulen-Cluster (leaflet.markercluster): an das tuerkise
+   Ladesaehulen-Design angepasst. Greift nur auf .marker-cluster-Elementen
+   und betrifft damit ausschliesslich die Ladesaehulen-Ebene. ----- */
+
+.marker-cluster-small,
+.marker-cluster-medium,
+.marker-cluster-large {
+  /* aeusserer Ring, leicht transparent, wie .charging-pin (#17a2b8) */
+  background-color: rgba(23, 162, 184, 0.35);
+}
+
+.marker-cluster-small div,
+.marker-cluster-medium div,
+.marker-cluster-large div {
+  /* innerer Kreis, kraeftig wie .charging-pin */
+  background-color: #17a2b8;
+}
+
+.marker-cluster div {
+  color: #fff;
+  font-weight: bold;
+  text-align: center;
+}
+
 .best-deal-pin {
   width: 30px;
   height: 30px;
