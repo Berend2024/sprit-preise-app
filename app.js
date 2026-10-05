@@ -665,20 +665,31 @@
     });
   }
 
+  // Popup-Aufbau: Name, Adresse, Leistung/Steckertyp, Ladepunkt-Anzahl,
+  // Betreiber, Route-Link. Fehlende Felder werden uebersprungen.
+  function chargingPopupHtml(station) {
+    var lines = [];
+    if (station.power_kw != null) lines.push('Leistung: ' + escapeHtml(station.power_kw) + ' kW');
+    if (station.connector_type) lines.push('Steckertyp: ' + escapeHtml(station.connector_type));
+    if (station.points === 1) lines.push('1 Ladepunkt');
+    else if (station.points != null) lines.push(escapeHtml(station.points) + ' Ladepunkte');
+    if (station.operator) lines.push('Betreiber: ' + escapeHtml(station.operator));
+    var html = '<strong>' + escapeHtml(station.name || 'Ladesäule') + '</strong>';
+    if (station.address) html += '<br>' + escapeHtml(station.address);
+    if (lines.length) html += '<br>' + lines.join('<br>');
+    var routeUrl = 'https://www.google.com/maps/dir/?api=1&destination=' + station.lat + ',' + station.lon;
+    html += '<br><a class="maps-link" href="' + escapeHtml(routeUrl) +
+      '" target="_blank" rel="noopener noreferrer">Route planen</a>';
+    return html;
+  }
+
   function renderChargingMarkers() {
     var layer = ensureChargingLayer();
     if (!layer || !chargingLoaded) return;
     layer.clearLayers();
     filteredChargingStations().forEach(function (station) {
-      var details = [];
-      if (station.power_kw != null) details.push('Leistung: ' + escapeHtml(station.power_kw) + ' kW');
-      if (station.connector_type) details.push('Steckertyp: ' + escapeHtml(station.connector_type));
-      if (station.operator) details.push('Betreiber: ' + escapeHtml(station.operator));
       window.L.marker([station.lat, station.lon], { icon: createChargingIcon() })
-        .bindPopup(
-          '<strong>' + escapeHtml(station.name || 'Ladesäule') + '</strong>' +
-          (details.length ? '<br>' + details.join('<br>') : '')
-        )
+        .bindPopup(chargingPopupHtml(station))
         .addTo(layer);
     });
   }

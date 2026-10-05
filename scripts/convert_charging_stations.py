@@ -61,10 +61,24 @@ def to_number(raw):
         return None
 
 
-def clean_power(value):
+def clean_number(value):
     if value is None:
         return None
     return int(value) if value == int(value) else value
+
+
+def compose_address(row, columns):
+    # "Strasse Hausnr., PLZ Ort" - leere Teile weglassen, keine doppelten
+    # Leerzeichen oder Kommas.
+    street = " ".join(
+        part.strip() for part in (row[columns["Straße"]], row[columns["Hausnummer"]])
+        if part and part.strip()
+    )
+    city = " ".join(
+        part.strip() for part in (row[columns["Postleitzahl"]], row[columns["Ort"]])
+        if part and part.strip()
+    )
+    return ", ".join(part for part in (street, city) if part)
 
 
 def connector_short(raw_values, unknown):
@@ -122,10 +136,12 @@ def convert(csv_path):
                 "id": row[columns["Ladeeinrichtungs-ID"]].strip(),
                 "name": row[columns["Anzeigename (Karte)"]].strip()
                         or row[columns["Betreiber"]].strip(),
+                "address": compose_address(row, columns),
                 "lat": lat,
                 "lon": lon,
-                "power_kw": clean_power(power_kw),
+                "power_kw": clean_number(power_kw),
                 "connector_type": connector_short(connectors, unknown),
+                "points": clean_number(to_number(row[columns["Anzahl Ladepunkte"]])),
                 "operator": row[columns["Betreiber"]].strip(),
             })
     print(f"Status != '{STATUS_FILTER}' uebersprungen: {skipped_status}")
