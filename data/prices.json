@@ -44,12 +44,12 @@
       "lng": 13.408138,
       "dist": 1.8,
       "diesel": 2.199,
-      "e5": 2.099,
-      "e10": 2.039,
+      "e5": 2.089,
+      "e10": 2.029,
       "isOpen": true,
       "houseNumber": "138",
       "postCode": 10969,
-      "superplus": 2.199
+      "superplus": 2.189
     },
     {
       "id": "813ed58c-b58d-4d17-895b-2078cb302649",
@@ -112,12 +112,12 @@
       "lng": 13.440946,
       "dist": 2.7,
       "diesel": 2.219,
-      "e5": 2.109,
-      "e10": 2.049,
-      "isOpen": true,
+      "e5": 2.099,
+      "e10": 2.039,
+      "isOpen": false,
       "houseNumber": "2",
       "postCode": 10407,
-      "superplus": 2.209
+      "superplus": 2.199
     },
     {
       "id": "cba00de3-9841-49ce-943c-0bcded76ba18",
@@ -146,12 +146,12 @@
       "lng": 13.376696,
       "dist": 2.9,
       "diesel": 2.199,
-      "e5": 2.109,
-      "e10": 2.049,
+      "e5": 2.099,
+      "e10": 2.039,
       "isOpen": true,
       "houseNumber": "33-35",
       "postCode": 10963,
-      "superplus": 2.209
+      "superplus": 2.199
     },
     {
       "id": "1723edea-8e01-4de3-8c5e-ca227a49e2c3",
@@ -163,12 +163,12 @@
       "lng": 13.433074,
       "dist": 3,
       "diesel": 2.199,
-      "e5": 2.089,
-      "e10": 2.029,
+      "e5": 2.079,
+      "e10": 2.019,
       "isOpen": true,
       "houseNumber": "48",
       "postCode": 10997,
-      "superplus": 2.189
+      "superplus": 2.179
     },
     {
       "id": "1c4f126b-1f3c-4b38-9692-05c400ea8e61",
@@ -197,12 +197,12 @@
       "lng": 13.390687,
       "dist": 3.2,
       "diesel": 2.199,
-      "e5": 2.109,
-      "e10": 2.049,
+      "e5": 2.099,
+      "e10": 2.039,
       "isOpen": true,
       "houseNumber": "",
       "postCode": 10961,
-      "superplus": 2.209
+      "superplus": 2.199
     },
     {
       "id": "858d8d7c-1bf2-44ed-a33b-71185fce93ff",
@@ -248,12 +248,12 @@
       "lng": 13.450748,
       "dist": 3.5,
       "diesel": 2.209,
-      "e5": 2.099,
-      "e10": 2.039,
-      "isOpen": true,
+      "e5": 2.089,
+      "e10": 2.029,
+      "isOpen": false,
       "houseNumber": "116",
       "postCode": 10407,
-      "superplus": 2.199
+      "superplus": 2.189
     },
     {
       "id": "51d4b6a9-a095-1aa0-e100-80009459e03a",
@@ -282,12 +282,12 @@
       "lng": 13.457798,
       "dist": 3.7,
       "diesel": 2.219,
-      "e5": 2.109,
-      "e10": 2.049,
+      "e5": 2.099,
+      "e10": 2.039,
       "isOpen": true,
       "houseNumber": "174",
       "postCode": 10369,
-      "superplus": 2.209
+      "superplus": 2.199
     },
     {
       "id": "c1d9c3c2-a6de-4111-8e63-81bee1189b50",
@@ -352,7 +352,7 @@
       "diesel": 2.189,
       "e5": 2.099,
       "e10": 2.039,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "33",
       "postCode": 10559,
       "superplus": 2.199
@@ -369,7 +369,7 @@
       "diesel": 2.189,
       "e5": 2.099,
       "e10": 2.039,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "83",
       "postCode": 13189,
       "superplus": 2.199
@@ -417,7 +417,7 @@
       "lat": 52.48449,
       "lng": 13.429329,
       "dist": 4.3,
-      "diesel": 2.259,
+      "diesel": 2.239,
       "e5": 2.089,
       "e10": 2.029,
       "isOpen": true,
@@ -454,7 +454,7 @@
       "diesel": 2.199,
       "e5": 2.109,
       "e10": 2.049,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "1",
       "postCode": 13353,
       "superplus": 2.209
@@ -471,7 +471,7 @@
       "diesel": 2.149,
       "e5": 2.089,
       "e10": 2.029,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "37",
       "postCode": 13089,
       "superplus": 2.189
@@ -503,12 +503,12 @@
       "lng": 13.3466,
       "dist": 4.8,
       "diesel": 2.199,
-      "e5": 2.109,
-      "e10": 2.049,
+      "e5": 2.099,
+      "e10": 2.039,
       "isOpen": true,
       "houseNumber": "29",
       "postCode": 10777,
-      "superplus": 2.209
+      "superplus": 2.199
     },
     {
       "id": "297fe76f-7c3d-4410-bea1-279834e6a36c",
@@ -556,7 +556,7 @@
       "diesel": 2.179,
       "e5": 2.089,
       "e10": 2.029,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "79",
       "postCode": 13409,
       "superplus": 2.189
@@ -605,12 +605,12 @@
       "lng": 13.34559,
       "dist": 5.2,
       "diesel": 2.199,
-      "e5": 2.109,
-      "e10": 2.049,
+      "e5": 2.099,
+      "e10": 2.039,
       "isOpen": true,
       "houseNumber": "",
       "postCode": 10779,
-      "superplus": 2.209
+      "superplus": 2.199
     },
     {
       "id": "a0f35e83-2d97-4bfb-b90e-f068fe8c73e1",
@@ -658,7 +658,7 @@
       "diesel": 2.199,
       "e5": 2.099,
       "e10": 2.039,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "9-9 A",
       "postCode": 10553,
       "superplus": 2.199
@@ -692,7 +692,7 @@
       "diesel": 2.189,
       "e5": 2.079,
       "e10": 2.019,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "30",
       "postCode": 10365,
       "superplus": 2.179
@@ -726,7 +726,7 @@
       "diesel": 2.149,
       "e5": 2.089,
       "e10": 2.029,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "72-73",
       "postCode": 13089,
       "superplus": 2.189
@@ -743,7 +743,7 @@
       "diesel": 2.199,
       "e5": 2.099,
       "e10": 2.039,
-      "isOpen": false,
+      "isOpen": true,
       "houseNumber": "44 N-Q",
       "postCode": 10553,
       "superplus": 2.199
@@ -760,7 +760,7 @@
       "diesel": 2.149,
       "e5": 2.089,
       "e10": 2.029,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "27",
       "postCode": 10365,
       "superplus": 2.189
@@ -775,12 +775,12 @@
       "lng": 13.355071,
       "dist": 5.7,
       "diesel": 2.199,
-      "e5": 2.109,
-      "e10": 2.049,
+      "e5": 2.099,
+      "e10": 2.039,
       "isOpen": true,
       "houseNumber": "90-92",
       "postCode": 10829,
-      "superplus": 2.209
+      "superplus": 2.199
     },
     {
       "id": "8a027639-18de-4314-93e1-224c4cf6b634",
@@ -794,7 +794,7 @@
       "diesel": 2.149,
       "e5": 2.089,
       "e10": 2.029,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "13",
       "postCode": 13089,
       "superplus": 2.189
@@ -811,7 +811,7 @@
       "diesel": 2.149,
       "e5": 2.089,
       "e10": 2.029,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "2",
       "postCode": 13089,
       "superplus": 2.189
@@ -826,12 +826,12 @@
       "lng": 13.331354,
       "dist": 5.8,
       "diesel": 2.199,
-      "e5": 2.109,
-      "e10": 2.049,
+      "e5": 2.099,
+      "e10": 2.039,
       "isOpen": true,
       "houseNumber": "200",
       "postCode": 10717,
-      "superplus": 2.209
+      "superplus": 2.199
     },
     {
       "id": "09c46b5b-20c0-4dcf-a4d4-e6c67f6d5bb0",
@@ -877,12 +877,12 @@
       "lng": 13.371984,
       "dist": 6,
       "diesel": 2.199,
-      "e5": 2.109,
-      "e10": 2.049,
-      "isOpen": true,
+      "e5": 2.099,
+      "e10": 2.039,
+      "isOpen": false,
       "houseNumber": "17",
       "postCode": 12103,
-      "superplus": 2.209
+      "superplus": 2.199
     },
     {
       "id": "7cbddee6-be90-4954-b392-19467cdbd1e4",
@@ -947,7 +947,7 @@
       "diesel": 2.189,
       "e5": 2.099,
       "e10": 2.039,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "29",
       "postCode": 13409,
       "superplus": 2.199
@@ -964,7 +964,7 @@
       "diesel": 2.149,
       "e5": 2.089,
       "e10": 2.029,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "257",
       "postCode": 13088,
       "superplus": 2.189
@@ -979,12 +979,12 @@
       "lng": 13.31931,
       "dist": 6.2,
       "diesel": 2.189,
-      "e5": 2.099,
-      "e10": 2.039,
-      "isOpen": true,
+      "e5": 2.089,
+      "e10": 2.029,
+      "isOpen": false,
       "houseNumber": "97",
       "postCode": 10719,
-      "superplus": 2.199
+      "superplus": 2.189
     },
     {
       "id": "057a6924-d3a7-4ff3-8c9e-1be2e52c3142",
@@ -998,7 +998,7 @@
       "diesel": 2.159,
       "e5": 2.089,
       "e10": 2.029,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "96-99",
       "postCode": 13089,
       "superplus": 2.189
@@ -1015,7 +1015,7 @@
       "diesel": 2.149,
       "e5": 2.089,
       "e10": 2.029,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "179",
       "postCode": 10365,
       "superplus": 2.189
@@ -1032,7 +1032,7 @@
       "diesel": 2.149,
       "e5": 2.069,
       "e10": 2.009,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "170",
       "postCode": 10365,
       "superplus": 2.169
@@ -1047,12 +1047,12 @@
       "lng": 13.478669,
       "dist": 6.4,
       "diesel": 2.199,
-      "e5": 2.089,
-      "e10": 2.029,
-      "isOpen": true,
+      "e5": 2.079,
+      "e10": 2.019,
+      "isOpen": false,
       "houseNumber": "9",
       "postCode": 12435,
-      "superplus": 2.189
+      "superplus": 2.179
     },
     {
       "id": "49d45108-e566-470e-aa7e-fd3c6590c683",
@@ -1081,12 +1081,12 @@
       "lng": 13.341226,
       "dist": 6.5,
       "diesel": 2.199,
-      "e5": 2.109,
-      "e10": 2.049,
-      "isOpen": true,
+      "e5": 2.099,
+      "e10": 2.039,
+      "isOpen": false,
       "houseNumber": "91",
       "postCode": 12159,
-      "superplus": 2.209
+      "superplus": 2.199
     },
     {
       "id": "e1a15081-257b-9107-e040-0b0a3dfe563c",
@@ -1100,7 +1100,7 @@
       "diesel": 2.159,
       "e5": 2.089,
       "e10": 2.029,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "3",
       "postCode": 13158,
       "superplus": 2.189
@@ -1117,7 +1117,7 @@
       "diesel": 2.399,
       "e5": 2.249,
       "e10": 2.189,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "259-263",
       "postCode": 12057,
       "superplus": 2.349
@@ -1131,13 +1131,13 @@
       "lat": 52.465242,
       "lng": 13.443165,
       "dist": 6.6,
-      "diesel": 2.279,
-      "e5": 2.109,
-      "e10": 2.049,
+      "diesel": 2.249,
+      "e5": 2.099,
+      "e10": 2.039,
       "isOpen": true,
       "houseNumber": "267",
       "postCode": 12057,
-      "superplus": 2.209
+      "superplus": 2.199
     },
     {
       "id": "6ab6f8d4-e9f1-4c73-8a20-852b8cd73bc4",
@@ -1151,7 +1151,7 @@
       "diesel": 2.199,
       "e5": 2.109,
       "e10": 2.049,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "86",
       "postCode": 12159,
       "superplus": 2.209
@@ -1168,7 +1168,7 @@
       "diesel": 2.399,
       "e5": 2.299,
       "e10": 2.239,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "320",
       "postCode": 13088,
       "superplus": 2.399
@@ -1185,7 +1185,7 @@
       "diesel": 2.149,
       "e5": 2.089,
       "e10": 2.029,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "1",
       "postCode": 13088,
       "superplus": 2.189
@@ -1234,12 +1234,12 @@
       "lng": 13.367119,
       "dist": 6.9,
       "diesel": 2.179,
-      "e5": 2.089,
-      "e10": 2.029,
-      "isOpen": true,
+      "e5": 2.079,
+      "e10": 2.019,
+      "isOpen": false,
       "houseNumber": "57",
       "postCode": 12103,
-      "superplus": 2.189
+      "superplus": 2.179
     },
     {
       "id": "c7565063-01dd-4181-82a9-a9012f2380ae",
@@ -1268,12 +1268,12 @@
       "lng": 13.302904,
       "dist": 6.9,
       "diesel": 2.179,
-      "e5": 2.089,
-      "e10": 2.029,
-      "isOpen": true,
+      "e5": 2.079,
+      "e10": 2.019,
+      "isOpen": false,
       "houseNumber": "132",
       "postCode": 10585,
-      "superplus": 2.189
+      "superplus": 2.179
     },
     {
       "id": "12e6b614-87d4-4413-afd2-7dd783505ee8",
@@ -1304,7 +1304,7 @@
       "diesel": 2.189,
       "e5": 2.089,
       "e10": 2.029,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "2",
       "postCode": 13405,
       "superplus": 2.189
@@ -1321,7 +1321,7 @@
       "diesel": 2.209,
       "e5": 2.109,
       "e10": 2.049,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "21",
       "postCode": 10713,
       "superplus": 2.209
@@ -1338,7 +1338,7 @@
       "diesel": 2.169,
       "e5": 2.099,
       "e10": 2.039,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "2",
       "postCode": 13156,
       "superplus": 2.199
@@ -1387,12 +1387,12 @@
       "lng": 13.300963,
       "dist": 7,
       "diesel": 2.189,
-      "e5": 2.099,
-      "e10": 2.039,
+      "e5": 2.089,
+      "e10": 2.029,
       "isOpen": true,
       "houseNumber": "102",
       "postCode": 10585,
-      "superplus": 2.199
+      "superplus": 2.189
     },
     {
       "id": "7d1662e8-1f17-4332-b790-6dacc044a0a3",
@@ -1406,7 +1406,7 @@
       "diesel": 2.199,
       "e5": 2.109,
       "e10": 2.049,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "45 B",
       "postCode": 10627,
       "superplus": 2.209
@@ -1440,7 +1440,7 @@
       "diesel": 2.189,
       "e5": 2.089,
       "e10": 2.029,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "62",
       "postCode": 13627,
       "superplus": 2.189
@@ -1457,7 +1457,7 @@
       "diesel": 2.159,
       "e5": 2.099,
       "e10": 2.039,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "11",
       "postCode": 13127,
       "superplus": 2.199
@@ -1505,13 +1505,13 @@
       "lat": 52.457048,
       "lng": 13.436356,
       "dist": 7.3,
-      "diesel": 2.339,
-      "e5": 2.199,
-      "e10": 2.139,
+      "diesel": 2.319,
+      "e5": 2.179,
+      "e10": 2.119,
       "isOpen": true,
       "houseNumber": "60-62",
       "postCode": 12347,
-      "superplus": 2.299
+      "superplus": 2.279
     },
     {
       "id": "834adf75-8c11-40ab-ac61-7f199cc3b98f",
@@ -1559,7 +1559,7 @@
       "diesel": 2.199,
       "e5": 2.109,
       "e10": 2.049,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "98-99",
       "postCode": 12105,
       "superplus": 2.209
@@ -1593,7 +1593,7 @@
       "diesel": 2.149,
       "e5": 2.089,
       "e10": 2.029,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "220",
       "postCode": 13051,
       "superplus": 2.189
@@ -1658,9 +1658,9 @@
       "lat": 52.4519,
       "lng": 13.385,
       "dist": 7.7,
-      "diesel": 2.299,
+      "diesel": 2.269,
       "e5": 2.129,
-      "e10": 2.079,
+      "e10": 2.069,
       "isOpen": true,
       "houseNumber": "11-13",
       "postCode": 12109,
@@ -1678,7 +1678,7 @@
       "diesel": 2.159,
       "e5": 2.079,
       "e10": 2.019,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "175",
       "postCode": 13053,
       "superplus": 2.179
@@ -1709,13 +1709,13 @@
       "lat": 52.45582,
       "lng": 13.44954,
       "dist": 7.7,
-      "diesel": 2.319,
-      "e5": 2.159,
+      "diesel": 2.289,
+      "e5": 2.149,
       "e10": 2.109,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "",
       "postCode": 12359,
-      "superplus": 2.259
+      "superplus": 2.249
     },
     {
       "id": "5f0a857d-a161-40bf-a3a0-28e564951ec2",
@@ -1727,12 +1727,12 @@
       "lng": 13.294388,
       "dist": 7.8,
       "diesel": 2.189,
-      "e5": 2.099,
-      "e10": 2.039,
-      "isOpen": true,
+      "e5": 2.089,
+      "e10": 2.029,
+      "isOpen": false,
       "houseNumber": "14-15",
       "postCode": 10711,
-      "superplus": 2.199
+      "superplus": 2.189
     },
     {
       "id": "285aaf2a-f363-4c83-9fd2-4c9cc34833b2",
@@ -1763,7 +1763,7 @@
       "diesel": 2.159,
       "e5": 2.079,
       "e10": 2.019,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "52",
       "postCode": 12681,
       "superplus": 2.179
@@ -1780,7 +1780,7 @@
       "diesel": 2.189,
       "e5": 2.099,
       "e10": 2.039,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "48 a",
       "postCode": 12157,
       "superplus": 2.199
@@ -1811,13 +1811,13 @@
       "lat": 52.450566,
       "lng": 13.43448,
       "dist": 8,
-      "diesel": 2.319,
-      "e5": 2.169,
-      "e10": 2.109,
+      "diesel": 2.289,
+      "e5": 2.149,
+      "e10": 2.089,
       "isOpen": true,
       "houseNumber": "102",
       "postCode": 12347,
-      "superplus": 2.269
+      "superplus": 2.249
     },
     {
       "id": "bd3536ff-83ee-4055-a5e8-0dc891dc2ea6",
@@ -1828,10 +1828,10 @@
       "lat": 52.448913,
       "lng": 13.384674,
       "dist": 8,
-      "diesel": 2.319,
+      "diesel": 2.279,
       "e5": 2.149,
       "e10": 2.089,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "",
       "postCode": 12109,
       "superplus": 2.249
@@ -1848,7 +1848,7 @@
       "diesel": 2.149,
       "e5": 2.069,
       "e10": 2.009,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "10",
       "postCode": 13053,
       "superplus": 2.169
@@ -1896,13 +1896,13 @@
       "lat": 52.453111,
       "lng": 13.456709,
       "dist": 8.2,
-      "diesel": 2.319,
-      "e5": 2.169,
-      "e10": 2.109,
+      "diesel": 2.289,
+      "e5": 2.149,
+      "e10": 2.089,
       "isOpen": true,
       "houseNumber": "158",
       "postCode": 12359,
-      "superplus": 2.269
+      "superplus": 2.249
     },
     {
       "id": "a83c2eae-4dd5-4cab-8172-d50ca036589a",
@@ -1931,12 +1931,12 @@
       "lng": 13.366024,
       "dist": 8.3,
       "diesel": 2.189,
-      "e5": 2.099,
-      "e10": 2.039,
-      "isOpen": true,
+      "e5": 2.089,
+      "e10": 2.029,
+      "isOpen": false,
       "houseNumber": "124",
       "postCode": 12105,
-      "superplus": 2.199
+      "superplus": 2.189
     },
     {
       "id": "1ca3b827-3d5c-4037-b3ff-d5f6a0e72bb0",
@@ -2101,12 +2101,12 @@
       "lng": 13.350067,
       "dist": 8.6,
       "diesel": 2.189,
-      "e5": 2.099,
-      "e10": 2.039,
-      "isOpen": true,
+      "e5": 2.089,
+      "e10": 2.029,
+      "isOpen": false,
       "houseNumber": "77",
       "postCode": 12169,
-      "superplus": 2.199
+      "superplus": 2.189
     },
     {
       "id": "19adfb9d-003d-4e7c-abd9-351d5ca521b6",
@@ -2137,7 +2137,7 @@
       "diesel": 2.209,
       "e5": 2.089,
       "e10": 2.029,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "294,",
       "postCode": 12437,
       "superplus": 2.189
@@ -2171,7 +2171,7 @@
       "diesel": 2.739,
       "e5": 2.679,
       "e10": 2.619,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "",
       "postCode": 14055,
       "superplus": 2.779
@@ -2188,7 +2188,7 @@
       "diesel": 2.219,
       "e5": 2.099,
       "e10": 2.039,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "69",
       "postCode": 13439,
       "superplus": 2.199
@@ -2222,7 +2222,7 @@
       "diesel": 2.159,
       "e5": 2.079,
       "e10": 2.019,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "155",
       "postCode": 12681,
       "superplus": 2.179
@@ -2256,7 +2256,7 @@
       "diesel": 2.189,
       "e5": 2.099,
       "e10": 2.039,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "61",
       "postCode": 13437,
       "superplus": 2.199
@@ -2273,7 +2273,7 @@
       "diesel": 2.169,
       "e5": 2.069,
       "e10": 2.009,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "61",
       "postCode": 12681,
       "superplus": 2.169
@@ -2290,7 +2290,7 @@
       "diesel": 2.169,
       "e5": 2.099,
       "e10": 2.039,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "32",
       "postCode": 13127,
       "superplus": 2.199
@@ -2324,7 +2324,7 @@
       "diesel": 2.379,
       "e5": 2.249,
       "e10": 2.189,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "16",
       "postCode": 13509,
       "superplus": 2.349
@@ -2392,7 +2392,7 @@
       "diesel": 2.149,
       "e5": 2.089,
       "e10": 2.029,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "70 A",
       "postCode": 13127,
       "superplus": 2.189
@@ -2409,7 +2409,7 @@
       "diesel": 2.169,
       "e5": 2.099,
       "e10": 2.039,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "35",
       "postCode": 13129,
       "superplus": 2.199
@@ -2474,13 +2474,13 @@
       "lat": 52.438503,
       "lng": 13.452542,
       "dist": 9.6,
-      "diesel": 2.309,
-      "e5": 2.149,
-      "e10": 2.089,
-      "isOpen": true,
+      "diesel": 2.279,
+      "e5": 2.139,
+      "e10": 2.079,
+      "isOpen": false,
       "houseNumber": "75",
       "postCode": 12359,
-      "superplus": 2.249
+      "superplus": 2.239
     },
     {
       "id": "d5bcbb8b-47a9-4060-9457-b90d2488319c",
@@ -2494,7 +2494,7 @@
       "diesel": 2.199,
       "e5": 2.119,
       "e10": 2.059,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "117",
       "postCode": 12247,
       "superplus": 2.219
@@ -2528,7 +2528,7 @@
       "diesel": 2.189,
       "e5": 2.099,
       "e10": 2.039,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "86",
       "postCode": 14052,
       "superplus": 2.199
@@ -2542,13 +2542,13 @@
       "lat": 52.43349,
       "lng": 13.377298,
       "dist": 9.8,
-      "diesel": 2.319,
-      "e5": 2.149,
-      "e10": 2.089,
+      "diesel": 2.279,
+      "e5": 2.139,
+      "e10": 2.079,
       "isOpen": true,
       "houseNumber": "82-88",
       "postCode": 12107,
-      "superplus": 2.249
+      "superplus": 2.239
     },
     {
       "id": "4cda8f83-88e0-47c0-9a38-616f0504d76c",
@@ -2562,7 +2562,7 @@
       "diesel": 2.199,
       "e5": 2.109,
       "e10": 2.049,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "97",
       "postCode": 14199,
       "superplus": 2.209
@@ -2613,7 +2613,7 @@
       "diesel": 2.189,
       "e5": 2.099,
       "e10": 2.039,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "22a",
       "postCode": 14195,
       "superplus": 2.199
@@ -2627,13 +2627,13 @@
       "lat": 52.435962,
       "lng": 13.465448,
       "dist": 10.2,
-      "diesel": 2.319,
-      "e5": 2.159,
-      "e10": 2.099,
-      "isOpen": true,
+      "diesel": 2.289,
+      "e5": 2.149,
+      "e10": 2.089,
+      "isOpen": false,
       "houseNumber": "102",
       "postCode": 12351,
-      "superplus": 2.259
+      "superplus": 2.249
     },
     {
       "id": "ce8685d4-7249-477e-8bb3-04eb69e6bb44",
@@ -2662,12 +2662,12 @@
       "lng": 13.513042,
       "dist": 10.4,
       "diesel": 2.259,
-      "e5": 2.119,
-      "e10": 2.059,
-      "isOpen": true,
+      "e5": 2.089,
+      "e10": 2.029,
+      "isOpen": false,
       "houseNumber": "26-31",
       "postCode": 12439,
-      "superplus": 2.219
+      "superplus": 2.189
     },
     {
       "id": "51d4b4ad-a095-1aa0-e100-80009459e03a",
@@ -2698,7 +2698,7 @@
       "diesel": 2.399,
       "e5": 2.249,
       "e10": 2.189,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "25",
       "postCode": 12439,
       "superplus": 2.349
@@ -2712,10 +2712,10 @@
       "lat": 52.425911,
       "lng": 13.394271,
       "dist": 10.5,
-      "diesel": 2.299,
+      "diesel": 2.269,
       "e5": 2.119,
       "e10": 2.059,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "306",
       "postCode": 12107,
       "superplus": 2.219
@@ -2729,13 +2729,13 @@
       "lat": 52.431854,
       "lng": 13.460731,
       "dist": 10.5,
-      "diesel": 2.309,
-      "e5": 2.159,
-      "e10": 2.099,
-      "isOpen": true,
+      "diesel": 2.279,
+      "e5": 2.139,
+      "e10": 2.079,
+      "isOpen": false,
       "houseNumber": "263-273",
       "postCode": 12351,
-      "superplus": 2.259
+      "superplus": 2.239
     },
     {
       "id": "e1a15081-2596-9107-e040-0b0a3dfe563c",
@@ -2749,7 +2749,7 @@
       "diesel": 2.149,
       "e5": 2.089,
       "e10": 2.029,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "6061",
       "postCode": 13127,
       "superplus": 2.189
@@ -2766,7 +2766,7 @@
       "diesel": 2.159,
       "e5": 2.079,
       "e10": 2.019,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "248",
       "postCode": 12679,
       "superplus": 2.179
@@ -2780,13 +2780,13 @@
       "lat": 52.433167,
       "lng": 13.471164,
       "dist": 10.6,
-      "diesel": 2.309,
-      "e5": 2.149,
-      "e10": 2.089,
-      "isOpen": true,
+      "diesel": 2.279,
+      "e5": 2.139,
+      "e10": 2.079,
+      "isOpen": false,
       "houseNumber": "150",
       "postCode": 12351,
-      "superplus": 2.249
+      "superplus": 2.239
     },
     {
       "id": "2c21b856-4850-0952-e100-00000630df04",
@@ -2797,13 +2797,13 @@
       "lat": 52.427305,
       "lng": 13.365091,
       "dist": 10.7,
-      "diesel": 2.309,
-      "e5": 2.139,
-      "e10": 2.079,
-      "isOpen": true,
+      "diesel": 2.279,
+      "e5": 2.129,
+      "e10": 2.069,
+      "isOpen": false,
       "houseNumber": "51",
       "postCode": 12249,
-      "superplus": 2.239
+      "superplus": 2.229
     },
     {
       "id": "7c6a13f6-12a8-4619-a7ab-2c3c9dbab28b",
@@ -2817,7 +2817,7 @@
       "diesel": 2.389,
       "e5": 2.269,
       "e10": 2.209,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "24",
       "postCode": 13507,
       "superplus": 2.369
@@ -2851,7 +2851,7 @@
       "diesel": 2.149,
       "e5": 2.069,
       "e10": 2.009,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "2",
       "postCode": 12683,
       "superplus": 2.169
@@ -2865,10 +2865,10 @@
       "lat": 52.423088,
       "lng": 13.39677,
       "dist": 10.8,
-      "diesel": 2.299,
+      "diesel": 2.269,
       "e5": 2.119,
       "e10": 2.059,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "",
       "postCode": 12107,
       "superplus": 2.219
@@ -2899,13 +2899,13 @@
       "lat": 52.42493,
       "lng": 13.442476,
       "dist": 10.9,
-      "diesel": 2.319,
-      "e5": 2.159,
-      "e10": 2.099,
-      "isOpen": true,
+      "diesel": 2.289,
+      "e5": 2.149,
+      "e10": 2.089,
+      "isOpen": false,
       "houseNumber": "411",
       "postCode": 12351,
-      "superplus": 2.259
+      "superplus": 2.249
     },
     {
       "id": "40066e8e-fd1c-4ccc-8c47-bee5d1bed07e",
@@ -2916,13 +2916,13 @@
       "lat": 52.423594,
       "lng": 13.437216,
       "dist": 10.9,
-      "diesel": 2.319,
-      "e5": 2.149,
-      "e10": 2.089,
-      "isOpen": true,
+      "diesel": 2.279,
+      "e5": 2.139,
+      "e10": 2.079,
+      "isOpen": false,
       "houseNumber": "225",
       "postCode": 12349,
-      "superplus": 2.249
+      "superplus": 2.239
     },
     {
       "id": "51d4b5f0-a095-1aa0-e100-80009459e03a",
@@ -2936,7 +2936,7 @@
       "diesel": 2.209,
       "e5": 2.179,
       "e10": 2.119,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "108",
       "postCode": 12683,
       "superplus": 2.279
@@ -2970,7 +2970,7 @@
       "diesel": 2.179,
       "e5": 2.089,
       "e10": 2.029,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "20",
       "postCode": 13469,
       "superplus": 2.189
@@ -2987,7 +2987,7 @@
       "diesel": 2.199,
       "e5": 2.119,
       "e10": 2.059,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "71",
       "postCode": 13599,
       "superplus": 2.219
@@ -3004,7 +3004,7 @@
       "diesel": 2.179,
       "e5": 2.089,
       "e10": 2.029,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "54",
       "postCode": 13509,
       "superplus": 2.189
@@ -3021,7 +3021,7 @@
       "diesel": 2.199,
       "e5": 2.119,
       "e10": 2.069,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "",
       "postCode": 12203,
       "superplus": 2.219
@@ -3038,7 +3038,7 @@
       "diesel": 2.199,
       "e5": 2.119,
       "e10": 2.059,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "26a",
       "postCode": 12205,
       "superplus": 2.219
@@ -3055,7 +3055,7 @@
       "diesel": 2.339,
       "e5": 2.199,
       "e10": 2.139,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "219",
       "postCode": 12357,
       "superplus": 2.299
@@ -3072,7 +3072,7 @@
       "diesel": 2.159,
       "e5": 2.079,
       "e10": 2.019,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "526",
       "postCode": 12681,
       "superplus": 2.179
@@ -3086,13 +3086,13 @@
       "lat": 52.425434,
       "lng": 13.474281,
       "dist": 11.5,
-      "diesel": 2.319,
-      "e5": 2.179,
-      "e10": 2.119,
-      "isOpen": true,
+      "diesel": 2.289,
+      "e5": 2.169,
+      "e10": 2.109,
+      "isOpen": false,
       "houseNumber": "",
       "postCode": 12353,
-      "superplus": 2.279
+      "superplus": 2.269
     },
     {
       "id": "40a5a76a-b60f-49eb-8930-38308772afec",
@@ -3106,7 +3106,7 @@
       "diesel": 2.199,
       "e5": 2.119,
       "e10": 2.059,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "8",
       "postCode": 12207,
       "superplus": 2.219
@@ -3123,7 +3123,7 @@
       "diesel": 2.399,
       "e5": 2.269,
       "e10": 2.209,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "47",
       "postCode": 13597,
       "superplus": 2.369
@@ -3157,7 +3157,7 @@
       "diesel": 2.179,
       "e5": 2.089,
       "e10": 2.029,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "28",
       "postCode": 13469,
       "superplus": 2.189
@@ -3171,13 +3171,13 @@
       "lat": 52.425937,
       "lng": 13.482317,
       "dist": 11.7,
-      "diesel": 2.319,
-      "e5": 2.179,
-      "e10": 2.119,
+      "diesel": 2.289,
+      "e5": 2.149,
+      "e10": 2.109,
       "isOpen": true,
       "houseNumber": "",
       "postCode": 12357,
-      "superplus": 2.279
+      "superplus": 2.249
     },
     {
       "id": "af73e67f-0010-4a8e-93c0-29254f70c1ed",
@@ -3191,7 +3191,7 @@
       "diesel": 2.459,
       "e5": 2.349,
       "e10": 2.289,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "",
       "postCode": 16356,
       "superplus": 2.449
@@ -3206,12 +3206,12 @@
       "lng": 13.527143,
       "dist": 11.7,
       "diesel": 2.259,
-      "e5": 2.129,
-      "e10": 2.069,
+      "e5": 2.089,
+      "e10": 2.029,
       "isOpen": false,
       "houseNumber": "121",
       "postCode": 12439,
-      "superplus": 2.229
+      "superplus": 2.189
     },
     {
       "id": "38313b7f-d78d-4d61-9c57-dfd5765f7952",
@@ -3222,7 +3222,7 @@
       "lat": 52.414372,
       "lng": 13.402286,
       "dist": 11.7,
-      "diesel": 2.319,
+      "diesel": 2.279,
       "e5": 2.139,
       "e10": 2.079,
       "isOpen": true,
@@ -3242,7 +3242,7 @@
       "diesel": 2.189,
       "e5": 2.109,
       "e10": 2.049,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "25a",
       "postCode": 12207,
       "superplus": 2.209
@@ -3259,7 +3259,7 @@
       "diesel": 2.149,
       "e5": 2.069,
       "e10": 2.009,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "534",
       "postCode": 12681,
       "superplus": 2.169
@@ -3310,7 +3310,7 @@
       "diesel": 2.179,
       "e5": 2.089,
       "e10": 2.029,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "140",
       "postCode": 13467,
       "superplus": 2.189
@@ -3344,7 +3344,7 @@
       "diesel": 2.209,
       "e5": 2.149,
       "e10": 2.099,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "",
       "postCode": 12621,
       "superplus": 2.249
@@ -3361,7 +3361,7 @@
       "diesel": 2.199,
       "e5": 2.109,
       "e10": 2.049,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "136",
       "postCode": 14055,
       "superplus": 2.209
@@ -3375,13 +3375,13 @@
       "lat": 52.4222,
       "lng": 13.487083,
       "dist": 12.2,
-      "diesel": 2.319,
-      "e5": 2.169,
-      "e10": 2.109,
+      "diesel": 2.289,
+      "e5": 2.149,
+      "e10": 2.089,
       "isOpen": true,
       "houseNumber": "294",
       "postCode": 12357,
-      "superplus": 2.269
+      "superplus": 2.249
     },
     {
       "id": "cd74cb4d-9127-4d6a-8b86-7dbdb44281fd",
@@ -3395,7 +3395,7 @@
       "diesel": 2.219,
       "e5": 2.079,
       "e10": 2.019,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "152",
       "postCode": 12689,
       "superplus": 2.179
@@ -3410,12 +3410,12 @@
       "lng": 13.533086,
       "dist": 12.3,
       "diesel": 2.259,
-      "e5": 2.119,
-      "e10": 2.059,
-      "isOpen": true,
+      "e5": 2.089,
+      "e10": 2.029,
+      "isOpen": false,
       "houseNumber": "179",
       "postCode": 12489,
-      "superplus": 2.219
+      "superplus": 2.189
     },
     {
       "id": "005056ba-7cb6-1ed2-bceb-aba199748d43",
@@ -3446,7 +3446,7 @@
       "diesel": 2.189,
       "e5": 2.109,
       "e10": 2.049,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "27",
       "postCode": 12279,
       "superplus": 2.209
@@ -3463,7 +3463,7 @@
       "diesel": 2.199,
       "e5": 2.139,
       "e10": 2.089,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "124126",
       "postCode": 12555,
       "superplus": 2.239
@@ -3480,7 +3480,7 @@
       "diesel": 2.169,
       "e5": 2.069,
       "e10": 2.009,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "45/49",
       "postCode": 12621,
       "superplus": 2.169
@@ -3497,7 +3497,7 @@
       "diesel": 2.299,
       "e5": 2.169,
       "e10": 2.109,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "240-242",
       "postCode": 12459,
       "superplus": 2.269
@@ -3514,7 +3514,7 @@
       "diesel": 2.199,
       "e5": 2.109,
       "e10": 2.049,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "33",
       "postCode": 13599,
       "superplus": 2.209
@@ -3531,7 +3531,7 @@
       "diesel": 2.189,
       "e5": 2.109,
       "e10": 2.049,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "96",
       "postCode": 12279,
       "superplus": 2.209
@@ -3548,7 +3548,7 @@
       "diesel": 2.189,
       "e5": 2.109,
       "e10": 2.049,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "133",
       "postCode": 12205,
       "superplus": 2.209
@@ -3565,7 +3565,7 @@
       "diesel": 2.199,
       "e5": 2.119,
       "e10": 2.059,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "222",
       "postCode": 12209,
       "superplus": 2.219
@@ -3582,7 +3582,7 @@
       "diesel": 2.189,
       "e5": 2.099,
       "e10": 2.039,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "141-143",
       "postCode": 13467,
       "superplus": 2.199
@@ -3633,7 +3633,7 @@
       "diesel": 2.189,
       "e5": 2.099,
       "e10": 2.039,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "",
       "postCode": 13467,
       "superplus": 2.199
@@ -3650,7 +3650,7 @@
       "diesel": 2.269,
       "e5": 2.169,
       "e10": 2.109,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "21",
       "postCode": 12555,
       "superplus": 2.269
@@ -3684,7 +3684,7 @@
       "diesel": 2.199,
       "e5": 2.129,
       "e10": 2.069,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "15A",
       "postCode": 14169,
       "superplus": 2.229
@@ -3718,7 +3718,7 @@
       "diesel": 2.189,
       "e5": 2.099,
       "e10": 2.039,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "1 A",
       "postCode": 13597,
       "superplus": 2.199
@@ -3733,12 +3733,12 @@
       "lng": 13.56179,
       "dist": 13.4,
       "diesel": 2.269,
-      "e5": 2.139,
-      "e10": 2.079,
+      "e5": 2.099,
+      "e10": 2.039,
       "isOpen": true,
       "houseNumber": "138",
       "postCode": 12555,
-      "superplus": 2.239
+      "superplus": 2.199
     },
     {
       "id": "735a2db4-8f05-4118-819a-d6689a23db0c",
@@ -3752,7 +3752,7 @@
       "diesel": 2.219,
       "e5": 2.119,
       "e10": 2.059,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "89",
       "postCode": 12207,
       "superplus": 2.219
@@ -3769,7 +3769,7 @@
       "diesel": 2.139,
       "e5": 2.059,
       "e10": 1.999,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "17",
       "postCode": 16356,
       "superplus": 2.159
@@ -3784,12 +3784,12 @@
       "lng": 13.546518992104,
       "dist": 13.7,
       "diesel": 2.279,
-      "e5": 2.139,
-      "e10": 2.079,
-      "isOpen": true,
+      "e5": 2.109,
+      "e10": 2.049,
+      "isOpen": false,
       "houseNumber": "289 A",
       "postCode": 12489,
-      "superplus": 2.239
+      "superplus": 2.209
     },
     {
       "id": "a68f5a66-9816-4716-ae24-91a541c18188",
@@ -3837,7 +3837,7 @@
       "diesel": 2.189,
       "e5": 2.099,
       "e10": 2.039,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "11-13",
       "postCode": 13505,
       "superplus": 2.199
@@ -3854,7 +3854,7 @@
       "diesel": 2.199,
       "e5": 2.129,
       "e10": 2.069,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "49",
       "postCode": 14163,
       "superplus": 2.229
@@ -3871,7 +3871,7 @@
       "diesel": 2.199,
       "e5": 2.109,
       "e10": 2.049,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "84",
       "postCode": 13587,
       "superplus": 2.209
@@ -3885,10 +3885,10 @@
       "lat": 52.394814,
       "lng": 13.400066,
       "dist": 13.9,
-      "diesel": 2.299,
+      "diesel": 2.269,
       "e5": 2.119,
       "e10": 2.059,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "67a",
       "postCode": 12305,
       "superplus": 2.219
@@ -3903,12 +3903,12 @@
       "lng": 13.549101,
       "dist": 13.9,
       "diesel": 2.259,
-      "e5": 2.119,
-      "e10": 2.059,
+      "e5": 2.089,
+      "e10": 2.029,
       "isOpen": true,
       "houseNumber": "305",
       "postCode": 12489,
-      "superplus": 2.219
+      "superplus": 2.189
     },
     {
       "id": "4a77f092-7ee2-417b-ba14-266b54230092",
@@ -3920,12 +3920,12 @@
       "lng": 13.57849,
       "dist": 13.9,
       "diesel": 2.259,
-      "e5": 2.109,
-      "e10": 2.059,
+      "e5": 2.079,
+      "e10": 2.029,
       "isOpen": true,
       "houseNumber": "4",
       "postCode": 12555,
-      "superplus": 2.209
+      "superplus": 2.179
     },
     {
       "id": "ec18e7d5-8776-49a3-a445-8eac7d2a7f66",
@@ -3939,7 +3939,7 @@
       "diesel": 2.189,
       "e5": 2.079,
       "e10": 2.019,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "129/131",
       "postCode": 12623,
       "superplus": 2.179
@@ -3973,7 +3973,7 @@
       "diesel": 2.159,
       "e5": 2.069,
       "e10": 2.009,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "21",
       "postCode": 16356,
       "superplus": 2.169
@@ -4005,12 +4005,12 @@
       "lng": 13.552521,
       "dist": 14.1,
       "diesel": 2.259,
-      "e5": 2.119,
-      "e10": 2.059,
+      "e5": 2.089,
+      "e10": 2.029,
       "isOpen": true,
       "houseNumber": "182",
       "postCode": 12489,
-      "superplus": 2.219
+      "superplus": 2.189
     },
     {
       "id": "51d4b590-a095-1aa0-e100-80009459e03a",
@@ -4024,7 +4024,7 @@
       "diesel": 2.399,
       "e5": 2.249,
       "e10": 2.189,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "105",
       "postCode": 12489,
       "superplus": 2.349
@@ -4041,7 +4041,7 @@
       "diesel": 2.219,
       "e5": 2.089,
       "e10": 2.029,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "1",
       "postCode": 16356,
       "superplus": 2.189
@@ -4075,7 +4075,7 @@
       "diesel": 2.179,
       "e5": 2.089,
       "e10": 2.029,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "28",
       "postCode": 13503,
       "superplus": 2.189
@@ -4109,7 +4109,7 @@
       "diesel": 2.219,
       "e5": 2.079,
       "e10": 2.019,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "",
       "postCode": 16356,
       "superplus": 2.179
@@ -4126,7 +4126,7 @@
       "diesel": 2.149,
       "e5": 2.069,
       "e10": 2.009,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "40",
       "postCode": 12623,
       "superplus": 2.169
@@ -4143,7 +4143,7 @@
       "diesel": 2.189,
       "e5": 2.099,
       "e10": 2.039,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "34",
       "postCode": 16548,
       "superplus": 2.199
@@ -4160,7 +4160,7 @@
       "diesel": 2.219,
       "e5": 2.169,
       "e10": 2.109,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "1",
       "postCode": 16341,
       "superplus": 2.269
@@ -4177,7 +4177,7 @@
       "diesel": 2.189,
       "e5": 2.099,
       "e10": 2.039,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "41",
       "postCode": 13583,
       "superplus": 2.199
@@ -4211,7 +4211,7 @@
       "diesel": 2.389,
       "e5": 2.249,
       "e10": 2.189,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "14",
       "postCode": 12555,
       "superplus": 2.349
@@ -4228,7 +4228,7 @@
       "diesel": 2.219,
       "e5": 2.089,
       "e10": 2.029,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "94",
       "postCode": 12623,
       "superplus": 2.189
@@ -4245,7 +4245,7 @@
       "diesel": 2.399,
       "e5": 2.249,
       "e10": 2.189,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "281",
       "postCode": 14167,
       "superplus": 2.349
@@ -4262,7 +4262,7 @@
       "diesel": 2.189,
       "e5": 2.109,
       "e10": 2.049,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "164",
       "postCode": 14167,
       "superplus": 2.209
@@ -4276,7 +4276,7 @@
       "lat": 52.387691,
       "lng": 13.40843,
       "dist": 14.7,
-      "diesel": 2.309,
+      "diesel": 2.279,
       "e5": 2.129,
       "e10": 2.069,
       "isOpen": true,
@@ -4293,10 +4293,10 @@
       "lat": 52.386922,
       "lng": 13.407901,
       "dist": 14.8,
-      "diesel": 2.319,
+      "diesel": 2.279,
       "e5": 2.129,
       "e10": 2.069,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "1",
       "postCode": 12305,
       "superplus": 2.229
@@ -4313,7 +4313,7 @@
       "diesel": 2.249,
       "e5": 2.129,
       "e10": 2.069,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "6",
       "postCode": 14163,
       "superplus": 2.229
@@ -4347,7 +4347,7 @@
       "diesel": 2.149,
       "e5": 2.069,
       "e10": 2.009,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "121",
       "postCode": 12627,
       "superplus": 2.169
@@ -4364,7 +4364,7 @@
       "diesel": 2.159,
       "e5": 2.079,
       "e10": 2.019,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "60",
       "postCode": 12623,
       "superplus": 2.179
@@ -4381,7 +4381,7 @@
       "diesel": 2.399,
       "e5": 2.289,
       "e10": 2.229,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "87-89",
       "postCode": 13581,
       "superplus": 2.389
@@ -4396,12 +4396,12 @@
       "lng": 13.55947,
       "dist": 15,
       "diesel": 2.259,
-      "e5": 2.129,
-      "e10": 2.069,
+      "e5": 2.089,
+      "e10": 2.029,
       "isOpen": true,
       "houseNumber": "391",
       "postCode": 12527,
-      "superplus": 2.229
+      "superplus": 2.189
     },
     {
       "id": "ee849919-bb4a-4801-bc20-cb027e26ec2b",
@@ -4415,7 +4415,7 @@
       "diesel": 2.199,
       "e5": 2.139,
       "e10": 2.079,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "",
       "postCode": 20459,
       "superplus": 2.239
@@ -4447,12 +4447,12 @@
       "lng": 10.01002,
       "dist": 1.2,
       "diesel": 2.199,
-      "e5": 2.139,
-      "e10": 2.079,
+      "e5": 2.129,
+      "e10": 2.069,
       "isOpen": true,
       "houseNumber": "4",
       "postCode": 20099,
-      "superplus": 2.239
+      "superplus": 2.229
     },
     {
       "id": "9ba71fe3-09c4-5674-8ad7-e90dd0321720",
@@ -4463,13 +4463,13 @@
       "lat": 53.54937362671,
       "lng": 10.0161895752,
       "dist": 1.5,
-      "diesel": 2.409,
-      "e5": 2.259,
-      "e10": 2.199,
+      "diesel": 2.199,
+      "e5": 2.139,
+      "e10": 2.079,
       "isOpen": true,
       "houseNumber": "77-79",
       "postCode": 20097,
-      "superplus": 2.359
+      "superplus": 2.239
     },
     {
       "id": "08386c5e-29e9-4e40-ab34-ea2107e8eddf",
@@ -4517,7 +4517,7 @@
       "diesel": 2.379,
       "e5": 2.269,
       "e10": 2.209,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "31",
       "postCode": 20359,
       "superplus": 2.369
@@ -4582,13 +4582,13 @@
       "lat": 53.548717,
       "lng": 10.027277,
       "dist": 2.2,
-      "diesel": 2.229,
-      "e5": 2.169,
-      "e10": 2.109,
+      "diesel": 2.209,
+      "e5": 2.149,
+      "e10": 2.089,
       "isOpen": true,
       "houseNumber": "54",
       "postCode": 20097,
-      "superplus": 2.269
+      "superplus": 2.249
     },
     {
       "id": "51d4b4ff-a095-1aa0-e100-80009459e03a",
@@ -4619,7 +4619,7 @@
       "diesel": 2.389,
       "e5": 2.279,
       "e10": 2.219,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "66",
       "postCode": 20144,
       "superplus": 2.379
@@ -4651,12 +4651,12 @@
       "lng": 10.03176,
       "dist": 2.8,
       "diesel": 2.209,
-      "e5": 2.149,
-      "e10": 2.089,
+      "e5": 2.139,
+      "e10": 2.079,
       "isOpen": true,
       "houseNumber": "86",
       "postCode": 22087,
-      "superplus": 2.249
+      "superplus": 2.239
     },
     {
       "id": "8cc3cad2-214d-4008-8962-c66e5940db5c",
@@ -4667,13 +4667,13 @@
       "lat": 53.568682,
       "lng": 10.024122,
       "dist": 2.8,
-      "diesel": 2.219,
-      "e5": 2.159,
-      "e10": 2.099,
+      "diesel": 2.209,
+      "e5": 2.139,
+      "e10": 2.079,
       "isOpen": true,
       "houseNumber": "47",
       "postCode": 22087,
-      "superplus": 2.259
+      "superplus": 2.239
     },
     {
       "id": "4153c6bc-a820-4f87-8909-59e287f38995",
@@ -4684,7 +4684,7 @@
       "lat": 53.543998718262,
       "lng": 10.038999557495,
       "dist": 3.1,
-      "diesel": 2.289,
+      "diesel": 2.209,
       "e5": 2.179,
       "e10": 2.139,
       "isOpen": true,
@@ -4718,13 +4718,13 @@
       "lat": 53.546751,
       "lng": 10.040956,
       "dist": 3.2,
-      "diesel": 2.229,
-      "e5": 2.169,
-      "e10": 2.109,
+      "diesel": 2.219,
+      "e5": 2.149,
+      "e10": 2.089,
       "isOpen": true,
       "houseNumber": "3",
       "postCode": 20537,
-      "superplus": 2.269
+      "superplus": 2.249
     },
     {
       "id": "1765f2e4-d684-4a83-9568-b71b8ac26455",
@@ -4736,12 +4736,12 @@
       "lng": 10.023314,
       "dist": 3.2,
       "diesel": 2.209,
-      "e5": 2.149,
-      "e10": 2.089,
+      "e5": 2.139,
+      "e10": 2.079,
       "isOpen": true,
       "houseNumber": "72",
       "postCode": 22085,
-      "superplus": 2.249
+      "superplus": 2.239
     },
     {
       "id": "ef641499-360a-4adc-af2c-b484c1453ef5",
@@ -4753,12 +4753,12 @@
       "lng": 10.020474,
       "dist": 3.2,
       "diesel": 2.209,
-      "e5": 2.149,
-      "e10": 2.089,
-      "isOpen": true,
+      "e5": 2.139,
+      "e10": 2.079,
+      "isOpen": false,
       "houseNumber": "",
       "postCode": 22085,
-      "superplus": 2.249
+      "superplus": 2.239
     },
     {
       "id": "f820f0a1-7a9c-4d99-91fc-4b09514f4820",
@@ -4769,7 +4769,7 @@
       "lat": 53.559813,
       "lng": 10.040542,
       "dist": 3.2,
-      "diesel": 2.229,
+      "diesel": 2.209,
       "e5": 2.149,
       "e10": 2.089,
       "isOpen": true,
@@ -4803,10 +4803,10 @@
       "lat": 53.536232,
       "lng": 10.036326,
       "dist": 3.3,
-      "diesel": 2.219,
+      "diesel": 2.209,
       "e5": 2.149,
       "e10": 2.089,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "",
       "postCode": 20539,
       "superplus": 2.249
@@ -4820,13 +4820,13 @@
       "lat": 53.548551,
       "lng": 9.944134,
       "dist": 3.3,
-      "diesel": 2.229,
-      "e5": 2.169,
-      "e10": 2.109,
+      "diesel": 2.209,
+      "e5": 2.149,
+      "e10": 2.089,
       "isOpen": true,
       "houseNumber": "22",
       "postCode": 22767,
-      "superplus": 2.269
+      "superplus": 2.249
     },
     {
       "id": "4cb95c6f-7842-425d-ba00-15f795b5f32b",
@@ -4889,12 +4889,12 @@
       "lng": 10.0413,
       "dist": 3.5,
       "diesel": 2.199,
-      "e5": 2.139,
-      "e10": 2.079,
-      "isOpen": true,
+      "e5": 2.129,
+      "e10": 2.069,
+      "isOpen": false,
       "houseNumber": "37-39",
       "postCode": 22089,
-      "superplus": 2.239
+      "superplus": 2.229
     },
     {
       "id": "03a0cb36-1403-43c7-b3d6-8fff2f574b40",
@@ -4908,7 +4908,7 @@
       "diesel": 2.209,
       "e5": 2.149,
       "e10": 2.089,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "76",
       "postCode": 20535,
       "superplus": 2.249
@@ -4993,7 +4993,7 @@
       "diesel": 2.359,
       "e5": 2.269,
       "e10": 2.209,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "14",
       "postCode": 22761,
       "superplus": 2.369
@@ -5024,7 +5024,7 @@
       "lat": 53.560899,
       "lng": 10.058436,
       "dist": 4.4,
-      "diesel": 2.229,
+      "diesel": 2.209,
       "e5": 2.149,
       "e10": 2.089,
       "isOpen": true,
@@ -5058,10 +5058,10 @@
       "lat": 53.510792,
       "lng": 9.984535,
       "dist": 4.5,
-      "diesel": 2.289,
+      "diesel": 2.239,
       "e5": 2.269,
       "e10": 2.209,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "28",
       "postCode": 21107,
       "superplus": 2.369
@@ -5075,13 +5075,13 @@
       "lat": 53.554041,
       "lng": 10.063172,
       "dist": 4.6,
-      "diesel": 2.229,
-      "e5": 2.169,
-      "e10": 2.109,
+      "diesel": 2.209,
+      "e5": 2.149,
+      "e10": 2.089,
       "isOpen": true,
       "houseNumber": "204",
       "postCode": 20537,
-      "superplus": 2.269
+      "superplus": 2.249
     },
     {
       "id": "1c839223-1405-4ca5-bbeb-97ff2999ba96",
@@ -5228,13 +5228,13 @@
       "lat": 53.585013,
       "lng": 10.047194,
       "dist": 5.2,
-      "diesel": 2.219,
-      "e5": 2.159,
-      "e10": 2.099,
-      "isOpen": true,
+      "diesel": 2.209,
+      "e5": 2.139,
+      "e10": 2.079,
+      "isOpen": false,
       "houseNumber": "",
       "postCode": 22305,
-      "superplus": 2.259
+      "superplus": 2.239
     },
     {
       "id": "7a5ee48a-680a-49e3-8705-fa4020f94e74",
@@ -5347,13 +5347,13 @@
       "lat": 53.587929,
       "lng": 10.052757,
       "dist": 5.7,
-      "diesel": 2.219,
-      "e5": 2.159,
-      "e10": 2.099,
+      "diesel": 2.209,
+      "e5": 2.139,
+      "e10": 2.079,
       "isOpen": true,
       "houseNumber": "86A",
       "postCode": 22305,
-      "superplus": 2.259
+      "superplus": 2.239
     },
     {
       "id": "e736cdbd-aecc-419e-8626-0db1b239e28e",
@@ -5365,12 +5365,12 @@
       "lng": 10.075438,
       "dist": 5.7,
       "diesel": 2.209,
-      "e5": 2.149,
-      "e10": 2.089,
+      "e5": 2.129,
+      "e10": 2.069,
       "isOpen": true,
       "houseNumber": "49",
       "postCode": 22043,
-      "superplus": 2.249
+      "superplus": 2.229
     },
     {
       "id": "51d4b6ab-a095-1aa0-e100-80009459e03a",
@@ -5418,7 +5418,7 @@
       "diesel": 2.369,
       "e5": 2.279,
       "e10": 2.219,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "",
       "postCode": 22527,
       "superplus": 2.379
@@ -5433,12 +5433,12 @@
       "lng": 10.024281,
       "dist": 5.9,
       "diesel": 2.199,
-      "e5": 2.089,
-      "e10": 2.029,
-      "isOpen": true,
+      "e5": 2.049,
+      "e10": 2.009,
+      "isOpen": false,
       "houseNumber": "",
       "postCode": 22297,
-      "superplus": 2.189
+      "superplus": 2.149
     },
     {
       "id": "406cbf50-53a1-4670-bf9b-f2e503f3fd92",
@@ -5452,7 +5452,7 @@
       "diesel": 2.219,
       "e5": 2.159,
       "e10": 2.099,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "91",
       "postCode": 22049,
       "superplus": 2.259
@@ -5469,7 +5469,7 @@
       "diesel": 2.369,
       "e5": 2.279,
       "e10": 2.219,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "27",
       "postCode": 22761,
       "superplus": 2.379
@@ -5486,7 +5486,7 @@
       "diesel": 2.219,
       "e5": 2.169,
       "e10": 2.109,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "39",
       "postCode": 22305,
       "superplus": 2.269
@@ -5520,7 +5520,7 @@
       "diesel": 2.199,
       "e5": 2.139,
       "e10": 2.079,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "4",
       "postCode": 22113,
       "superplus": 2.239
@@ -5554,7 +5554,7 @@
       "diesel": 2.359,
       "e5": 2.269,
       "e10": 2.209,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "95",
       "postCode": 22453,
       "superplus": 2.369
@@ -5571,7 +5571,7 @@
       "diesel": 2.229,
       "e5": 2.249,
       "e10": 2.189,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "205",
       "postCode": 21107,
       "superplus": 2.349
@@ -5588,7 +5588,7 @@
       "diesel": 2.369,
       "e5": 2.279,
       "e10": 2.219,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "131",
       "postCode": 22605,
       "superplus": 2.379
@@ -5673,7 +5673,7 @@
       "diesel": 2.229,
       "e5": 2.159,
       "e10": 2.099,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "",
       "postCode": 22177,
       "superplus": 2.259
@@ -5707,7 +5707,7 @@
       "diesel": 2.359,
       "e5": 2.269,
       "e10": 2.209,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "18-22",
       "postCode": 22761,
       "superplus": 2.369
@@ -5775,7 +5775,7 @@
       "diesel": 2.209,
       "e5": 2.149,
       "e10": 2.089,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "21",
       "postCode": 22111,
       "superplus": 2.249
@@ -5789,13 +5789,13 @@
       "lat": 53.515228,
       "lng": 10.082204,
       "dist": 7.1,
-      "diesel": 2.229,
-      "e5": 2.169,
-      "e10": 2.109,
+      "diesel": 2.209,
+      "e5": 2.149,
+      "e10": 2.089,
       "isOpen": true,
       "houseNumber": "44",
       "postCode": 22113,
-      "superplus": 2.269
+      "superplus": 2.249
     },
     {
       "id": "fd99d09b-f1e8-5642-8407-542ecf56a305",
@@ -5806,13 +5806,13 @@
       "lat": 53.53609848022,
       "lng": 10.09920024872,
       "dist": 7.2,
-      "diesel": 2.219,
-      "e5": 2.159,
-      "e10": 2.099,
+      "diesel": 2.199,
+      "e5": 2.139,
+      "e10": 2.079,
       "isOpen": true,
       "houseNumber": "165",
       "postCode": 22113,
-      "superplus": 2.259
+      "superplus": 2.239
     },
     {
       "id": "a3afd848-3f5b-4239-a135-5996900770bf",
@@ -5824,12 +5824,12 @@
       "lng": 10.045663,
       "dist": 7.2,
       "diesel": 2.179,
-      "e5": 2.059,
-      "e10": 1.999,
+      "e5": 2.029,
+      "e10": 1.969,
       "isOpen": true,
       "houseNumber": "5",
       "postCode": 22309,
-      "superplus": 2.159
+      "superplus": 2.129
     },
     {
       "id": "570db8b0-501d-402f-ba0d-afcb979c84a8",
@@ -5841,12 +5841,12 @@
       "lng": 10.093245,
       "dist": 7.2,
       "diesel": 2.209,
-      "e5": 2.149,
-      "e10": 2.089,
-      "isOpen": true,
+      "e5": 2.139,
+      "e10": 2.079,
+      "isOpen": false,
       "houseNumber": "35",
       "postCode": 22041,
-      "superplus": 2.249
+      "superplus": 2.239
     },
     {
       "id": "cd8ba6a6-8316-1ed5-a3ae-d3139800d85f",
@@ -5894,7 +5894,7 @@
       "diesel": 2.359,
       "e5": 2.269,
       "e10": 2.209,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "170-172",
       "postCode": 22453,
       "superplus": 2.369
@@ -5911,7 +5911,7 @@
       "diesel": 2.369,
       "e5": 2.279,
       "e10": 2.219,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "560",
       "postCode": 22525,
       "superplus": 2.379
@@ -5928,7 +5928,7 @@
       "diesel": 2.199,
       "e5": 2.139,
       "e10": 2.079,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "36",
       "postCode": 22119,
       "superplus": 2.239
@@ -5943,12 +5943,12 @@
       "lng": 10.051451,
       "dist": 7.5,
       "diesel": 2.199,
-      "e5": 2.079,
-      "e10": 2.019,
-      "isOpen": true,
+      "e5": 2.039,
+      "e10": 1.979,
+      "isOpen": false,
       "houseNumber": "55",
       "postCode": 22309,
-      "superplus": 2.179
+      "superplus": 2.139
     },
     {
       "id": "51d4b540-a095-1aa0-e100-80009459e03a",
@@ -6010,13 +6010,13 @@
       "lat": 53.512352,
       "lng": 10.088851,
       "dist": 7.6,
-      "diesel": 2.219,
-      "e5": 2.159,
-      "e10": 2.099,
+      "diesel": 2.209,
+      "e5": 2.149,
+      "e10": 2.089,
       "isOpen": true,
       "houseNumber": "63",
       "postCode": 22113,
-      "superplus": 2.259
+      "superplus": 2.249
     },
     {
       "id": "4c98cdd1-b3e5-4442-933e-3b14c00b7973",
@@ -6163,13 +6163,13 @@
       "lat": 53.621232,
       "lng": 10.009901,
       "dist": 7.9,
-      "diesel": 2.249,
-      "e5": 2.179,
-      "e10": 2.119,
+      "diesel": 2.229,
+      "e5": 2.169,
+      "e10": 2.109,
       "isOpen": true,
       "houseNumber": "431",
       "postCode": 22335,
-      "superplus": 2.279
+      "superplus": 2.269
     },
     {
       "id": "005056ba-7cb6-1ed2-bceb-ac86a218cd43",
@@ -6183,7 +6183,7 @@
       "diesel": 2.199,
       "e5": 2.139,
       "e10": 2.079,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "6",
       "postCode": 22113,
       "superplus": 2.239
@@ -6217,7 +6217,7 @@
       "diesel": 2.359,
       "e5": 2.269,
       "e10": 2.209,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "5",
       "postCode": 22607,
       "superplus": 2.369
@@ -6285,7 +6285,7 @@
       "diesel": 2.359,
       "e5": 2.269,
       "e10": 2.209,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "46a",
       "postCode": 22547,
       "superplus": 2.369
@@ -6319,7 +6319,7 @@
       "diesel": 2.209,
       "e5": 2.149,
       "e10": 2.089,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "228",
       "postCode": 22119,
       "superplus": 2.249
@@ -6336,7 +6336,7 @@
       "diesel": 2.359,
       "e5": 2.269,
       "e10": 2.209,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "70",
       "postCode": 22547,
       "superplus": 2.369
@@ -6489,7 +6489,7 @@
       "diesel": 2.359,
       "e5": 2.269,
       "e10": 2.209,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "74",
       "postCode": 22523,
       "superplus": 2.369
@@ -6503,13 +6503,13 @@
       "lat": 53.637398,
       "lng": 10.015115,
       "dist": 9.7,
-      "diesel": 2.239,
-      "e5": 2.169,
-      "e10": 2.109,
-      "isOpen": true,
+      "diesel": 2.219,
+      "e5": 2.159,
+      "e10": 2.099,
+      "isOpen": false,
       "houseNumber": "",
       "postCode": 22335,
-      "superplus": 2.269
+      "superplus": 2.259
     },
     {
       "id": "6b9dcae3-0b93-4633-9b96-1a377c930f09",
@@ -6523,7 +6523,7 @@
       "diesel": 2.379,
       "e5": 2.289,
       "e10": 2.229,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "150",
       "postCode": 22455,
       "superplus": 2.389
@@ -6540,7 +6540,7 @@
       "diesel": 2.169,
       "e5": 2.129,
       "e10": 2.069,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "1a",
       "postCode": 21073,
       "superplus": 2.229
@@ -6557,7 +6557,7 @@
       "diesel": 2.369,
       "e5": 2.269,
       "e10": 2.209,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "83",
       "postCode": 22549,
       "superplus": 2.369
@@ -6591,7 +6591,7 @@
       "diesel": 2.209,
       "e5": 2.129,
       "e10": 2.069,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "110",
       "postCode": 22045,
       "superplus": 2.229
@@ -6642,7 +6642,7 @@
       "diesel": 2.359,
       "e5": 2.269,
       "e10": 2.209,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "182-184",
       "postCode": 22457,
       "superplus": 2.369
@@ -6710,7 +6710,7 @@
       "diesel": 2.189,
       "e5": 2.119,
       "e10": 2.059,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "61",
       "postCode": 22045,
       "superplus": 2.219
@@ -6724,13 +6724,13 @@
       "lat": 53.644606,
       "lng": 10.01265,
       "dist": 10.5,
-      "diesel": 2.219,
-      "e5": 2.139,
-      "e10": 2.079,
+      "diesel": 2.199,
+      "e5": 2.129,
+      "e10": 2.069,
       "isOpen": true,
       "houseNumber": "141",
       "postCode": 22415,
-      "superplus": 2.239
+      "superplus": 2.229
     },
     {
       "id": "719ab906-c30e-40bf-9627-e86ddb5cbc83",
@@ -6795,7 +6795,7 @@
       "diesel": 2.369,
       "e5": 2.279,
       "e10": 2.219,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "377",
       "postCode": 25462,
       "superplus": 2.379
@@ -6812,7 +6812,7 @@
       "diesel": 2.219,
       "e5": 2.149,
       "e10": 2.089,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "4",
       "postCode": 22885,
       "superplus": 2.249
@@ -6829,7 +6829,7 @@
       "diesel": 2.189,
       "e5": 2.129,
       "e10": 2.069,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "1",
       "postCode": 22113,
       "superplus": 2.229
@@ -6846,7 +6846,7 @@
       "diesel": 2.169,
       "e5": 2.079,
       "e10": 2.019,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "131",
       "postCode": 21147,
       "superplus": 2.179
@@ -6863,7 +6863,7 @@
       "diesel": 2.359,
       "e5": 2.269,
       "e10": 2.209,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "20",
       "postCode": 22869,
       "superplus": 2.369
@@ -6880,7 +6880,7 @@
       "diesel": 2.189,
       "e5": 2.119,
       "e10": 2.059,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "22",
       "postCode": 22149,
       "superplus": 2.219
@@ -6894,13 +6894,13 @@
       "lat": 53.648328,
       "lng": 10.005961,
       "dist": 10.8,
-      "diesel": 2.229,
-      "e5": 2.149,
-      "e10": 2.089,
-      "isOpen": true,
+      "diesel": 2.209,
+      "e5": 2.139,
+      "e10": 2.079,
+      "isOpen": false,
       "houseNumber": "71-75",
       "postCode": 22415,
-      "superplus": 2.249
+      "superplus": 2.239
     },
     {
       "id": "4d382ce3-33bb-404f-88be-363e01648dca",
@@ -6914,7 +6914,7 @@
       "diesel": 2.169,
       "e5": 2.079,
       "e10": 2.019,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "122",
       "postCode": 21147,
       "superplus": 2.179
@@ -6931,7 +6931,7 @@
       "diesel": 2.199,
       "e5": 2.139,
       "e10": 2.079,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "4",
       "postCode": 22113,
       "superplus": 2.239
@@ -6979,13 +6979,13 @@
       "lat": 53.6496,
       "lng": 10.0096,
       "dist": 11,
-      "diesel": 2.219,
-      "e5": 2.139,
-      "e10": 2.079,
-      "isOpen": true,
+      "diesel": 2.199,
+      "e5": 2.129,
+      "e10": 2.069,
+      "isOpen": false,
       "houseNumber": "216",
       "postCode": 22415,
-      "superplus": 2.239
+      "superplus": 2.229
     },
     {
       "id": "5bc582da-bfa7-4793-887c-97ccf1bbb466",
@@ -7016,7 +7016,7 @@
       "diesel": 2.359,
       "e5": 2.269,
       "e10": 2.209,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "57",
       "postCode": 22869,
       "superplus": 2.369
@@ -7047,10 +7047,10 @@
       "lat": 53.6504,
       "lng": 10.0176,
       "dist": 11.2,
-      "diesel": 2.219,
+      "diesel": 2.199,
       "e5": 2.129,
       "e10": 2.069,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "",
       "postCode": 22415,
       "superplus": 2.229
@@ -7101,7 +7101,7 @@
       "diesel": 2.359,
       "e5": 2.269,
       "e10": 2.209,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "86",
       "postCode": 22869,
       "superplus": 2.369
@@ -7118,7 +7118,7 @@
       "diesel": 2.189,
       "e5": 2.119,
       "e10": 2.059,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "67",
       "postCode": 22143,
       "superplus": 2.219
@@ -7135,7 +7135,7 @@
       "diesel": 2.359,
       "e5": 2.279,
       "e10": 2.219,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "24",
       "postCode": 22391,
       "superplus": 2.379
@@ -7152,7 +7152,7 @@
       "diesel": 2.189,
       "e5": 2.119,
       "e10": 2.059,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "132",
       "postCode": 22147,
       "superplus": 2.219
@@ -7169,7 +7169,7 @@
       "diesel": 2.359,
       "e5": 2.259,
       "e10": 2.199,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "92",
       "postCode": 22339,
       "superplus": 2.359
@@ -7186,7 +7186,7 @@
       "diesel": 2.199,
       "e5": 2.129,
       "e10": 2.069,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "",
       "postCode": 22391,
       "superplus": 2.229
@@ -7220,7 +7220,7 @@
       "diesel": 2.199,
       "e5": 2.139,
       "e10": 2.079,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "83",
       "postCode": 22113,
       "superplus": 2.239
@@ -7237,7 +7237,7 @@
       "diesel": 2.369,
       "e5": 2.279,
       "e10": 2.219,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "1",
       "postCode": 25462,
       "superplus": 2.379
@@ -7271,7 +7271,7 @@
       "diesel": 2.209,
       "e5": 2.089,
       "e10": 2.029,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "91",
       "postCode": 21077,
       "superplus": 2.189
@@ -7288,7 +7288,7 @@
       "diesel": 2.379,
       "e5": 2.229,
       "e10": 2.169,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "56 A",
       "postCode": 22113,
       "superplus": 2.329
@@ -7322,7 +7322,7 @@
       "diesel": 2.359,
       "e5": 2.269,
       "e10": 2.209,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "",
       "postCode": 22869,
       "superplus": 2.369
@@ -7356,7 +7356,7 @@
       "diesel": 2.369,
       "e5": 2.279,
       "e10": 2.219,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "91",
       "postCode": 22589,
       "superplus": 2.379
@@ -7373,7 +7373,7 @@
       "diesel": 2.199,
       "e5": 2.139,
       "e10": 2.079,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "297",
       "postCode": 21077,
       "superplus": 2.239
@@ -7390,7 +7390,7 @@
       "diesel": 2.199,
       "e5": 2.139,
       "e10": 2.079,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "",
       "postCode": 22143,
       "superplus": 2.239
@@ -7407,7 +7407,7 @@
       "diesel": 2.189,
       "e5": 2.119,
       "e10": 2.059,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "407",
       "postCode": 22159,
       "superplus": 2.219
@@ -7475,7 +7475,7 @@
       "diesel": 2.369,
       "e5": 2.279,
       "e10": 2.219,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "1a",
       "postCode": 22587,
       "superplus": 2.379
@@ -7492,7 +7492,7 @@
       "diesel": 2.169,
       "e5": 2.079,
       "e10": 2.019,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "",
       "postCode": 21077,
       "superplus": 2.179
@@ -7509,7 +7509,7 @@
       "diesel": 2.199,
       "e5": 2.139,
       "e10": 2.079,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "104",
       "postCode": 21031,
       "superplus": 2.239
@@ -7526,7 +7526,7 @@
       "diesel": 2.189,
       "e5": 2.119,
       "e10": 2.059,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "2",
       "postCode": 22145,
       "superplus": 2.219
@@ -7594,7 +7594,7 @@
       "diesel": 2.369,
       "e5": 2.279,
       "e10": 2.219,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "70",
       "postCode": 25474,
       "superplus": 2.379
@@ -7611,7 +7611,7 @@
       "diesel": 2.239,
       "e5": 2.169,
       "e10": 2.109,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "50",
       "postCode": 22848,
       "superplus": 2.269
@@ -7628,7 +7628,7 @@
       "diesel": 2.179,
       "e5": 2.079,
       "e10": 2.019,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "180",
       "postCode": 21077,
       "superplus": 2.179
@@ -7659,13 +7659,13 @@
       "lat": 53.662773,
       "lng": 10.079065,
       "dist": 13.6,
-      "diesel": 2.239,
-      "e5": 2.159,
-      "e10": 2.099,
-      "isOpen": true,
+      "diesel": 2.229,
+      "e5": 2.149,
+      "e10": 2.089,
+      "isOpen": false,
       "houseNumber": "35",
       "postCode": 22399,
-      "superplus": 2.259
+      "superplus": 2.249
     },
     {
       "id": "cfe8958d-722d-49db-80f3-2c466142e5b3",
@@ -7679,7 +7679,7 @@
       "diesel": 2.369,
       "e5": 2.279,
       "e10": 2.219,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "8",
       "postCode": 25469,
       "superplus": 2.379
@@ -7696,7 +7696,7 @@
       "diesel": 2.189,
       "e5": 2.119,
       "e10": 2.059,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "",
       "postCode": 22145,
       "superplus": 2.219
@@ -7713,7 +7713,7 @@
       "diesel": 2.169,
       "e5": 2.079,
       "e10": 2.019,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "183",
       "postCode": 21077,
       "superplus": 2.179
@@ -7727,13 +7727,13 @@
       "lat": 53.674394,
       "lng": 9.987061,
       "dist": 13.7,
-      "diesel": 2.229,
-      "e5": 2.149,
-      "e10": 2.089,
-      "isOpen": true,
+      "diesel": 2.209,
+      "e5": 2.139,
+      "e10": 2.079,
+      "isOpen": false,
       "houseNumber": "117",
       "postCode": 22848,
-      "superplus": 2.249
+      "superplus": 2.239
     },
     {
       "id": "6c9d0e18-a79e-4d73-a5f4-4fd542b17923",
@@ -7747,7 +7747,7 @@
       "diesel": 2.199,
       "e5": 2.139,
       "e10": 2.079,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "136",
       "postCode": 21033,
       "superplus": 2.239
@@ -7764,7 +7764,7 @@
       "diesel": 2.199,
       "e5": 2.139,
       "e10": 2.079,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "39",
       "postCode": 21509,
       "superplus": 2.239
@@ -7846,13 +7846,13 @@
       "lat": 53.681803,
       "lng": 9.985981,
       "dist": 14.5,
-      "diesel": 2.229,
-      "e5": 2.149,
-      "e10": 2.089,
-      "isOpen": true,
+      "diesel": 2.209,
+      "e5": 2.139,
+      "e10": 2.079,
+      "isOpen": false,
       "houseNumber": "",
       "postCode": 22848,
-      "superplus": 2.249
+      "superplus": 2.239
     },
     {
       "id": "5e6d5cc3-d6a6-472b-a2db-4602613afd03",
@@ -7863,13 +7863,13 @@
       "lat": 53.683377,
       "lng": 10.011435,
       "dist": 14.8,
-      "diesel": 2.229,
-      "e5": 2.149,
-      "e10": 2.089,
+      "diesel": 2.209,
+      "e5": 2.139,
+      "e10": 2.079,
       "isOpen": true,
       "houseNumber": "69-71",
       "postCode": 22850,
-      "superplus": 2.249
+      "superplus": 2.239
     },
     {
       "id": "2f432c0c-9052-466d-9030-c78ab8c4149d",
@@ -7900,7 +7900,7 @@
       "diesel": 2.179,
       "e5": 2.079,
       "e10": 2.019,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "44",
       "postCode": 21217,
       "superplus": 2.179
@@ -7917,7 +7917,7 @@
       "diesel": 2.199,
       "e5": 2.139,
       "e10": 2.079,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "48",
       "postCode": 21033,
       "superplus": 2.239
@@ -7934,7 +7934,7 @@
       "diesel": 2.199,
       "e5": 2.139,
       "e10": 2.079,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "43",
       "postCode": 21033,
       "superplus": 2.239
@@ -7951,7 +7951,7 @@
       "diesel": 2.199,
       "e5": 2.139,
       "e10": 2.079,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "52",
       "postCode": 21033,
       "superplus": 2.239
@@ -8019,7 +8019,7 @@
       "diesel": 2.189,
       "e5": 2.009,
       "e10": 1.969,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "",
       "postCode": 81541,
       "superplus": 2.109
@@ -8053,7 +8053,7 @@
       "diesel": 2.178,
       "e5": 1.998,
       "e10": 1.958,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "50",
       "postCode": 81541,
       "superplus": 2.098
@@ -8087,7 +8087,7 @@
       "diesel": 2.199,
       "e5": 2.009,
       "e10": 1.949,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "15",
       "postCode": 81675,
       "superplus": 2.109
@@ -8104,7 +8104,7 @@
       "diesel": 2.189,
       "e5": 2.009,
       "e10": 1.949,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "7",
       "postCode": 81539,
       "superplus": 2.109
@@ -8206,7 +8206,7 @@
       "diesel": 2.189,
       "e5": 2.009,
       "e10": 1.959,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "15",
       "postCode": 81543,
       "superplus": 2.109
@@ -8342,7 +8342,7 @@
       "diesel": 2.199,
       "e5": 1.999,
       "e10": 1.939,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "46 - 50",
       "postCode": 80802,
       "superplus": 2.099
@@ -8410,7 +8410,7 @@
       "diesel": 2.189,
       "e5": 2.019,
       "e10": 1.959,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "153",
       "postCode": 81669,
       "superplus": 2.119
@@ -8444,7 +8444,7 @@
       "diesel": 2.199,
       "e5": 2.009,
       "e10": 1.949,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "48",
       "postCode": 80636,
       "superplus": 2.109
@@ -8461,7 +8461,7 @@
       "diesel": 2.189,
       "e5": 2.009,
       "e10": 1.949,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "112",
       "postCode": 81547,
       "superplus": 2.109
@@ -8478,7 +8478,7 @@
       "diesel": 2.199,
       "e5": 2.009,
       "e10": 1.949,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "101",
       "postCode": 81925,
       "superplus": 2.109
@@ -8529,7 +8529,7 @@
       "diesel": 2.199,
       "e5": 1.999,
       "e10": null,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "65",
       "postCode": 80805,
       "superplus": 2.099
@@ -8546,7 +8546,7 @@
       "diesel": 2.199,
       "e5": 2.009,
       "e10": 1.979,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "",
       "postCode": 81927,
       "superplus": 2.109
@@ -8580,7 +8580,7 @@
       "diesel": 2.219,
       "e5": 2.029,
       "e10": 1.969,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "39",
       "postCode": 81929,
       "superplus": 2.129
@@ -8595,12 +8595,12 @@
       "lng": 11.624476,
       "dist": 4.4,
       "diesel": 2.199,
-      "e5": 2.019,
+      "e5": 2.009,
       "e10": 1.989,
       "isOpen": true,
       "houseNumber": "",
       "postCode": 81925,
-      "superplus": 2.119
+      "superplus": 2.109
     },
     {
       "id": "51d4b443-a095-1aa0-e100-80009459e03a",
@@ -8631,7 +8631,7 @@
       "diesel": 2.209,
       "e5": 2.029,
       "e10": 1.969,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "175 C",
       "postCode": 81545,
       "superplus": 2.129
@@ -8665,7 +8665,7 @@
       "diesel": 2.199,
       "e5": 2.009,
       "e10": 1.949,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "163",
       "postCode": 80637,
       "superplus": 2.109
@@ -8682,7 +8682,7 @@
       "diesel": 2.199,
       "e5": 2.009,
       "e10": 1.949,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "205",
       "postCode": 80639,
       "superplus": 2.109
@@ -8733,7 +8733,7 @@
       "diesel": 2.219,
       "e5": 2.019,
       "e10": 1.959,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "178",
       "postCode": 81925,
       "superplus": 2.119
@@ -8750,7 +8750,7 @@
       "diesel": 2.199,
       "e5": 1.999,
       "e10": 1.939,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "92",
       "postCode": 80807,
       "superplus": 2.099
@@ -8767,7 +8767,7 @@
       "diesel": 2.199,
       "e5": 2.009,
       "e10": 1.949,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "55",
       "postCode": 80639,
       "superplus": 2.109
@@ -8801,7 +8801,7 @@
       "diesel": 2.199,
       "e5": 1.999,
       "e10": 1.939,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "257",
       "postCode": 80809,
       "superplus": 2.099
@@ -8818,7 +8818,7 @@
       "diesel": 2.189,
       "e5": 1.999,
       "e10": 1.939,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "8a",
       "postCode": 81379,
       "superplus": 2.099
@@ -8832,13 +8832,13 @@
       "lat": 48.125337,
       "lng": 11.648482,
       "dist": 5.1,
-      "diesel": 2.209,
-      "e5": 2.029,
-      "e10": 1.969,
-      "isOpen": true,
+      "diesel": 2.199,
+      "e5": 2.019,
+      "e10": 1.959,
+      "isOpen": false,
       "houseNumber": "128",
       "postCode": 81825,
-      "superplus": 2.129
+      "superplus": 2.119
     },
     {
       "id": "17e1d0a9-62fe-466d-9dac-455ef508dbfc",
@@ -8852,7 +8852,7 @@
       "diesel": 2.199,
       "e5": 2.029,
       "e10": 1.969,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "4",
       "postCode": 81927,
       "superplus": 2.129
@@ -8869,7 +8869,7 @@
       "diesel": 2.219,
       "e5": 2.019,
       "e10": 1.959,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "31",
       "postCode": 81735,
       "superplus": 2.119
@@ -8886,7 +8886,7 @@
       "diesel": 2.199,
       "e5": 2.009,
       "e10": 1.989,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "",
       "postCode": 80639,
       "superplus": 2.109
@@ -8903,7 +8903,7 @@
       "diesel": 2.199,
       "e5": 2.019,
       "e10": 1.959,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "186",
       "postCode": 81825,
       "superplus": 2.119
@@ -8920,7 +8920,7 @@
       "diesel": 2.199,
       "e5": 2.019,
       "e10": 1.969,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "",
       "postCode": 81735,
       "superplus": 2.119
@@ -8937,7 +8937,7 @@
       "diesel": 2.199,
       "e5": 1.999,
       "e10": 1.939,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "75",
       "postCode": 80809,
       "superplus": 2.099
@@ -8988,7 +8988,7 @@
       "diesel": 2.189,
       "e5": 1.999,
       "e10": 1.939,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "85",
       "postCode": 80639,
       "superplus": 2.099
@@ -9022,7 +9022,7 @@
       "diesel": 2.199,
       "e5": 2.009,
       "e10": null,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "10",
       "postCode": 80638,
       "superplus": 2.109
@@ -9090,7 +9090,7 @@
       "diesel": 2.219,
       "e5": 2.019,
       "e10": 1.959,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "68",
       "postCode": 82008,
       "superplus": 2.119
@@ -9141,7 +9141,7 @@
       "diesel": 2.199,
       "e5": 1.999,
       "e10": 1.939,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "175",
       "postCode": 81377,
       "superplus": 2.099
@@ -9192,7 +9192,7 @@
       "diesel": 2.199,
       "e5": 2.019,
       "e10": 1.959,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "127",
       "postCode": 81379,
       "superplus": 2.119
@@ -9224,12 +9224,12 @@
       "lng": 11.663854,
       "dist": 6.3,
       "diesel": 2.199,
-      "e5": 2.019,
-      "e10": 1.959,
-      "isOpen": true,
+      "e5": 2.009,
+      "e10": 1.949,
+      "isOpen": false,
       "houseNumber": "220",
       "postCode": 81825,
-      "superplus": 2.119
+      "superplus": 2.109
     },
     {
       "id": "435c2e50-cc83-4620-9abc-0e972d7050d1",
@@ -9241,12 +9241,12 @@
       "lng": 11.664057,
       "dist": 6.3,
       "diesel": 2.199,
-      "e5": 2.019,
-      "e10": 1.959,
-      "isOpen": true,
+      "e5": 2.009,
+      "e10": 1.949,
+      "isOpen": false,
       "houseNumber": "219",
       "postCode": 81825,
-      "superplus": 2.119
+      "superplus": 2.109
     },
     {
       "id": "51d4b71e-a095-1aa0-e100-80009459e03a",
@@ -9328,7 +9328,7 @@
       "diesel": 2.199,
       "e5": 1.999,
       "e10": 1.939,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "139",
       "postCode": 81379,
       "superplus": 2.099
@@ -9343,12 +9343,12 @@
       "lng": 11.663527,
       "dist": 6.7,
       "diesel": 2.209,
-      "e5": 2.019,
+      "e5": 2.009,
       "e10": 1.969,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "219",
       "postCode": 81825,
-      "superplus": 2.119
+      "superplus": 2.109
     },
     {
       "id": "2c5498fb-6a85-45c7-adc4-c38121cd9423",
@@ -9362,7 +9362,7 @@
       "diesel": 2.199,
       "e5": 1.999,
       "e10": 1.939,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "35 a",
       "postCode": 80993,
       "superplus": 2.099
@@ -9430,7 +9430,7 @@
       "diesel": 2.199,
       "e5": 2.009,
       "e10": 1.959,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "",
       "postCode": 80939,
       "superplus": 2.109
@@ -9498,7 +9498,7 @@
       "diesel": 2.199,
       "e5": 2.019,
       "e10": 1.959,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "121A",
       "postCode": 82008,
       "superplus": 2.119
@@ -9513,12 +9513,12 @@
       "lng": 11.679848,
       "dist": 7.3,
       "diesel": 2.199,
-      "e5": 2.019,
-      "e10": 1.959,
-      "isOpen": true,
+      "e5": 2.009,
+      "e10": 1.949,
+      "isOpen": false,
       "houseNumber": "339",
       "postCode": 81829,
-      "superplus": 2.119
+      "superplus": 2.109
     },
     {
       "id": "7d7e9d1a-b830-4672-a0a1-1c5cc471c205",
@@ -9564,12 +9564,12 @@
       "lng": 11.65478,
       "dist": 7.4,
       "diesel": 2.199,
-      "e5": 2.009,
-      "e10": 1.949,
+      "e5": 1.999,
+      "e10": 1.939,
       "isOpen": true,
       "houseNumber": "100",
       "postCode": 85774,
-      "superplus": 2.109
+      "superplus": 2.099
     },
     {
       "id": "802e24d9-e991-4be7-bac1-7a4e4fc683e2",
@@ -9598,12 +9598,12 @@
       "lng": 11.639168,
       "dist": 7.5,
       "diesel": 2.209,
-      "e5": 2.019,
-      "e10": 1.959,
-      "isOpen": true,
+      "e5": 2.009,
+      "e10": 1.949,
+      "isOpen": false,
       "houseNumber": "62",
       "postCode": 85774,
-      "superplus": 2.119
+      "superplus": 2.109
     },
     {
       "id": "de935c7e-bbdd-4d77-942a-69a77d2c1060",
@@ -9617,7 +9617,7 @@
       "diesel": 2.219,
       "e5": 2.029,
       "e10": 1.969,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "360",
       "postCode": 81829,
       "superplus": 2.129
@@ -9651,7 +9651,7 @@
       "diesel": 2.199,
       "e5": 2.009,
       "e10": 1.949,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "423-425",
       "postCode": 81241,
       "superplus": 2.109
@@ -9719,7 +9719,7 @@
       "diesel": 2.219,
       "e5": 2.009,
       "e10": 1.949,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "78",
       "postCode": 80997,
       "superplus": 2.109
@@ -9753,7 +9753,7 @@
       "diesel": 2.199,
       "e5": 2.009,
       "e10": 1.949,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "31",
       "postCode": 81375,
       "superplus": 2.109
@@ -9770,7 +9770,7 @@
       "diesel": 2.199,
       "e5": 1.999,
       "e10": 1.939,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "6",
       "postCode": 80935,
       "superplus": 2.099
@@ -9787,7 +9787,7 @@
       "diesel": 2.199,
       "e5": 2.009,
       "e10": 1.979,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "",
       "postCode": 81375,
       "superplus": 2.109
@@ -9821,7 +9821,7 @@
       "diesel": 2.219,
       "e5": 2.019,
       "e10": 1.959,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "111",
       "postCode": 81477,
       "superplus": 2.119
@@ -9838,7 +9838,7 @@
       "diesel": 2.199,
       "e5": 1.999,
       "e10": 1.939,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "1",
       "postCode": 80997,
       "superplus": 2.099
@@ -9855,7 +9855,7 @@
       "diesel": 2.179,
       "e5": 2.049,
       "e10": 1.989,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "1",
       "postCode": 85521,
       "superplus": 2.149
@@ -9906,7 +9906,7 @@
       "diesel": 2.169,
       "e5": 2.019,
       "e10": 1.959,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "42",
       "postCode": 82008,
       "superplus": 2.119
@@ -9923,7 +9923,7 @@
       "diesel": 2.199,
       "e5": 2.009,
       "e10": 1.969,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "",
       "postCode": 81247,
       "superplus": 2.109
@@ -9974,7 +9974,7 @@
       "diesel": 2.199,
       "e5": 2.009,
       "e10": 1.949,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "96",
       "postCode": 81247,
       "superplus": 2.109
@@ -9989,12 +9989,12 @@
       "lng": 11.546335,
       "dist": 9.3,
       "diesel": 2.189,
-      "e5": 1.999,
+      "e5": 1.989,
       "e10": null,
       "isOpen": true,
       "houseNumber": "52",
       "postCode": 80995,
-      "superplus": 2.099
+      "superplus": 2.089
     },
     {
       "id": "00061467-0014-4444-8888-acdcffffffff",
@@ -10025,7 +10025,7 @@
       "diesel": 2.169,
       "e5": 2.039,
       "e10": 1.979,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "26",
       "postCode": 85521,
       "superplus": 2.139
@@ -10076,7 +10076,7 @@
       "diesel": 2.169,
       "e5": 2.039,
       "e10": 1.979,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "28a",
       "postCode": 85521,
       "superplus": 2.139
@@ -10093,7 +10093,7 @@
       "diesel": 2.209,
       "e5": 2.029,
       "e10": 1.969,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "1-3",
       "postCode": 81829,
       "superplus": 2.129
@@ -10161,7 +10161,7 @@
       "diesel": 2.219,
       "e5": 2.019,
       "e10": 1.959,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "62",
       "postCode": 80999,
       "superplus": 2.119
@@ -10178,7 +10178,7 @@
       "diesel": 2.199,
       "e5": 2.009,
       "e10": 1.949,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "26",
       "postCode": 82061,
       "superplus": 2.109
@@ -10195,7 +10195,7 @@
       "diesel": 2.189,
       "e5": 2.049,
       "e10": 1.989,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "84",
       "postCode": 85579,
       "superplus": 2.149
@@ -10229,7 +10229,7 @@
       "diesel": 2.169,
       "e5": 2.039,
       "e10": null,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "50",
       "postCode": 85521,
       "superplus": 2.139
@@ -10261,12 +10261,12 @@
       "lng": 11.71303,
       "dist": 10.1,
       "diesel": 2.199,
-      "e5": 2.019,
-      "e10": 1.959,
-      "isOpen": true,
+      "e5": 2.009,
+      "e10": 1.949,
+      "isOpen": false,
       "houseNumber": "285",
       "postCode": 81827,
-      "superplus": 2.119
+      "superplus": 2.109
     },
     {
       "id": "19a36bac-ea1e-42b2-b7cd-c9f0fa8d0bd1",
@@ -10280,7 +10280,7 @@
       "diesel": 2.209,
       "e5": 2.029,
       "e10": null,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "",
       "postCode": 81827,
       "superplus": 2.129
@@ -10297,7 +10297,7 @@
       "diesel": 2.189,
       "e5": 2.049,
       "e10": 1.989,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "",
       "postCode": 85521,
       "superplus": 2.149
@@ -10314,7 +10314,7 @@
       "diesel": 2.189,
       "e5": 1.999,
       "e10": 1.939,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "",
       "postCode": 80999,
       "superplus": 2.099
@@ -10348,7 +10348,7 @@
       "diesel": 2.199,
       "e5": 2.009,
       "e10": 1.949,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "50",
       "postCode": 82166,
       "superplus": 2.109
@@ -10365,7 +10365,7 @@
       "diesel": 2.199,
       "e5": 2.019,
       "e10": 1.959,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "27",
       "postCode": 82031,
       "superplus": 2.119
@@ -10382,7 +10382,7 @@
       "diesel": 2.219,
       "e5": 2.109,
       "e10": 2.049,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "23",
       "postCode": 85622,
       "superplus": 2.209
@@ -10416,7 +10416,7 @@
       "diesel": 2.219,
       "e5": 2.019,
       "e10": 1.959,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "24 A",
       "postCode": 82031,
       "superplus": 2.119
@@ -10433,7 +10433,7 @@
       "diesel": 2.219,
       "e5": 2.029,
       "e10": 1.969,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "11",
       "postCode": 85622,
       "superplus": 2.129
@@ -10448,12 +10448,12 @@
       "lng": 11.719475,
       "dist": 11,
       "diesel": 2.229,
-      "e5": 2.089,
-      "e10": 2.029,
-      "isOpen": true,
+      "e5": 2.079,
+      "e10": 2.019,
+      "isOpen": false,
       "houseNumber": "6",
       "postCode": 85609,
-      "superplus": 2.189
+      "superplus": 2.179
     },
     {
       "id": "51d4b5e8-a095-1aa0-e100-80009459e03a",
@@ -10501,7 +10501,7 @@
       "diesel": 2.219,
       "e5": 2.059,
       "e10": 2.059,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "",
       "postCode": 85622,
       "superplus": 2.159
@@ -10516,12 +10516,12 @@
       "lng": 11.7314,
       "dist": 11.6,
       "diesel": 2.229,
-      "e5": 2.089,
-      "e10": 2.029,
+      "e5": 2.079,
+      "e10": 2.019,
       "isOpen": true,
       "houseNumber": "20",
       "postCode": 85609,
-      "superplus": 2.189
+      "superplus": 2.179
     },
     {
       "id": "620ba28e-edf4-43d7-bca3-eb0612952475",
@@ -10550,12 +10550,12 @@
       "lng": 11.729236,
       "dist": 11.7,
       "diesel": 2.209,
-      "e5": 2.029,
-      "e10": 1.969,
-      "isOpen": true,
+      "e5": 2.019,
+      "e10": 1.959,
+      "isOpen": false,
       "houseNumber": "6",
       "postCode": 85630,
-      "superplus": 2.129
+      "superplus": 2.119
     },
     {
       "id": "5c751aeb-d343-4e51-bd77-d0204dfce418",
@@ -10569,7 +10569,7 @@
       "diesel": 2.219,
       "e5": 2.019,
       "e10": 1.959,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "57",
       "postCode": 85737,
       "superplus": 2.119
@@ -10603,7 +10603,7 @@
       "diesel": 2.169,
       "e5": 2.039,
       "e10": 1.979,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "1",
       "postCode": 85649,
       "superplus": 2.139
@@ -10618,12 +10618,12 @@
       "lng": 11.671263,
       "dist": 12,
       "diesel": 2.209,
-      "e5": 2.019,
+      "e5": 2.009,
       "e10": 1.969,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "",
       "postCode": 85737,
-      "superplus": 2.119
+      "superplus": 2.109
     },
     {
       "id": "d96604a1-0ed7-4882-a292-0ab5436914c2",
@@ -10637,7 +10637,7 @@
       "diesel": 2.199,
       "e5": 2.019,
       "e10": 1.959,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "1",
       "postCode": 82152,
       "superplus": 2.119
@@ -10671,7 +10671,7 @@
       "diesel": 2.189,
       "e5": 1.999,
       "e10": 1.939,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "317",
       "postCode": 81249,
       "superplus": 2.099
@@ -10688,7 +10688,7 @@
       "diesel": 2.279,
       "e5": 2.109,
       "e10": null,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "",
       "postCode": 85764,
       "superplus": 2.209
@@ -10756,7 +10756,7 @@
       "diesel": 2.259,
       "e5": 2.109,
       "e10": 2.049,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "",
       "postCode": 85748,
       "superplus": 2.209
@@ -10773,7 +10773,7 @@
       "diesel": 2.189,
       "e5": 1.989,
       "e10": null,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "163",
       "postCode": 85757,
       "superplus": 2.089
@@ -10824,7 +10824,7 @@
       "diesel": 2.289,
       "e5": 2.119,
       "e10": 2.059,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "59",
       "postCode": 82152,
       "superplus": 2.219
@@ -10841,7 +10841,7 @@
       "diesel": 2.259,
       "e5": 2.109,
       "e10": 2.049,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "28",
       "postCode": 85748,
       "superplus": 2.209
@@ -10890,12 +10890,12 @@
       "lng": 11.764105,
       "dist": 14.2,
       "diesel": 2.239,
-      "e5": 2.099,
-      "e10": 2.039,
+      "e5": 2.089,
+      "e10": 2.029,
       "isOpen": true,
       "houseNumber": "",
       "postCode": 85551,
-      "superplus": 2.199
+      "superplus": 2.189
     },
     {
       "id": "7f990b02-58ae-4670-b34c-94a09971c681",
@@ -10907,12 +10907,12 @@
       "lng": 11.593216,
       "dist": 14.5,
       "diesel": 2.279,
-      "e5": 2.099,
-      "e10": 2.039,
-      "isOpen": true,
+      "e5": 2.089,
+      "e10": 2.029,
+      "isOpen": false,
       "houseNumber": "2",
       "postCode": 85764,
-      "superplus": 2.199
+      "superplus": 2.189
     },
     {
       "id": "93dacb1f-72eb-4eb5-a922-5799cc2b1bf5",
@@ -10940,7 +10940,7 @@
       "lat": 50.931279,
       "lng": 6.962356,
       "dist": 0.7,
-      "diesel": 2.239,
+      "diesel": 2.229,
       "e5": 2.149,
       "e10": 2.089,
       "isOpen": true,
@@ -11096,7 +11096,7 @@
       "diesel": 2.319,
       "e5": 2.239,
       "e10": 2.179,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "203-209",
       "postCode": 50931,
       "superplus": 2.339
@@ -11113,7 +11113,7 @@
       "diesel": 2.219,
       "e5": 2.139,
       "e10": 2.079,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "138",
       "postCode": 50937,
       "superplus": 2.239
@@ -11181,7 +11181,7 @@
       "diesel": 2.269,
       "e5": 2.239,
       "e10": 2.179,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "406",
       "postCode": 51105,
       "superplus": 2.339
@@ -11215,7 +11215,7 @@
       "diesel": 2.319,
       "e5": 2.239,
       "e10": 2.179,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "",
       "postCode": 50933,
       "superplus": 2.339
@@ -11232,7 +11232,7 @@
       "diesel": 2.239,
       "e5": 2.139,
       "e10": 2.079,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "170",
       "postCode": 50739,
       "superplus": 2.239
@@ -11266,7 +11266,7 @@
       "diesel": 2.309,
       "e5": 2.229,
       "e10": 2.169,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "165",
       "postCode": 50825,
       "superplus": 2.329
@@ -11283,7 +11283,7 @@
       "diesel": 2.219,
       "e5": 2.129,
       "e10": 2.069,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "460",
       "postCode": 50733,
       "superplus": 2.229
@@ -11300,7 +11300,7 @@
       "diesel": 2.219,
       "e5": 2.129,
       "e10": 2.079,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "90",
       "postCode": 50735,
       "superplus": 2.229
@@ -11317,7 +11317,7 @@
       "diesel": 2.229,
       "e5": 2.149,
       "e10": 2.089,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "417-425",
       "postCode": 50968,
       "superplus": 2.249
@@ -11334,7 +11334,7 @@
       "diesel": 2.239,
       "e5": 2.219,
       "e10": 2.159,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "27",
       "postCode": 51103,
       "superplus": 2.319
@@ -11351,7 +11351,7 @@
       "diesel": 2.239,
       "e5": 2.139,
       "e10": 2.079,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "",
       "postCode": 50935,
       "superplus": 2.239
@@ -11368,7 +11368,7 @@
       "diesel": 2.309,
       "e5": 2.239,
       "e10": 2.179,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "60",
       "postCode": 51103,
       "superplus": 2.339
@@ -11385,7 +11385,7 @@
       "diesel": 2.219,
       "e5": 2.139,
       "e10": 2.079,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "223",
       "postCode": 50968,
       "superplus": 2.239
@@ -11453,7 +11453,7 @@
       "diesel": 2.239,
       "e5": 2.139,
       "e10": 2.079,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "126",
       "postCode": 50825,
       "superplus": 2.239
@@ -11470,7 +11470,7 @@
       "diesel": 2.219,
       "e5": 2.139,
       "e10": 2.079,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "274",
       "postCode": 50968,
       "superplus": 2.239
@@ -11504,7 +11504,7 @@
       "diesel": 2.359,
       "e5": 2.289,
       "e10": 2.229,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "49",
       "postCode": 51063,
       "superplus": 2.389
@@ -11555,7 +11555,7 @@
       "diesel": 2.229,
       "e5": 2.129,
       "e10": 2.069,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "388-392",
       "postCode": 50935,
       "superplus": 2.229
@@ -11606,7 +11606,7 @@
       "diesel": 2.219,
       "e5": 2.119,
       "e10": 2.059,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "544",
       "postCode": 50933,
       "superplus": 2.219
@@ -11623,7 +11623,7 @@
       "diesel": 2.219,
       "e5": 2.129,
       "e10": 2.069,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "22-24",
       "postCode": 50735,
       "superplus": 2.229
@@ -11654,10 +11654,10 @@
       "lat": 50.96023,
       "lng": 6.893991,
       "dist": 5.3,
-      "diesel": 2.269,
+      "diesel": 2.249,
       "e5": 2.159,
       "e10": 2.099,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "771",
       "postCode": 50827,
       "superplus": 2.259
@@ -11674,7 +11674,7 @@
       "diesel": 2.259,
       "e5": 2.249,
       "e10": 2.189,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "111",
       "postCode": 51063,
       "superplus": 2.349
@@ -11691,7 +11691,7 @@
       "diesel": 2.239,
       "e5": 2.229,
       "e10": 2.179,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "",
       "postCode": 51063,
       "superplus": 2.329
@@ -11708,7 +11708,7 @@
       "diesel": 2.349,
       "e5": 2.269,
       "e10": 2.209,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "244",
       "postCode": 51063,
       "superplus": 2.369
@@ -11776,7 +11776,7 @@
       "diesel": 2.229,
       "e5": 2.149,
       "e10": 2.089,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "28",
       "postCode": 50996,
       "superplus": 2.249
@@ -11810,7 +11810,7 @@
       "diesel": 2.219,
       "e5": 2.129,
       "e10": 2.069,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "574",
       "postCode": 50354,
       "superplus": 2.229
@@ -11926,7 +11926,7 @@
       "lat": 50.977318,
       "lng": 6.895152,
       "dist": 6.4,
-      "diesel": 2.269,
+      "diesel": 2.249,
       "e5": 2.159,
       "e10": 2.099,
       "isOpen": true,
@@ -11946,7 +11946,7 @@
       "diesel": 2.209,
       "e5": 2.159,
       "e10": 2.099,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "498",
       "postCode": 51109,
       "superplus": 2.259
@@ -11980,7 +11980,7 @@
       "diesel": 2.239,
       "e5": 2.139,
       "e10": 2.079,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "407",
       "postCode": 50858,
       "superplus": 2.239
@@ -12014,7 +12014,7 @@
       "diesel": 2.219,
       "e5": 2.119,
       "e10": 2.059,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "1035",
       "postCode": 50858,
       "superplus": 2.219
@@ -12031,7 +12031,7 @@
       "diesel": 2.279,
       "e5": 2.239,
       "e10": 2.179,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "108",
       "postCode": 51149,
       "superplus": 2.339
@@ -12048,7 +12048,7 @@
       "diesel": 2.219,
       "e5": 2.139,
       "e10": 2.079,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "29",
       "postCode": 50997,
       "superplus": 2.239
@@ -12082,7 +12082,7 @@
       "diesel": 2.359,
       "e5": 2.289,
       "e10": 2.229,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "462",
       "postCode": 51061,
       "superplus": 2.389
@@ -12133,7 +12133,7 @@
       "diesel": 2.199,
       "e5": 2.129,
       "e10": 2.069,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "690",
       "postCode": 51109,
       "superplus": 2.229
@@ -12150,7 +12150,7 @@
       "diesel": 2.219,
       "e5": 2.129,
       "e10": 2.069,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "98",
       "postCode": 50354,
       "superplus": 2.229
@@ -12167,7 +12167,7 @@
       "diesel": 2.369,
       "e5": 2.259,
       "e10": 2.199,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "259",
       "postCode": 50354,
       "superplus": 2.359
@@ -12184,7 +12184,7 @@
       "diesel": 2.239,
       "e5": 2.139,
       "e10": 2.079,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "543",
       "postCode": 50739,
       "superplus": 2.239
@@ -12235,7 +12235,7 @@
       "diesel": 2.229,
       "e5": 2.139,
       "e10": 2.109,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "",
       "postCode": 50735,
       "superplus": 2.239
@@ -12320,7 +12320,7 @@
       "diesel": 2.239,
       "e5": 2.129,
       "e10": 2.069,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "111",
       "postCode": 50859,
       "superplus": 2.229
@@ -12354,7 +12354,7 @@
       "diesel": 2.319,
       "e5": 2.239,
       "e10": 2.179,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "521B/ Lü",
       "postCode": 51107,
       "superplus": 2.339
@@ -12371,7 +12371,7 @@
       "diesel": 2.209,
       "e5": 2.139,
       "e10": 2.079,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "1026",
       "postCode": 51109,
       "superplus": 2.239
@@ -12388,7 +12388,7 @@
       "diesel": 2.209,
       "e5": 2.139,
       "e10": 2.079,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "13",
       "postCode": 50997,
       "superplus": 2.239
@@ -12405,7 +12405,7 @@
       "diesel": 2.229,
       "e5": 2.129,
       "e10": 2.069,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "2",
       "postCode": 50767,
       "superplus": 2.229
@@ -12422,7 +12422,7 @@
       "diesel": 2.229,
       "e5": 2.129,
       "e10": 2.069,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "117",
       "postCode": 50767,
       "superplus": 2.229
@@ -12439,7 +12439,7 @@
       "diesel": 2.309,
       "e5": 2.229,
       "e10": 2.169,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "32-36",
       "postCode": 51149,
       "superplus": 2.329
@@ -12456,7 +12456,7 @@
       "diesel": 2.229,
       "e5": 2.129,
       "e10": 2.069,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "9",
       "postCode": 51069,
       "superplus": 2.229
@@ -12473,7 +12473,7 @@
       "diesel": 2.229,
       "e5": 2.129,
       "e10": 2.069,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "30-32",
       "postCode": 50859,
       "superplus": 2.229
@@ -12490,7 +12490,7 @@
       "diesel": 2.279,
       "e5": 2.239,
       "e10": 2.179,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "108",
       "postCode": 51145,
       "superplus": 2.339
@@ -12507,7 +12507,7 @@
       "diesel": 2.229,
       "e5": null,
       "e10": 2.069,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "1",
       "postCode": 51069,
       "superplus": null
@@ -12558,7 +12558,7 @@
       "diesel": 2.219,
       "e5": 2.139,
       "e10": 2.079,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "473",
       "postCode": 50997,
       "superplus": 2.239
@@ -12609,7 +12609,7 @@
       "diesel": 2.239,
       "e5": 2.149,
       "e10": 2.089,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "144",
       "postCode": 50997,
       "superplus": 2.249
@@ -12626,7 +12626,7 @@
       "diesel": 2.319,
       "e5": 2.249,
       "e10": 2.189,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "724",
       "postCode": 51107,
       "superplus": 2.349
@@ -12694,7 +12694,7 @@
       "diesel": 2.229,
       "e5": 2.129,
       "e10": 2.069,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "1146",
       "postCode": 51069,
       "superplus": 2.229
@@ -12711,7 +12711,7 @@
       "diesel": 2.219,
       "e5": 2.119,
       "e10": 2.059,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "79",
       "postCode": 50226,
       "superplus": 2.219
@@ -12745,7 +12745,7 @@
       "diesel": 2.259,
       "e5": 2.199,
       "e10": 2.139,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "44",
       "postCode": 51143,
       "superplus": 2.299
@@ -12762,7 +12762,7 @@
       "diesel": 2.239,
       "e5": 2.159,
       "e10": 2.099,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "2",
       "postCode": 51373,
       "superplus": 2.259
@@ -12881,7 +12881,7 @@
       "diesel": 2.209,
       "e5": 2.139,
       "e10": 2.079,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "2-4",
       "postCode": 51469,
       "superplus": 2.239
@@ -12898,7 +12898,7 @@
       "diesel": 2.359,
       "e5": 2.289,
       "e10": 2.229,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "123",
       "postCode": 51377,
       "superplus": 2.389
@@ -12932,7 +12932,7 @@
       "diesel": 2.219,
       "e5": 2.119,
       "e10": 2.059,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "19",
       "postCode": 50226,
       "superplus": 2.219
@@ -12949,7 +12949,7 @@
       "diesel": 2.209,
       "e5": 2.159,
       "e10": 2.109,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "",
       "postCode": 51427,
       "superplus": 2.259
@@ -12983,7 +12983,7 @@
       "diesel": 2.229,
       "e5": 2.129,
       "e10": 2.069,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "111",
       "postCode": 51375,
       "superplus": 2.229
@@ -13000,7 +13000,7 @@
       "diesel": 2.199,
       "e5": 2.129,
       "e10": 2.069,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "102",
       "postCode": 51469,
       "superplus": 2.229
@@ -13034,7 +13034,7 @@
       "diesel": 2.239,
       "e5": 2.129,
       "e10": 2.069,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "2",
       "postCode": 50259,
       "superplus": 2.229
@@ -13049,12 +13049,12 @@
       "lng": 6.8537,
       "dist": 11.4,
       "diesel": 2.219,
-      "e5": 2.139,
+      "e5": 2.129,
       "e10": 2.079,
       "isOpen": true,
       "houseNumber": "236",
       "postCode": 50354,
-      "superplus": 2.239
+      "superplus": 2.229
     },
     {
       "id": "538a08e6-2bbb-4d52-b078-f88ff40abc7c",
@@ -13068,7 +13068,7 @@
       "diesel": 2.229,
       "e5": 2.129,
       "e10": 2.069,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "100",
       "postCode": 51375,
       "superplus": 2.229
@@ -13085,7 +13085,7 @@
       "diesel": 2.239,
       "e5": 2.139,
       "e10": 2.079,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "101",
       "postCode": 51375,
       "superplus": 2.239
@@ -13102,7 +13102,7 @@
       "diesel": 2.269,
       "e5": 2.229,
       "e10": 2.169,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "148-150",
       "postCode": 51147,
       "superplus": 2.329
@@ -13153,7 +13153,7 @@
       "diesel": 2.199,
       "e5": 2.129,
       "e10": 2.069,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "189",
       "postCode": 51467,
       "superplus": 2.229
@@ -13170,7 +13170,7 @@
       "diesel": 2.219,
       "e5": 2.139,
       "e10": 2.079,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "",
       "postCode": 50389,
       "superplus": 2.239
@@ -13204,7 +13204,7 @@
       "diesel": 2.219,
       "e5": 2.139,
       "e10": 2.079,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "",
       "postCode": 50389,
       "superplus": 2.239
@@ -13221,7 +13221,7 @@
       "diesel": 2.219,
       "e5": 2.139,
       "e10": 2.079,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "367",
       "postCode": 50321,
       "superplus": 2.239
@@ -13238,7 +13238,7 @@
       "diesel": 2.199,
       "e5": 2.129,
       "e10": 2.069,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "",
       "postCode": 51467,
       "superplus": 2.229
@@ -13255,7 +13255,7 @@
       "diesel": 2.229,
       "e5": 2.149,
       "e10": 2.089,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "135",
       "postCode": 50321,
       "superplus": 2.249
@@ -13272,7 +13272,7 @@
       "diesel": 2.209,
       "e5": 2.139,
       "e10": 2.079,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "215",
       "postCode": 51469,
       "superplus": 2.239
@@ -13323,7 +13323,7 @@
       "diesel": 2.229,
       "e5": 2.129,
       "e10": 2.069,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "67-69",
       "postCode": 51377,
       "superplus": 2.229
@@ -13340,7 +13340,7 @@
       "diesel": 2.229,
       "e5": 2.129,
       "e10": 2.069,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "62",
       "postCode": 53859,
       "superplus": 2.229
@@ -13357,7 +13357,7 @@
       "diesel": 2.229,
       "e5": 2.139,
       "e10": 2.109,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "235",
       "postCode": 50321,
       "superplus": 2.239
@@ -13374,7 +13374,7 @@
       "diesel": 2.209,
       "e5": 2.099,
       "e10": 2.039,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "13",
       "postCode": 53859,
       "superplus": 2.199
@@ -13391,7 +13391,7 @@
       "diesel": 2.219,
       "e5": 2.119,
       "e10": 2.059,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "561",
       "postCode": 50226,
       "superplus": 2.219
@@ -13442,7 +13442,7 @@
       "diesel": 2.199,
       "e5": 2.119,
       "e10": 2.069,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "12",
       "postCode": 51427,
       "superplus": 2.219
@@ -13476,7 +13476,7 @@
       "diesel": 2.219,
       "e5": 2.139,
       "e10": 2.079,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "3",
       "postCode": 50389,
       "superplus": 2.239
@@ -13527,7 +13527,7 @@
       "diesel": 2.209,
       "e5": 2.129,
       "e10": 2.079,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "240",
       "postCode": 51469,
       "superplus": 2.229
@@ -13544,7 +13544,7 @@
       "diesel": 2.199,
       "e5": 2.119,
       "e10": 2.069,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "158",
       "postCode": 51469,
       "superplus": 2.219
@@ -13561,7 +13561,7 @@
       "diesel": 2.229,
       "e5": 2.129,
       "e10": 2.069,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "79",
       "postCode": 51429,
       "superplus": 2.229
@@ -13578,7 +13578,7 @@
       "diesel": 2.209,
       "e5": 2.139,
       "e10": 2.079,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "74",
       "postCode": 51429,
       "superplus": 2.239
@@ -13595,7 +13595,7 @@
       "diesel": 2.369,
       "e5": 2.259,
       "e10": 2.199,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "178",
       "postCode": 50259,
       "superplus": 2.359
@@ -13663,7 +13663,7 @@
       "diesel": 2.229,
       "e5": 2.149,
       "e10": 2.089,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "106",
       "postCode": 50321,
       "superplus": 2.249
@@ -13680,7 +13680,7 @@
       "diesel": 2.219,
       "e5": 2.149,
       "e10": 2.089,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "205",
       "postCode": 51467,
       "superplus": 2.249
@@ -13697,7 +13697,7 @@
       "diesel": 2.219,
       "e5": 2.119,
       "e10": 2.059,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "724",
       "postCode": 50226,
       "superplus": 2.219
@@ -13748,7 +13748,7 @@
       "diesel": 2.229,
       "e5": 2.139,
       "e10": 2.079,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "25",
       "postCode": 51377,
       "superplus": 2.239
@@ -13765,7 +13765,7 @@
       "diesel": 2.229,
       "e5": 2.139,
       "e10": 2.079,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "48",
       "postCode": 51377,
       "superplus": 2.239
@@ -13799,7 +13799,7 @@
       "diesel": 2.199,
       "e5": 2.129,
       "e10": 2.069,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "347",
       "postCode": 51465,
       "superplus": 2.229
@@ -13814,12 +13814,12 @@
       "lng": 7.00481,
       "dist": 14.2,
       "diesel": 2.229,
-      "e5": 2.149,
-      "e10": 2.119,
-      "isOpen": true,
+      "e5": 2.139,
+      "e10": 2.109,
+      "isOpen": false,
       "houseNumber": "7",
       "postCode": 51379,
-      "superplus": 2.249
+      "superplus": 2.239
     },
     {
       "id": "a83c8e00-e60a-4516-aba7-17318918d766",
@@ -13833,7 +13833,7 @@
       "diesel": 2.229,
       "e5": 2.129,
       "e10": 2.069,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "189",
       "postCode": 51381,
       "superplus": 2.229
@@ -13884,7 +13884,7 @@
       "diesel": 2.199,
       "e5": 2.169,
       "e10": 2.109,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "93",
       "postCode": 51503,
       "superplus": 2.269
@@ -13918,7 +13918,7 @@
       "diesel": 2.189,
       "e5": 2.099,
       "e10": 2.039,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "",
       "postCode": 53842,
       "superplus": 2.199
@@ -13935,7 +13935,7 @@
       "diesel": 2.209,
       "e5": 2.139,
       "e10": 2.079,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "2",
       "postCode": 51519,
       "superplus": 2.239
@@ -13969,7 +13969,7 @@
       "diesel": 2.209,
       "e5": 2.139,
       "e10": 2.079,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "34-40",
       "postCode": 60314,
       "superplus": 2.239
@@ -14003,7 +14003,7 @@
       "diesel": 2.209,
       "e5": 2.099,
       "e10": 2.039,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "67",
       "postCode": 60323,
       "superplus": 2.199
@@ -14071,7 +14071,7 @@
       "diesel": 2.199,
       "e5": 2.119,
       "e10": 2.059,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "230",
       "postCode": 60598,
       "superplus": 2.219
@@ -14139,7 +14139,7 @@
       "diesel": 2.229,
       "e5": 2.139,
       "e10": 2.079,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "49",
       "postCode": 60389,
       "superplus": 2.239
@@ -14190,7 +14190,7 @@
       "diesel": 2.189,
       "e5": 2.079,
       "e10": 2.019,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "10",
       "postCode": 60386,
       "superplus": 2.179
@@ -14309,7 +14309,7 @@
       "diesel": 2.209,
       "e5": 2.099,
       "e10": 2.039,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "145a",
       "postCode": 60431,
       "superplus": 2.199
@@ -14326,7 +14326,7 @@
       "diesel": 2.209,
       "e5": 2.119,
       "e10": 2.059,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "377",
       "postCode": 60528,
       "superplus": 2.219
@@ -14360,7 +14360,7 @@
       "diesel": 2.189,
       "e5": 2.099,
       "e10": 2.039,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "111",
       "postCode": 60431,
       "superplus": 2.199
@@ -14428,7 +14428,7 @@
       "diesel": 2.189,
       "e5": 2.099,
       "e10": 2.039,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "523",
       "postCode": 60431,
       "superplus": 2.199
@@ -14445,7 +14445,7 @@
       "diesel": 2.179,
       "e5": 2.089,
       "e10": 2.029,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "",
       "postCode": 60433,
       "superplus": 2.189
@@ -14496,7 +14496,7 @@
       "diesel": 2.199,
       "e5": 2.139,
       "e10": 2.079,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "70",
       "postCode": 60528,
       "superplus": 2.239
@@ -14547,7 +14547,7 @@
       "diesel": 2.229,
       "e5": 2.139,
       "e10": 2.079,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "",
       "postCode": 63069,
       "superplus": 2.239
@@ -14564,7 +14564,7 @@
       "diesel": 2.239,
       "e5": 2.169,
       "e10": 2.129,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "",
       "postCode": 63069,
       "superplus": 2.269
@@ -14598,7 +14598,7 @@
       "diesel": 2.209,
       "e5": 2.089,
       "e10": 2.029,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "529",
       "postCode": 65933,
       "superplus": 2.189
@@ -14700,7 +14700,7 @@
       "diesel": 2.199,
       "e5": 2.089,
       "e10": 2.029,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "96",
       "postCode": 60388,
       "superplus": 2.189
@@ -14768,7 +14768,7 @@
       "diesel": 2.209,
       "e5": 2.109,
       "e10": 2.049,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "78",
       "postCode": 60488,
       "superplus": 2.209
@@ -14785,7 +14785,7 @@
       "diesel": 2.189,
       "e5": 2.079,
       "e10": 2.019,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "8",
       "postCode": 60488,
       "superplus": 2.179
@@ -14819,7 +14819,7 @@
       "diesel": 2.189,
       "e5": 2.099,
       "e10": 2.039,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "92",
       "postCode": 61118,
       "superplus": 2.199
@@ -14836,7 +14836,7 @@
       "diesel": 2.199,
       "e5": 2.089,
       "e10": 2.029,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "237239",
       "postCode": 60388,
       "superplus": 2.189
@@ -14853,7 +14853,7 @@
       "diesel": 2.209,
       "e5": 2.099,
       "e10": 2.039,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "248",
       "postCode": 60388,
       "superplus": 2.199
@@ -14887,7 +14887,7 @@
       "diesel": 2.179,
       "e5": 2.109,
       "e10": 2.049,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "11",
       "postCode": 63263,
       "superplus": 2.209
@@ -14904,7 +14904,7 @@
       "diesel": 2.239,
       "e5": 2.169,
       "e10": 2.109,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "",
       "postCode": 63263,
       "superplus": 2.269
@@ -14921,7 +14921,7 @@
       "diesel": 2.229,
       "e5": 2.179,
       "e10": 2.129,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "268",
       "postCode": 63071,
       "superplus": 2.279
@@ -14938,7 +14938,7 @@
       "diesel": 2.159,
       "e5": 2.099,
       "e10": 2.039,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "3",
       "postCode": 63263,
       "superplus": 2.199
@@ -14972,7 +14972,7 @@
       "diesel": 2.199,
       "e5": 2.139,
       "e10": 2.119,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "",
       "postCode": 60529,
       "superplus": 2.239
@@ -14987,12 +14987,12 @@
       "lng": 8.785781,
       "dist": 7.4,
       "diesel": 2.229,
-      "e5": 2.129,
-      "e10": 2.069,
+      "e5": 2.119,
+      "e10": 2.059,
       "isOpen": true,
       "houseNumber": "111-115",
       "postCode": 63075,
-      "superplus": 2.229
+      "superplus": 2.219
     },
     {
       "id": "7d4a25b1-6335-4e37-8dda-6e0b9fce4402",
@@ -15072,12 +15072,12 @@
       "lng": 8.78982,
       "dist": 7.8,
       "diesel": 2.229,
-      "e5": 2.129,
-      "e10": 2.069,
-      "isOpen": true,
+      "e5": 2.119,
+      "e10": 2.059,
+      "isOpen": false,
       "houseNumber": "79",
       "postCode": 63075,
-      "superplus": 2.229
+      "superplus": 2.219
     },
     {
       "id": "51d4b488-a095-1aa0-e100-80009459e03a",
@@ -15091,7 +15091,7 @@
       "diesel": 2.239,
       "e5": 2.189,
       "e10": 2.129,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "255",
       "postCode": 63071,
       "superplus": 2.289
@@ -15142,7 +15142,7 @@
       "diesel": 2.189,
       "e5": 2.109,
       "e10": 2.049,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "35",
       "postCode": 60437,
       "superplus": 2.209
@@ -15176,7 +15176,7 @@
       "diesel": 2.249,
       "e5": 2.139,
       "e10": 2.079,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "138",
       "postCode": 63303,
       "superplus": 2.239
@@ -15191,12 +15191,12 @@
       "lng": 8.802513,
       "dist": 8.6,
       "diesel": 2.239,
-      "e5": 2.139,
-      "e10": 2.079,
+      "e5": 2.129,
+      "e10": 2.069,
       "isOpen": true,
       "houseNumber": "333",
       "postCode": 63075,
-      "superplus": 2.239
+      "superplus": 2.229
     },
     {
       "id": "14fd2180-82b1-486f-bbe2-58316fe665a5",
@@ -15227,7 +15227,7 @@
       "diesel": 2.219,
       "e5": 2.099,
       "e10": 2.039,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "63",
       "postCode": 65934,
       "superplus": 2.199
@@ -15242,12 +15242,12 @@
       "lng": 8.564624,
       "dist": 9,
       "diesel": 2.209,
-      "e5": 2.159,
-      "e10": 2.099,
-      "isOpen": true,
+      "e5": 2.099,
+      "e10": 2.039,
+      "isOpen": false,
       "houseNumber": "1",
       "postCode": 65760,
-      "superplus": 2.259
+      "superplus": 2.199
     },
     {
       "id": "a6712b01-ce8b-4881-8d6d-3da22be7c9f8",
@@ -15329,7 +15329,7 @@
       "diesel": 2.209,
       "e5": 2.089,
       "e10": 2.029,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "65",
       "postCode": 65936,
       "superplus": 2.189
@@ -15380,7 +15380,7 @@
       "diesel": 2.189,
       "e5": 2.109,
       "e10": 2.049,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "56",
       "postCode": 60437,
       "superplus": 2.209
@@ -15397,7 +15397,7 @@
       "diesel": 2.239,
       "e5": 2.179,
       "e10": 2.119,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "20",
       "postCode": 63150,
       "superplus": 2.279
@@ -15431,7 +15431,7 @@
       "diesel": 2.229,
       "e5": 2.209,
       "e10": 2.149,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "109",
       "postCode": 63165,
       "superplus": 2.309
@@ -15465,7 +15465,7 @@
       "diesel": 2.219,
       "e5": 2.119,
       "e10": 2.059,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "75",
       "postCode": 63477,
       "superplus": 2.219
@@ -15499,7 +15499,7 @@
       "diesel": 2.199,
       "e5": 2.109,
       "e10": 2.049,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "69",
       "postCode": 63303,
       "superplus": 2.209
@@ -15516,7 +15516,7 @@
       "diesel": 2.249,
       "e5": 2.139,
       "e10": 2.079,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "55",
       "postCode": 63477,
       "superplus": 2.239
@@ -15533,7 +15533,7 @@
       "diesel": 2.239,
       "e5": 2.179,
       "e10": 2.119,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "110",
       "postCode": 63150,
       "superplus": 2.279
@@ -15567,7 +15567,7 @@
       "diesel": 2.209,
       "e5": 2.179,
       "e10": 2.149,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "",
       "postCode": 61449,
       "superplus": 2.279
@@ -15599,12 +15599,12 @@
       "lng": 8.82474,
       "dist": 10.2,
       "diesel": 2.249,
-      "e5": 2.149,
-      "e10": 2.089,
+      "e5": 2.139,
+      "e10": 2.079,
       "isOpen": true,
       "houseNumber": "108",
       "postCode": 63165,
-      "superplus": 2.249
+      "superplus": 2.239
     },
     {
       "id": "99be4ce1-dce7-4207-b118-891febda47bf",
@@ -15616,12 +15616,12 @@
       "lng": 8.672722,
       "dist": 10.2,
       "diesel": 2.139,
-      "e5": 2.089,
-      "e10": 2.039,
-      "isOpen": true,
+      "e5": 2.079,
+      "e10": 2.029,
+      "isOpen": false,
       "houseNumber": "210",
       "postCode": 63303,
-      "superplus": 2.189
+      "superplus": 2.179
     },
     {
       "id": "6a3e48bd-3ede-4c5b-979e-5c896bb61757",
@@ -15652,7 +15652,7 @@
       "diesel": 2.249,
       "e5": 2.139,
       "e10": 2.079,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "",
       "postCode": 65926,
       "superplus": 2.239
@@ -15667,12 +15667,12 @@
       "lng": 8.550742,
       "dist": 10.5,
       "diesel": 2.209,
-      "e5": 2.159,
-      "e10": 2.099,
-      "isOpen": true,
+      "e5": 2.099,
+      "e10": 2.039,
+      "isOpen": false,
       "houseNumber": "235",
       "postCode": 65760,
-      "superplus": 2.259
+      "superplus": 2.199
     },
     {
       "id": "95532e6a-8a4f-4504-9195-91a89cac8d2c",
@@ -15686,7 +15686,7 @@
       "diesel": 2.169,
       "e5": 2.109,
       "e10": 2.049,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "43",
       "postCode": 63303,
       "superplus": 2.209
@@ -15701,12 +15701,12 @@
       "lng": 8.561412,
       "dist": 11,
       "diesel": 2.209,
-      "e5": 2.129,
-      "e10": 2.069,
+      "e5": 2.119,
+      "e10": 2.059,
       "isOpen": true,
       "houseNumber": "21",
       "postCode": 60549,
-      "superplus": 2.229
+      "superplus": 2.219
     },
     {
       "id": "e8c4089f-538d-436d-837f-0ebf069bbcb2",
@@ -15720,7 +15720,7 @@
       "diesel": 2.219,
       "e5": 2.119,
       "e10": 2.059,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "94",
       "postCode": 63477,
       "superplus": 2.219
@@ -15754,7 +15754,7 @@
       "diesel": 2.199,
       "e5": 2.129,
       "e10": 2.069,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "",
       "postCode": 65843,
       "superplus": 2.229
@@ -15771,7 +15771,7 @@
       "diesel": 2.169,
       "e5": 2.089,
       "e10": 2.039,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "92",
       "postCode": 63303,
       "superplus": 2.189
@@ -15788,7 +15788,7 @@
       "diesel": 2.339,
       "e5": 2.149,
       "e10": 2.089,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "2",
       "postCode": 65451,
       "superplus": 2.249
@@ -15805,7 +15805,7 @@
       "diesel": 2.199,
       "e5": 2.089,
       "e10": 2.039,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "74",
       "postCode": 63165,
       "superplus": 2.189
@@ -15822,7 +15822,7 @@
       "diesel": 2.419,
       "e5": 2.259,
       "e10": 2.199,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "",
       "postCode": 63128,
       "superplus": 2.359
@@ -15839,7 +15839,7 @@
       "diesel": 2.189,
       "e5": 2.099,
       "e10": 2.039,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "36",
       "postCode": 61440,
       "superplus": 2.199
@@ -15856,7 +15856,7 @@
       "diesel": 2.209,
       "e5": 2.109,
       "e10": 2.049,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "140",
       "postCode": 63477,
       "superplus": 2.209
@@ -15941,7 +15941,7 @@
       "diesel": 2.229,
       "e5": 2.169,
       "e10": 2.109,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "103",
       "postCode": 65843,
       "superplus": 2.269
@@ -15958,7 +15958,7 @@
       "diesel": 2.229,
       "e5": 2.159,
       "e10": 2.099,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "",
       "postCode": 65824,
       "superplus": 2.259
@@ -15992,7 +15992,7 @@
       "diesel": 2.219,
       "e5": 2.109,
       "e10": 2.049,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "133",
       "postCode": 65931,
       "superplus": 2.209
@@ -16009,7 +16009,7 @@
       "diesel": 2.209,
       "e5": 2.099,
       "e10": 2.039,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "5",
       "postCode": 65931,
       "superplus": 2.199
@@ -16043,7 +16043,7 @@
       "diesel": 2.259,
       "e5": 2.189,
       "e10": 2.129,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "",
       "postCode": 63179,
       "superplus": 2.289
@@ -16060,7 +16060,7 @@
       "diesel": 2.199,
       "e5": 2.109,
       "e10": 2.049,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "3",
       "postCode": 63225,
       "superplus": 2.209
@@ -16077,7 +16077,7 @@
       "diesel": 2.189,
       "e5": 2.109,
       "e10": 2.049,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "34",
       "postCode": 61352,
       "superplus": 2.209
@@ -16111,7 +16111,7 @@
       "diesel": 2.229,
       "e5": 2.139,
       "e10": 2.079,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "200",
       "postCode": 63303,
       "superplus": 2.239
@@ -16128,7 +16128,7 @@
       "diesel": 2.219,
       "e5": 2.159,
       "e10": 2.099,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "11",
       "postCode": 65812,
       "superplus": 2.259
@@ -16162,7 +16162,7 @@
       "diesel": 2.189,
       "e5": 2.109,
       "e10": 2.049,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "146",
       "postCode": 61348,
       "superplus": 2.209
@@ -16179,7 +16179,7 @@
       "diesel": 2.209,
       "e5": 2.169,
       "e10": 2.149,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "",
       "postCode": 64546,
       "superplus": 2.269
@@ -16213,7 +16213,7 @@
       "diesel": 2.229,
       "e5": 2.169,
       "e10": 2.149,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "",
       "postCode": 65812,
       "superplus": 2.269
@@ -16230,7 +16230,7 @@
       "diesel": 2.249,
       "e5": 2.149,
       "e10": 2.089,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "50",
       "postCode": 63179,
       "superplus": 2.249
@@ -16247,7 +16247,7 @@
       "diesel": 2.169,
       "e5": 2.109,
       "e10": 2.049,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "19",
       "postCode": 63225,
       "superplus": 2.209
@@ -16279,12 +16279,12 @@
       "lng": 8.65203,
       "dist": 13.3,
       "diesel": 2.199,
-      "e5": 2.099,
-      "e10": 2.039,
+      "e5": 2.089,
+      "e10": 2.029,
       "isOpen": true,
       "houseNumber": "27",
       "postCode": 63225,
-      "superplus": 2.199
+      "superplus": 2.189
     },
     {
       "id": "20011e79-aebd-4445-9b2a-027c80c82cc8",
@@ -16298,7 +16298,7 @@
       "diesel": 2.229,
       "e5": 2.099,
       "e10": 2.039,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "52-54",
       "postCode": 61476,
       "superplus": 2.199
@@ -16332,7 +16332,7 @@
       "diesel": 2.189,
       "e5": 2.129,
       "e10": 2.069,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "41",
       "postCode": 61440,
       "superplus": 2.229
@@ -16347,12 +16347,12 @@
       "lng": 8.649521,
       "dist": 13.4,
       "diesel": 2.199,
-      "e5": 2.099,
-      "e10": 2.039,
-      "isOpen": true,
+      "e5": 2.089,
+      "e10": 2.029,
+      "isOpen": false,
       "houseNumber": "12",
       "postCode": 63225,
-      "superplus": 2.199
+      "superplus": 2.189
     },
     {
       "id": "af63f990-531d-44bd-b36e-e54391d8b396",
@@ -16366,7 +16366,7 @@
       "diesel": 2.189,
       "e5": 2.179,
       "e10": 2.159,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "",
       "postCode": 61348,
       "superplus": 2.279
@@ -16383,7 +16383,7 @@
       "diesel": 2.209,
       "e5": 2.109,
       "e10": 2.049,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "38",
       "postCode": 61348,
       "superplus": 2.209
@@ -16417,7 +16417,7 @@
       "diesel": 2.419,
       "e5": 2.319,
       "e10": 2.259,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "1",
       "postCode": 63128,
       "superplus": 2.419
@@ -16434,7 +16434,7 @@
       "diesel": 2.339,
       "e5": 2.149,
       "e10": 2.089,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "15",
       "postCode": 65451,
       "superplus": 2.249
@@ -16451,7 +16451,7 @@
       "diesel": 2.209,
       "e5": 2.129,
       "e10": 2.069,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "13",
       "postCode": 65835,
       "superplus": 2.229
@@ -16468,7 +16468,7 @@
       "diesel": 2.209,
       "e5": 2.169,
       "e10": 2.139,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "",
       "postCode": 61348,
       "superplus": 2.269
@@ -16502,7 +16502,7 @@
       "diesel": 2.209,
       "e5": 2.089,
       "e10": 2.029,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "6",
       "postCode": 64546,
       "superplus": 2.189
@@ -16553,7 +16553,7 @@
       "diesel": 2.209,
       "e5": 2.109,
       "e10": 2.049,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "2-6",
       "postCode": 61348,
       "superplus": 2.209
@@ -16568,12 +16568,12 @@
       "lng": 8.793691,
       "dist": 14.4,
       "diesel": 2.429,
-      "e5": 2.269,
-      "e10": 2.209,
+      "e5": 2.259,
+      "e10": 2.199,
       "isOpen": true,
       "houseNumber": "25",
       "postCode": 63128,
-      "superplus": 2.369
+      "superplus": 2.359
     },
     {
       "id": "b79b6b12-e394-46d9-93d8-79d1e279bd6a",
@@ -16587,7 +16587,7 @@
       "diesel": 2.209,
       "e5": 2.089,
       "e10": 2.029,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "40",
       "postCode": 65795,
       "superplus": 2.189
@@ -16638,7 +16638,7 @@
       "diesel": 2.179,
       "e5": 2.119,
       "e10": 2.059,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "66",
       "postCode": 61184,
       "superplus": 2.219
@@ -16655,7 +16655,7 @@
       "diesel": 2.169,
       "e5": 2.109,
       "e10": 2.049,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "50",
       "postCode": 61184,
       "superplus": 2.209
@@ -16672,7 +16672,7 @@
       "diesel": 2.189,
       "e5": 2.079,
       "e10": 2.019,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "92",
       "postCode": 65830,
       "superplus": 2.179
@@ -16689,7 +16689,7 @@
       "diesel": 2.209,
       "e5": 2.169,
       "e10": 2.109,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "18",
       "postCode": 26725,
       "superplus": 2.269
@@ -16740,7 +16740,7 @@
       "diesel": 2.209,
       "e5": 2.159,
       "e10": 2.099,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "21",
       "postCode": 26721,
       "superplus": 2.259
@@ -16791,7 +16791,7 @@
       "diesel": 2.209,
       "e5": 2.169,
       "e10": 2.109,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "6",
       "postCode": 26723,
       "superplus": 2.269
@@ -16825,7 +16825,7 @@
       "diesel": 2.219,
       "e5": 2.179,
       "e10": 2.119,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "284",
       "postCode": 26725,
       "superplus": 2.279
@@ -16842,7 +16842,7 @@
       "diesel": 2.209,
       "e5": 2.169,
       "e10": 2.109,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "212",
       "postCode": 26721,
       "superplus": 2.269
@@ -16859,7 +16859,7 @@
       "diesel": 2.219,
       "e5": 2.179,
       "e10": 2.119,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "216",
       "postCode": 26721,
       "superplus": 2.279
@@ -16876,7 +16876,7 @@
       "diesel": 2.209,
       "e5": 2.169,
       "e10": 2.109,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "1a",
       "postCode": 26723,
       "superplus": 2.269
@@ -16893,7 +16893,7 @@
       "diesel": 2.209,
       "e5": 2.169,
       "e10": 2.109,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "229",
       "postCode": 26721,
       "superplus": 2.269
@@ -16910,7 +16910,7 @@
       "diesel": 2.209,
       "e5": 2.169,
       "e10": 2.109,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "2",
       "postCode": 26759,
       "superplus": 2.269
@@ -16978,7 +16978,7 @@
       "diesel": 2.189,
       "e5": 2.169,
       "e10": 2.109,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "2",
       "postCode": 26736,
       "superplus": 2.269
@@ -17009,7 +17009,7 @@
       "lat": 53.465688385,
       "lng": 7.29862571,
       "dist": 13,
-      "diesel": 2.159,
+      "diesel": 2.149,
       "e5": null,
       "e10": null,
       "isOpen": true,
@@ -17026,10 +17026,10 @@
       "lat": 53.47236,
       "lng": 7.318657,
       "dist": 14.3,
-      "diesel": 2.169,
+      "diesel": 2.159,
       "e5": 2.089,
       "e10": 2.029,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "33",
       "postCode": 26624,
       "superplus": 2.189
@@ -17046,7 +17046,7 @@
       "diesel": 2.169,
       "e5": 2.089,
       "e10": 2.029,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "8-10",
       "postCode": 26624,
       "superplus": 2.189
@@ -17097,7 +17097,7 @@
       "diesel": 2.179,
       "e5": 2.099,
       "e10": 2.039,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "244",
       "postCode": 26506,
       "superplus": 2.199
@@ -17114,7 +17114,7 @@
       "diesel": 2.179,
       "e5": 2.099,
       "e10": 2.039,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "1",
       "postCode": 26506,
       "superplus": 2.199
@@ -17131,7 +17131,7 @@
       "diesel": 2.179,
       "e5": 2.099,
       "e10": 2.039,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "103",
       "postCode": 26524,
       "superplus": 2.199
@@ -17182,7 +17182,7 @@
       "diesel": 2.179,
       "e5": 2.099,
       "e10": 2.039,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "50 B",
       "postCode": 26529,
       "superplus": 2.199
@@ -17199,7 +17199,7 @@
       "diesel": 2.179,
       "e5": 2.099,
       "e10": 2.039,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "21",
       "postCode": 26532,
       "superplus": 2.199
@@ -17233,7 +17233,7 @@
       "diesel": 2.179,
       "e5": 2.129,
       "e10": 2.069,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "49",
       "postCode": 26529,
       "superplus": 2.229
@@ -17366,7 +17366,7 @@
       "lat": 53.514869689941,
       "lng": 7.3717789649963,
       "dist": 13.2,
-      "diesel": 2.149,
+      "diesel": 2.139,
       "e5": 2.069,
       "e10": 2.039,
       "isOpen": true,
@@ -17400,10 +17400,10 @@
       "lat": 53.45736,
       "lng": 7.49745,
       "dist": 3.9,
-      "diesel": 2.169,
+      "diesel": 2.159,
       "e5": 2.079,
       "e10": 2.019,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "18",
       "postCode": 26603,
       "superplus": 2.179
@@ -17417,10 +17417,10 @@
       "lat": 53.45914,
       "lng": 7.4934,
       "dist": 4.1,
-      "diesel": 2.169,
+      "diesel": 2.159,
       "e5": 2.079,
       "e10": 2.019,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "74-76",
       "postCode": 26603,
       "superplus": 2.179
@@ -17437,7 +17437,7 @@
       "diesel": 2.179,
       "e5": 2.119,
       "e10": 2.059,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "27",
       "postCode": 26603,
       "superplus": 2.219
@@ -17468,7 +17468,7 @@
       "lat": 53.473116,
       "lng": 7.480949,
       "dist": 4.9,
-      "diesel": 2.159,
+      "diesel": 2.149,
       "e5": 2.079,
       "e10": 2.019,
       "isOpen": true,
@@ -17485,10 +17485,10 @@
       "lat": 53.512202,
       "lng": 7.552364,
       "dist": 5,
-      "diesel": 2.169,
+      "diesel": 2.159,
       "e5": 2.089,
       "e10": 2.029,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "261",
       "postCode": 26607,
       "superplus": 2.189
@@ -17502,10 +17502,10 @@
       "lat": 53.49618,
       "lng": 7.49028,
       "dist": 5.3,
-      "diesel": 2.169,
+      "diesel": 2.159,
       "e5": 2.089,
       "e10": 2.029,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "7",
       "postCode": 26607,
       "superplus": 2.189
@@ -17519,7 +17519,7 @@
       "lat": 53.471627,
       "lng": 7.471603,
       "dist": 5.5,
-      "diesel": 2.169,
+      "diesel": 2.159,
       "e5": 2.089,
       "e10": 2.029,
       "isOpen": true,
@@ -17553,10 +17553,10 @@
       "lat": 53.463533,
       "lng": 7.463036,
       "dist": 6.1,
-      "diesel": 2.169,
+      "diesel": 2.159,
       "e5": 2.089,
       "e10": 2.029,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "82",
       "postCode": 26605,
       "superplus": 2.189
@@ -17570,13 +17570,13 @@
       "lat": 53.4153,
       "lng": 7.6013,
       "dist": 6.5,
-      "diesel": 2.219,
-      "e5": 2.119,
-      "e10": 2.089,
-      "isOpen": true,
+      "diesel": 2.199,
+      "e5": 2.099,
+      "e10": 2.079,
+      "isOpen": false,
       "houseNumber": "1",
       "postCode": 26629,
-      "superplus": 2.219
+      "superplus": 2.199
     },
     {
       "id": "48bd1f5e-d31f-4a9f-aaf2-259c35edbc9c",
@@ -17590,7 +17590,7 @@
       "diesel": 2.179,
       "e5": 2.109,
       "e10": 2.049,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "16",
       "postCode": 26629,
       "superplus": 2.209
@@ -17607,7 +17607,7 @@
       "diesel": 2.169,
       "e5": 2.099,
       "e10": 2.039,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "67",
       "postCode": 26629,
       "superplus": 2.199
@@ -17655,10 +17655,10 @@
       "lat": 53.477658,
       "lng": 7.39957,
       "dist": 10.3,
-      "diesel": 2.169,
+      "diesel": 2.159,
       "e5": 2.089,
       "e10": 2.029,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "100",
       "postCode": 26624,
       "superplus": 2.189
@@ -17672,10 +17672,10 @@
       "lat": 53.478036,
       "lng": 7.398105,
       "dist": 10.4,
-      "diesel": 2.169,
+      "diesel": 2.159,
       "e5": 2.089,
       "e10": 2.029,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "96",
       "postCode": 26624,
       "superplus": 2.189
@@ -17706,10 +17706,10 @@
       "lat": 53.4001,
       "lng": 7.43692,
       "dist": 10.8,
-      "diesel": 2.169,
+      "diesel": 2.159,
       "e5": 2.079,
       "e10": 2.019,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "44",
       "postCode": 26632,
       "superplus": 2.179
@@ -17723,7 +17723,7 @@
       "lat": 53.55417,
       "lng": 7.47365,
       "dist": 11.1,
-      "diesel": 2.179,
+      "diesel": 2.169,
       "e5": 2.099,
       "e10": 2.039,
       "isOpen": true,
@@ -17743,7 +17743,7 @@
       "diesel": 2.199,
       "e5": 2.159,
       "e10": 2.099,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "3",
       "postCode": 26629,
       "superplus": 2.259
@@ -17777,7 +17777,7 @@
       "diesel": 2.169,
       "e5": 2.169,
       "e10": 2.109,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "205",
       "postCode": 26639,
       "superplus": 2.269
@@ -17828,7 +17828,7 @@
       "diesel": 2.159,
       "e5": 2.149,
       "e10": 2.089,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "121",
       "postCode": 26639,
       "superplus": 2.249
@@ -17845,7 +17845,7 @@
       "diesel": 2.169,
       "e5": 2.099,
       "e10": 2.039,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "73",
       "postCode": 26135,
       "superplus": 2.199
@@ -17862,7 +17862,7 @@
       "diesel": 2.179,
       "e5": 2.099,
       "e10": 2.039,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "",
       "postCode": 26122,
       "superplus": 2.199
@@ -17947,7 +17947,7 @@
       "diesel": 2.179,
       "e5": 2.099,
       "e10": 2.039,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "",
       "postCode": 26129,
       "superplus": 2.199
@@ -17998,7 +17998,7 @@
       "diesel": 2.199,
       "e5": 2.169,
       "e10": 2.109,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "133",
       "postCode": 26133,
       "superplus": 2.269
@@ -18015,7 +18015,7 @@
       "diesel": 2.209,
       "e5": 2.179,
       "e10": 2.119,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "154",
       "postCode": 26133,
       "superplus": 2.279
@@ -18049,7 +18049,7 @@
       "diesel": 2.179,
       "e5": 2.109,
       "e10": 2.049,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "109",
       "postCode": 26135,
       "superplus": 2.209
@@ -18100,7 +18100,7 @@
       "diesel": 2.189,
       "e5": 2.139,
       "e10": 2.079,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "288",
       "postCode": 26125,
       "superplus": 2.239
@@ -18117,7 +18117,7 @@
       "diesel": 2.209,
       "e5": 2.179,
       "e10": 2.119,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "",
       "postCode": 26133,
       "superplus": 2.279
@@ -18132,12 +18132,12 @@
       "lng": 8.21372032166,
       "dist": 2.7,
       "diesel": 2.179,
-      "e5": 2.119,
-      "e10": 2.059,
+      "e5": 2.099,
+      "e10": 2.039,
       "isOpen": true,
       "houseNumber": "100",
       "postCode": 26127,
-      "superplus": 2.219
+      "superplus": 2.199
     },
     {
       "id": "92da3eb5-c84e-4920-a22b-15e711beb990",
@@ -18151,7 +18151,7 @@
       "diesel": 2.199,
       "e5": 2.119,
       "e10": 2.059,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "",
       "postCode": 26131,
       "superplus": 2.219
@@ -18185,7 +18185,7 @@
       "diesel": 2.199,
       "e5": 2.169,
       "e10": 2.109,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "224",
       "postCode": 26133,
       "superplus": 2.269
@@ -18217,12 +18217,12 @@
       "lng": 8.17229366302,
       "dist": 3.3,
       "diesel": 2.179,
-      "e5": 2.119,
-      "e10": 2.059,
+      "e5": 2.099,
+      "e10": 2.039,
       "isOpen": true,
       "houseNumber": "10",
       "postCode": 26129,
-      "superplus": 2.219
+      "superplus": 2.199
     },
     {
       "id": "07942e9f-d251-48b5-bbec-9a135a01bcd4",
@@ -18268,12 +18268,12 @@
       "lng": 8.262815,
       "dist": 4.3,
       "diesel": 2.179,
-      "e5": 2.119,
+      "e5": 2.099,
       "e10": null,
       "isOpen": false,
       "houseNumber": "133",
       "postCode": 26125,
-      "superplus": 2.219
+      "superplus": 2.199
     },
     {
       "id": "d648caf3-f917-4cd8-9bc0-20c1d1cc1ffd",
@@ -18304,7 +18304,7 @@
       "diesel": 2.159,
       "e5": 2.089,
       "e10": 2.029,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "27",
       "postCode": 26125,
       "superplus": 2.189
@@ -18355,7 +18355,7 @@
       "diesel": 2.189,
       "e5": 2.119,
       "e10": 2.059,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "1",
       "postCode": 26215,
       "superplus": 2.219
@@ -18423,7 +18423,7 @@
       "diesel": 2.189,
       "e5": 2.119,
       "e10": 2.059,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "130 A",
       "postCode": 26203,
       "superplus": 2.219
@@ -18491,7 +18491,7 @@
       "diesel": 2.189,
       "e5": 2.119,
       "e10": 2.059,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "247",
       "postCode": 26203,
       "superplus": 2.219
@@ -18525,7 +18525,7 @@
       "diesel": 2.199,
       "e5": 2.139,
       "e10": 2.079,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "290",
       "postCode": 26203,
       "superplus": 2.239
@@ -18556,13 +18556,13 @@
       "lat": 53.23534,
       "lng": 8.20184,
       "dist": 10.2,
-      "diesel": 2.189,
-      "e5": 2.129,
-      "e10": 2.069,
+      "diesel": 2.179,
+      "e5": 2.109,
+      "e10": 2.049,
       "isOpen": true,
       "houseNumber": "125",
       "postCode": 26180,
-      "superplus": 2.229
+      "superplus": 2.209
     },
     {
       "id": "9d9ee2e8-6bb8-4f00-9070-c4af2dd2355d",
@@ -18576,7 +18576,7 @@
       "diesel": 2.199,
       "e5": 2.129,
       "e10": 2.069,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "",
       "postCode": 26180,
       "superplus": 2.229
@@ -18661,7 +18661,7 @@
       "diesel": 2.349,
       "e5": 2.209,
       "e10": 2.149,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "52",
       "postCode": 26180,
       "superplus": 2.309
@@ -18675,7 +18675,7 @@
       "lat": 53.24584,
       "lng": 8.121752,
       "dist": 12.9,
-      "diesel": 2.219,
+      "diesel": 2.209,
       "e5": null,
       "e10": null,
       "isOpen": true,
@@ -18692,13 +18692,13 @@
       "lat": 53.25047,
       "lng": 8.120147,
       "dist": 13.4,
-      "diesel": 2.229,
-      "e5": 2.169,
-      "e10": 2.109,
+      "diesel": 2.219,
+      "e5": 2.159,
+      "e10": 2.099,
       "isOpen": true,
       "houseNumber": "2",
       "postCode": 26215,
-      "superplus": 2.269
+      "superplus": 2.259
     },
     {
       "id": "6a0f5fb0-b28a-4ca1-b6b1-114e3ffc8566",
@@ -18727,12 +18727,12 @@
       "lng": 8.3723497390747,
       "dist": 14.1,
       "diesel": 2.129,
-      "e5": 2.139,
-      "e10": 2.079,
+      "e5": 2.129,
+      "e10": 2.069,
       "isOpen": true,
       "houseNumber": "2b",
       "postCode": 26931,
-      "superplus": 2.239
+      "superplus": 2.229
     },
     {
       "id": "72f04cea-d26b-4612-9b74-da7e27a2e6d8",
@@ -18743,13 +18743,13 @@
       "lat": 53.258818,
       "lng": 8.115688,
       "dist": 14.4,
-      "diesel": 2.229,
-      "e5": 2.169,
+      "diesel": 2.219,
+      "e5": 2.159,
       "e10": 2.149,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "",
       "postCode": 26215,
-      "superplus": 2.269
+      "superplus": 2.259
     },
     {
       "id": "43d2a2a6-c1a9-4313-baca-b75684e877f6",
@@ -18761,12 +18761,12 @@
       "lng": 8.3109502792358,
       "dist": 14.6,
       "diesel": 2.129,
-      "e5": 2.139,
+      "e5": 2.129,
       "e10": null,
       "isOpen": true,
       "houseNumber": "20",
       "postCode": 26939,
-      "superplus": 2.239
+      "superplus": 2.229
     },
     {
       "id": "06627310-9949-487e-acd8-7aa12f9c4deb",
@@ -18794,13 +18794,13 @@
       "lat": 53.08968,
       "lng": 8.803957,
       "dist": 1.2,
-      "diesel": 2.249,
-      "e5": 2.159,
-      "e10": 2.099,
+      "diesel": 2.219,
+      "e5": 2.139,
+      "e10": 2.079,
       "isOpen": true,
       "houseNumber": "17",
       "postCode": 28215,
-      "superplus": 2.259
+      "superplus": 2.239
     },
     {
       "id": "b409a753-f4d5-4b0f-84c7-cbd63ac1052d",
@@ -18811,13 +18811,13 @@
       "lat": 53.087685,
       "lng": 8.787594,
       "dist": 1.3,
-      "diesel": 2.259,
-      "e5": 2.169,
-      "e10": 2.109,
-      "isOpen": true,
+      "diesel": 2.229,
+      "e5": 2.149,
+      "e10": 2.089,
+      "isOpen": false,
       "houseNumber": "73",
       "postCode": 28217,
-      "superplus": 2.269
+      "superplus": 2.249
     },
     {
       "id": "17f71fda-fb79-5759-802a-b948657d0c54",
@@ -18828,13 +18828,13 @@
       "lat": 53.08781814575,
       "lng": 8.78441905975,
       "dist": 1.5,
-      "diesel": 2.319,
-      "e5": 2.229,
-      "e10": 2.169,
+      "diesel": 2.219,
+      "e5": 2.129,
+      "e10": 2.069,
       "isOpen": true,
       "houseNumber": "7",
       "postCode": 28217,
-      "superplus": 2.329
+      "superplus": 2.229
     },
     {
       "id": "cd610759-8163-4470-b638-1e92b574c939",
@@ -18845,13 +18845,13 @@
       "lat": 53.084163,
       "lng": 8.825713,
       "dist": 1.7,
-      "diesel": 2.259,
-      "e5": 2.169,
-      "e10": 2.109,
-      "isOpen": true,
+      "diesel": 2.229,
+      "e5": 2.149,
+      "e10": 2.089,
+      "isOpen": false,
       "houseNumber": "",
       "postCode": 28209,
-      "superplus": 2.269
+      "superplus": 2.249
     },
     {
       "id": "28714b27-acda-4f00-9927-381b1ed93953",
@@ -18862,10 +18862,10 @@
       "lat": 53.094288,
       "lng": 8.792462,
       "dist": 1.8,
-      "diesel": 2.259,
+      "diesel": 2.239,
       "e5": 2.199,
       "e10": 2.139,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "",
       "postCode": 28217,
       "superplus": 2.299
@@ -18879,13 +18879,13 @@
       "lat": 53.082286,
       "lng": 8.828614,
       "dist": 1.8,
-      "diesel": 2.249,
-      "e5": 2.159,
-      "e10": 2.099,
-      "isOpen": true,
+      "diesel": 2.219,
+      "e5": 2.129,
+      "e10": 2.069,
+      "isOpen": false,
       "houseNumber": "27",
       "postCode": 28209,
-      "superplus": 2.259
+      "superplus": 2.229
     },
     {
       "id": "b9c637b0-76b1-4f8a-8554-9a64085ea2ca",
@@ -18897,12 +18897,12 @@
       "lng": 8.78299,
       "dist": 2,
       "diesel": 2.209,
-      "e5": 2.119,
-      "e10": 2.059,
+      "e5": 2.069,
+      "e10": 2.009,
       "isOpen": true,
       "houseNumber": "25/27",
       "postCode": 28199,
-      "superplus": 2.219
+      "superplus": 2.169
     },
     {
       "id": "51d4b5e7-a095-1aa0-e100-80009459e03a",
@@ -18914,12 +18914,12 @@
       "lng": 8.77632,
       "dist": 2.4,
       "diesel": 2.189,
-      "e5": 2.099,
-      "e10": 2.039,
-      "isOpen": true,
+      "e5": 2.079,
+      "e10": 2.019,
+      "isOpen": false,
       "houseNumber": "55",
       "postCode": 28199,
-      "superplus": 2.199
+      "superplus": 2.179
     },
     {
       "id": "c1009946-54e6-4d1f-83eb-709e1de852d9",
@@ -18930,13 +18930,13 @@
       "lat": 53.0824,
       "lng": 8.76534,
       "dist": 2.5,
-      "diesel": 2.209,
-      "e5": 2.119,
-      "e10": 2.059,
-      "isOpen": true,
+      "diesel": 2.199,
+      "e5": 2.099,
+      "e10": 2.039,
+      "isOpen": false,
       "houseNumber": "58",
       "postCode": 28197,
-      "superplus": 2.219
+      "superplus": 2.199
     },
     {
       "id": "f4cff0c5-82ee-488b-a093-b0cc5a8ffde7",
@@ -18947,13 +18947,13 @@
       "lat": 53.100705,
       "lng": 8.814656,
       "dist": 2.5,
-      "diesel": 2.269,
-      "e5": 2.169,
-      "e10": 2.109,
-      "isOpen": true,
+      "diesel": 2.239,
+      "e5": 2.149,
+      "e10": 2.089,
+      "isOpen": false,
       "houseNumber": "351",
       "postCode": 28215,
-      "superplus": 2.269
+      "superplus": 2.249
     },
     {
       "id": "20db6a90-f2e4-452d-86c0-6ad07550d510",
@@ -18967,7 +18967,7 @@
       "diesel": 2.329,
       "e5": 2.239,
       "e10": 2.179,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "65",
       "postCode": 28219,
       "superplus": 2.339
@@ -18982,12 +18982,12 @@
       "lng": 8.799813,
       "dist": 2.7,
       "diesel": 2.209,
-      "e5": 2.119,
-      "e10": 2.059,
-      "isOpen": true,
+      "e5": 2.069,
+      "e10": 2.009,
+      "isOpen": false,
       "houseNumber": "170",
       "postCode": 28199,
-      "superplus": 2.219
+      "superplus": 2.169
     },
     {
       "id": "1d84bcb2-3c17-46ff-8436-f9bfd7d2b357",
@@ -18999,12 +18999,12 @@
       "lng": 8.813713,
       "dist": 2.7,
       "diesel": 2.209,
-      "e5": 2.119,
-      "e10": 2.059,
-      "isOpen": true,
+      "e5": 2.069,
+      "e10": 2.009,
+      "isOpen": false,
       "houseNumber": "266",
       "postCode": 28201,
-      "superplus": 2.219
+      "superplus": 2.169
     },
     {
       "id": "240ba115-6512-5c4b-bfdc-d6acf5fa46ad",
@@ -19015,13 +19015,13 @@
       "lat": 53.09580230713,
       "lng": 8.76940345764,
       "dist": 2.8,
-      "diesel": 2.319,
-      "e5": 2.229,
-      "e10": 2.169,
+      "diesel": 2.219,
+      "e5": 2.129,
+      "e10": 2.069,
       "isOpen": true,
       "houseNumber": "1",
       "postCode": 28217,
-      "superplus": 2.329
+      "superplus": 2.229
     },
     {
       "id": "51d4b502-a095-1aa0-e100-80009459e03a",
@@ -19035,7 +19035,7 @@
       "diesel": 2.369,
       "e5": 2.259,
       "e10": 2.199,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "300",
       "postCode": 28201,
       "superplus": 2.359
@@ -19050,12 +19050,12 @@
       "lng": 8.844334,
       "dist": 3.2,
       "diesel": 2.209,
-      "e5": 2.129,
-      "e10": 2.069,
-      "isOpen": true,
+      "e5": 2.069,
+      "e10": 2.009,
+      "isOpen": false,
       "houseNumber": "124-125",
       "postCode": 28205,
-      "superplus": 2.229
+      "superplus": 2.169
     },
     {
       "id": "51d4b712-a095-1aa0-e100-80009459e03a",
@@ -19100,13 +19100,13 @@
       "lat": 53.085277,
       "lng": 8.851599,
       "dist": 3.4,
-      "diesel": 2.259,
-      "e5": 2.169,
-      "e10": 2.109,
-      "isOpen": true,
+      "diesel": 2.229,
+      "e5": 2.139,
+      "e10": 2.079,
+      "isOpen": false,
       "houseNumber": "205",
       "postCode": 28211,
-      "superplus": 2.269
+      "superplus": 2.239
     },
     {
       "id": "e67c9993-313d-4ee3-84ca-35b4aff7e36e",
@@ -19120,7 +19120,7 @@
       "diesel": 2.259,
       "e5": 2.169,
       "e10": 2.109,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "49",
       "postCode": 28329,
       "superplus": 2.269
@@ -19134,13 +19134,13 @@
       "lat": 53.1077,
       "lng": 8.77568,
       "dist": 3.6,
-      "diesel": 2.249,
-      "e5": 2.159,
-      "e10": 2.099,
-      "isOpen": true,
+      "diesel": 2.219,
+      "e5": 2.129,
+      "e10": 2.069,
+      "isOpen": false,
       "houseNumber": "259",
       "postCode": 28219,
-      "superplus": 2.259
+      "superplus": 2.229
     },
     {
       "id": "005056ba-7cb6-1ed2-bceb-8a39e78c8d33",
@@ -19151,13 +19151,13 @@
       "lat": 53.108535,
       "lng": 8.772798,
       "dist": 3.8,
-      "diesel": 2.249,
-      "e5": 2.159,
-      "e10": 2.099,
-      "isOpen": true,
+      "diesel": 2.219,
+      "e5": 2.129,
+      "e10": 2.069,
+      "isOpen": false,
       "houseNumber": "294",
       "postCode": 28219,
-      "superplus": 2.259
+      "superplus": 2.229
     },
     {
       "id": "2065f709-5c1e-4ce0-9583-1ddaf11a2f9e",
@@ -19168,13 +19168,13 @@
       "lat": 53.081858,
       "lng": 8.866397,
       "dist": 4.3,
-      "diesel": 2.259,
-      "e5": 2.169,
-      "e10": 2.109,
-      "isOpen": true,
+      "diesel": 2.229,
+      "e5": 2.139,
+      "e10": 2.079,
+      "isOpen": false,
       "houseNumber": "",
       "postCode": 28329,
-      "superplus": 2.269
+      "superplus": 2.239
     },
     {
       "id": "b13188a6-e0d6-45e1-ae2e-1faa7bc4ee0a",
@@ -19185,13 +19185,13 @@
       "lat": 53.0688,
       "lng": 8.866984,
       "dist": 4.5,
-      "diesel": 2.239,
-      "e5": 2.149,
-      "e10": 2.089,
+      "diesel": 2.209,
+      "e5": 2.119,
+      "e10": 2.059,
       "isOpen": true,
       "houseNumber": "31-33",
       "postCode": 28207,
-      "superplus": 2.249
+      "superplus": 2.219
     },
     {
       "id": "cb644b6a-8aa7-488a-ace4-d7536a7376ab",
@@ -19219,13 +19219,13 @@
       "lat": 53.04086,
       "lng": 8.831701,
       "dist": 4.7,
-      "diesel": 2.209,
-      "e5": 2.129,
-      "e10": 2.069,
+      "diesel": 2.199,
+      "e5": 2.119,
+      "e10": 2.059,
       "isOpen": true,
       "houseNumber": "98",
       "postCode": 28277,
-      "superplus": 2.229
+      "superplus": 2.219
     },
     {
       "id": "ac275308-e6de-4e14-a593-89183cf8e504",
@@ -19256,7 +19256,7 @@
       "diesel": 2.189,
       "e5": 2.109,
       "e10": 2.049,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "15",
       "postCode": 28279,
       "superplus": 2.209
@@ -19290,7 +19290,7 @@
       "diesel": 2.189,
       "e5": 2.109,
       "e10": 2.049,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "",
       "postCode": 28207,
       "superplus": 2.209
@@ -19305,12 +19305,12 @@
       "lng": 8.735128,
       "dist": 5,
       "diesel": 2.209,
-      "e5": 2.129,
-      "e10": 2.069,
-      "isOpen": true,
+      "e5": 2.089,
+      "e10": 2.029,
+      "isOpen": false,
       "houseNumber": "55",
       "postCode": 28259,
-      "superplus": 2.229
+      "superplus": 2.189
     },
     {
       "id": "005056ba-7cb6-1ed2-bceb-805b47cacd2a",
@@ -19321,13 +19321,13 @@
       "lat": 53.080897,
       "lng": 8.877401,
       "dist": 5.1,
-      "diesel": 2.249,
-      "e5": 2.159,
-      "e10": 2.099,
+      "diesel": 2.219,
+      "e5": 2.129,
+      "e10": 2.069,
       "isOpen": true,
       "houseNumber": "72",
       "postCode": 28329,
-      "superplus": 2.259
+      "superplus": 2.229
     },
     {
       "id": "7e250165-c4b0-4e81-8c60-3d5177b787fd",
@@ -19338,13 +19338,13 @@
       "lat": 53.082008,
       "lng": 8.877442,
       "dist": 5.1,
-      "diesel": 2.259,
-      "e5": 2.169,
-      "e10": 2.109,
-      "isOpen": true,
+      "diesel": 2.229,
+      "e5": 2.139,
+      "e10": 2.079,
+      "isOpen": false,
       "houseNumber": "1",
       "postCode": 28329,
-      "superplus": 2.269
+      "superplus": 2.239
     },
     {
       "id": "0bbe19ef-6ebd-4e10-9873-a840a1472a61",
@@ -19355,13 +19355,13 @@
       "lat": 53.082718,
       "lng": 8.878073,
       "dist": 5.1,
-      "diesel": 2.259,
-      "e5": 2.169,
-      "e10": 2.109,
-      "isOpen": true,
+      "diesel": 2.229,
+      "e5": 2.139,
+      "e10": 2.079,
+      "isOpen": false,
       "houseNumber": "2",
       "postCode": 28329,
-      "superplus": 2.269
+      "superplus": 2.239
     },
     {
       "id": "77e11a22-0fdb-4a1f-8c9b-aba46e9d00d8",
@@ -19389,13 +19389,13 @@
       "lat": 53.030588,
       "lng": 8.807484,
       "dist": 5.4,
-      "diesel": 2.219,
-      "e5": 2.139,
-      "e10": 2.079,
+      "diesel": 2.199,
+      "e5": 2.119,
+      "e10": 2.059,
       "isOpen": true,
       "houseNumber": "117",
       "postCode": 28816,
-      "superplus": 2.239
+      "superplus": 2.219
     },
     {
       "id": "51d4b6d7-a095-1aa0-e100-80009459e03a",
@@ -19409,7 +19409,7 @@
       "diesel": 2.369,
       "e5": 2.259,
       "e10": 2.199,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "253",
       "postCode": 28329,
       "superplus": 2.359
@@ -19423,13 +19423,13 @@
       "lat": 53.02891,
       "lng": 8.807547,
       "dist": 5.6,
-      "diesel": 2.219,
-      "e5": 2.139,
-      "e10": 2.079,
+      "diesel": 2.199,
+      "e5": 2.119,
+      "e10": 2.059,
       "isOpen": true,
       "houseNumber": "112",
       "postCode": 28816,
-      "superplus": 2.239
+      "superplus": 2.219
     },
     {
       "id": "cd743ae9-5be5-4c47-8951-72fe669c8ccc",
@@ -19441,12 +19441,12 @@
       "lng": 8.73772,
       "dist": 5.6,
       "diesel": 2.199,
-      "e5": 2.119,
-      "e10": 2.059,
-      "isOpen": true,
+      "e5": 2.059,
+      "e10": 1.999,
+      "isOpen": false,
       "houseNumber": "",
       "postCode": 28259,
-      "superplus": 2.219
+      "superplus": 2.159
     },
     {
       "id": "7eff9d16-2b08-450f-be77-a99f12aa6267",
@@ -19457,13 +19457,13 @@
       "lat": 53.101569,
       "lng": 8.878291,
       "dist": 5.7,
-      "diesel": 2.259,
-      "e5": 2.159,
-      "e10": 2.099,
-      "isOpen": true,
+      "diesel": 2.229,
+      "e5": 2.139,
+      "e10": 2.079,
+      "isOpen": false,
       "houseNumber": "98",
       "postCode": 28359,
-      "superplus": 2.259
+      "superplus": 2.239
     },
     {
       "id": "29e303b7-589a-435d-b906-648cb5c1b5cb",
@@ -19474,13 +19474,13 @@
       "lat": 53.02685,
       "lng": 8.80082,
       "dist": 5.8,
-      "diesel": 2.209,
-      "e5": 2.119,
-      "e10": 2.059,
+      "diesel": 2.189,
+      "e5": 2.099,
+      "e10": 2.039,
       "isOpen": true,
       "houseNumber": "1",
       "postCode": 28816,
-      "superplus": 2.219
+      "superplus": 2.199
     },
     {
       "id": "0d59105f-f3f5-4dce-bb9e-584fcd8fc0b2",
@@ -19491,13 +19491,13 @@
       "lat": 53.065886,
       "lng": 8.888143,
       "dist": 6,
-      "diesel": 2.249,
-      "e5": 2.159,
-      "e10": 2.099,
+      "diesel": 2.219,
+      "e5": 2.129,
+      "e10": 2.069,
       "isOpen": true,
       "houseNumber": "156",
       "postCode": 28309,
-      "superplus": 2.259
+      "superplus": 2.229
     },
     {
       "id": "6b73358b-ad99-43b6-bafb-ad3a3c6b3b4c",
@@ -19526,12 +19526,12 @@
       "lng": 8.727184,
       "dist": 6.8,
       "diesel": 2.199,
-      "e5": 2.119,
-      "e10": 2.059,
+      "e5": 2.059,
+      "e10": 1.999,
       "isOpen": true,
       "houseNumber": "225",
       "postCode": 28259,
-      "superplus": 2.219
+      "superplus": 2.159
     },
     {
       "id": "005056ba-7cb6-1ed2-bceb-66675e910d1f",
@@ -19543,12 +19543,12 @@
       "lng": 8.713235,
       "dist": 6.8,
       "diesel": 2.199,
-      "e5": 2.119,
-      "e10": 2.059,
+      "e5": 2.059,
+      "e10": 1.999,
       "isOpen": true,
       "houseNumber": "100",
       "postCode": 28259,
-      "superplus": 2.219
+      "superplus": 2.159
     },
     {
       "id": "80ec1461-fdfa-4afd-8290-99d12f2fa3c9",
@@ -19562,7 +19562,7 @@
       "diesel": 2.249,
       "e5": 2.159,
       "e10": 2.099,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "53",
       "postCode": 28816,
       "superplus": 2.259
@@ -19594,12 +19594,12 @@
       "lng": 8.894031,
       "dist": 7,
       "diesel": 2.199,
-      "e5": 2.109,
-      "e10": 2.049,
-      "isOpen": true,
+      "e5": 2.059,
+      "e10": 1.999,
+      "isOpen": false,
       "houseNumber": "8 A",
       "postCode": 28309,
-      "superplus": 2.209
+      "superplus": 2.159
     },
     {
       "id": "64d208c2-6e07-48eb-8824-1237ab1a3ab3",
@@ -19610,13 +19610,13 @@
       "lat": 53.111651,
       "lng": 8.893157,
       "dist": 7.1,
-      "diesel": 2.259,
-      "e5": 2.159,
-      "e10": 2.099,
-      "isOpen": true,
+      "diesel": 2.229,
+      "e5": 2.139,
+      "e10": 2.079,
+      "isOpen": false,
       "houseNumber": "44",
       "postCode": 28357,
-      "superplus": 2.259
+      "superplus": 2.239
     },
     {
       "id": "72137d04-286d-469f-9ab3-677f8fca29c4",
@@ -19630,7 +19630,7 @@
       "diesel": 2.289,
       "e5": 2.159,
       "e10": 2.099,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "38",
       "postCode": 28355,
       "superplus": 2.259
@@ -19644,13 +19644,13 @@
       "lat": 53.034886,
       "lng": 8.887201,
       "dist": 7.6,
-      "diesel": 2.239,
-      "e5": 2.149,
-      "e10": 2.089,
+      "diesel": 2.229,
+      "e5": 2.079,
+      "e10": 2.019,
       "isOpen": true,
       "houseNumber": "5A",
       "postCode": 28309,
-      "superplus": 2.249
+      "superplus": 2.179
     },
     {
       "id": "9eb12b02-2cdd-4f4b-af57-92abb801a3d1",
@@ -19661,13 +19661,13 @@
       "lat": 53.13722,
       "lng": 8.740584,
       "dist": 7.6,
-      "diesel": 2.269,
-      "e5": 2.169,
-      "e10": 2.109,
+      "diesel": 2.239,
+      "e5": 2.139,
+      "e10": 2.079,
       "isOpen": true,
       "houseNumber": "5",
       "postCode": 28239,
-      "superplus": 2.269
+      "superplus": 2.239
     },
     {
       "id": "b1024a67-e1e8-49f1-aa4b-c83270b8ccb0",
@@ -19681,7 +19681,7 @@
       "diesel": 2.289,
       "e5": 2.159,
       "e10": 2.099,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "62",
       "postCode": 28357,
       "superplus": 2.259
@@ -19712,13 +19712,13 @@
       "lat": 53.13563156128,
       "lng": 8.72056484222,
       "dist": 8.3,
-      "diesel": 2.319,
-      "e5": 2.229,
-      "e10": 2.169,
+      "diesel": 2.219,
+      "e5": 2.129,
+      "e10": 2.069,
       "isOpen": true,
       "houseNumber": "11",
       "postCode": 28239,
-      "superplus": 2.329
+      "superplus": 2.229
     },
     {
       "id": "e23d5972-e95a-4c03-9ab3-1fd093c66a13",
@@ -19730,12 +19730,12 @@
       "lng": 8.929957,
       "dist": 8.9,
       "diesel": 2.209,
-      "e5": 2.119,
-      "e10": 2.059,
-      "isOpen": true,
+      "e5": 2.069,
+      "e10": 2.009,
+      "isOpen": false,
       "houseNumber": "83",
       "postCode": 28307,
-      "superplus": 2.219
+      "superplus": 2.169
     },
     {
       "id": "cbfe10e6-6cc4-4f40-be7b-b360b6c2cb22",
@@ -19766,7 +19766,7 @@
       "diesel": 2.229,
       "e5": 2.139,
       "e10": 2.079,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "46",
       "postCode": 28325,
       "superplus": 2.239
@@ -19781,12 +19781,12 @@
       "lng": 8.670717,
       "dist": 9.6,
       "diesel": 2.209,
-      "e5": 2.129,
-      "e10": 2.069,
-      "isOpen": true,
+      "e5": 2.089,
+      "e10": 2.029,
+      "isOpen": false,
       "houseNumber": "226",
       "postCode": 27751,
-      "superplus": 2.229
+      "superplus": 2.189
     },
     {
       "id": "dda79663-5ae9-4c34-b48c-4c27287c6d55",
@@ -19800,7 +19800,7 @@
       "diesel": 2.249,
       "e5": 2.159,
       "e10": 2.099,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "",
       "postCode": 28844,
       "superplus": 2.259
@@ -19814,13 +19814,13 @@
       "lat": 52.991,
       "lng": 8.80606,
       "dist": 9.8,
-      "diesel": 2.269,
-      "e5": 2.179,
-      "e10": 2.119,
+      "diesel": 2.239,
+      "e5": 2.149,
+      "e10": 2.089,
       "isOpen": true,
       "houseNumber": "2",
       "postCode": 28844,
-      "superplus": 2.279
+      "superplus": 2.249
     },
     {
       "id": "51d4b5ee-a095-1aa0-e100-80009459e03a",
@@ -19834,7 +19834,7 @@
       "diesel": 2.359,
       "e5": 2.279,
       "e10": 2.219,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "149",
       "postCode": 28307,
       "superplus": 2.379
@@ -19848,13 +19848,13 @@
       "lat": 53.011737,
       "lng": 8.703697,
       "dist": 10,
-      "diesel": 2.239,
-      "e5": 2.159,
-      "e10": 2.099,
+      "diesel": 2.209,
+      "e5": 2.129,
+      "e10": 2.069,
       "isOpen": true,
       "houseNumber": "84-86",
       "postCode": 28816,
-      "superplus": 2.259
+      "superplus": 2.229
     },
     {
       "id": "c543910c-fbd3-4865-9286-3e76baad3017",
@@ -19885,7 +19885,7 @@
       "diesel": 2.219,
       "e5": 2.119,
       "e10": 2.059,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "35",
       "postCode": 28865,
       "superplus": 2.219
@@ -19900,12 +19900,12 @@
       "lng": 8.9483,
       "dist": 10.1,
       "diesel": 2.199,
-      "e5": 2.099,
-      "e10": 2.039,
-      "isOpen": true,
+      "e5": 2.049,
+      "e10": 1.989,
+      "isOpen": false,
       "houseNumber": "161",
       "postCode": 28307,
-      "superplus": 2.199
+      "superplus": 2.149
     },
     {
       "id": "38678054-8e6b-4bd8-a714-ff92a3993164",
@@ -19919,7 +19919,7 @@
       "diesel": 2.229,
       "e5": 2.129,
       "e10": 2.069,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "",
       "postCode": 28861,
       "superplus": 2.229
@@ -19933,13 +19933,13 @@
       "lat": 53.050333,
       "lng": 8.654466,
       "dist": 10.4,
-      "diesel": 2.229,
-      "e5": 2.139,
-      "e10": 2.079,
-      "isOpen": true,
+      "diesel": 2.209,
+      "e5": 2.119,
+      "e10": 2.059,
+      "isOpen": false,
       "houseNumber": "74",
       "postCode": 27751,
-      "superplus": 2.239
+      "superplus": 2.219
     },
     {
       "id": "036d7041-93ba-49e3-b7e7-cdf6217adfc1",
@@ -19970,7 +19970,7 @@
       "diesel": 2.359,
       "e5": 2.209,
       "e10": 2.149,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "208",
       "postCode": 28816,
       "superplus": 2.309
@@ -19985,12 +19985,12 @@
       "lng": 8.962569,
       "dist": 11,
       "diesel": 2.209,
-      "e5": 2.109,
-      "e10": 2.049,
+      "e5": 2.059,
+      "e10": 1.999,
       "isOpen": true,
       "houseNumber": "222",
       "postCode": 28325,
-      "superplus": 2.209
+      "superplus": 2.159
     },
     {
       "id": "b1957bf9-c90d-4b3e-910f-7a3a918176c0",
@@ -20002,12 +20002,12 @@
       "lng": 8.957482,
       "dist": 11,
       "diesel": 2.199,
-      "e5": 2.109,
-      "e10": 2.049,
-      "isOpen": true,
+      "e5": 2.059,
+      "e10": 1.999,
+      "isOpen": false,
       "houseNumber": "41",
       "postCode": 28307,
-      "superplus": 2.209
+      "superplus": 2.159
     },
     {
       "id": "51d4b6e2-a095-1aa0-e100-80009459e03a",
@@ -20021,7 +20021,7 @@
       "diesel": 2.369,
       "e5": 2.269,
       "e10": 2.209,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "86",
       "postCode": 28307,
       "superplus": 2.369
@@ -20035,13 +20035,13 @@
       "lat": 52.9879,
       "lng": 8.87077,
       "dist": 11.2,
-      "diesel": 2.269,
-      "e5": 2.179,
-      "e10": 2.119,
-      "isOpen": true,
+      "diesel": 2.239,
+      "e5": 2.149,
+      "e10": 2.089,
+      "isOpen": false,
       "houseNumber": "4",
       "postCode": 28844,
-      "superplus": 2.279
+      "superplus": 2.249
     },
     {
       "id": "51d4b4af-a095-1aa0-e100-80009459e03a",
@@ -20069,13 +20069,13 @@
       "lat": 53.02978,
       "lng": 8.655731,
       "dist": 11.2,
-      "diesel": 2.219,
-      "e5": 2.129,
-      "e10": 2.069,
-      "isOpen": true,
+      "diesel": 2.199,
+      "e5": 2.119,
+      "e10": 2.059,
+      "isOpen": false,
       "houseNumber": "200",
       "postCode": 27755,
-      "superplus": 2.229
+      "superplus": 2.219
     },
     {
       "id": "30f9d3d3-a41b-463e-99f8-c077f4828df0",
@@ -20086,13 +20086,13 @@
       "lat": 53.0341,
       "lng": 8.65099,
       "dist": 11.3,
-      "diesel": 2.209,
-      "e5": 2.119,
+      "diesel": 2.199,
+      "e5": 2.109,
       "e10": 2.059,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "159",
       "postCode": 27755,
-      "superplus": 2.219
+      "superplus": 2.209
     },
     {
       "id": "710625cc-af7a-4b31-8563-e42a49a31f09",
@@ -20123,7 +20123,7 @@
       "diesel": 2.369,
       "e5": 2.209,
       "e10": 2.149,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "163",
       "postCode": 27753,
       "superplus": 2.309
@@ -20137,13 +20137,13 @@
       "lat": 52.97629,
       "lng": 8.791554,
       "dist": 11.5,
-      "diesel": 2.269,
-      "e5": 2.179,
-      "e10": 2.119,
+      "diesel": 2.239,
+      "e5": 2.149,
+      "e10": 2.089,
       "isOpen": true,
       "houseNumber": "29-31",
       "postCode": 28844,
-      "superplus": 2.279
+      "superplus": 2.249
     },
     {
       "id": "8d4240a2-737f-4f94-82d6-764b55bd3891",
@@ -20154,13 +20154,13 @@
       "lat": 53.061147,
       "lng": 8.631143,
       "dist": 11.6,
-      "diesel": 2.209,
-      "e5": 2.129,
-      "e10": 2.069,
-      "isOpen": true,
+      "diesel": 2.199,
+      "e5": 2.109,
+      "e10": 2.049,
+      "isOpen": false,
       "houseNumber": "95",
       "postCode": 27753,
-      "superplus": 2.229
+      "superplus": 2.209
     },
     {
       "id": "3e2de480-c65a-59de-81fb-19eba6ffa76c",
@@ -20171,13 +20171,13 @@
       "lat": 53.04574966431,
       "lng": 8.63498210907,
       "dist": 11.7,
-      "diesel": 2.269,
-      "e5": 2.189,
-      "e10": 2.129,
+      "diesel": 2.199,
+      "e5": 2.109,
+      "e10": 2.049,
       "isOpen": true,
       "houseNumber": "2",
       "postCode": 27749,
-      "superplus": 2.289
+      "superplus": 2.209
     },
     {
       "id": "2163d24f-5c5c-4a6a-8f4a-26d9d4b37845",
@@ -20191,7 +20191,7 @@
       "diesel": 2.299,
       "e5": 2.219,
       "e10": 2.159,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "78",
       "postCode": 28844,
       "superplus": 2.319
@@ -20222,13 +20222,13 @@
       "lat": 53.167858,
       "lng": 8.702534,
       "dist": 11.9,
-      "diesel": 2.279,
-      "e5": 2.199,
-      "e10": 2.139,
+      "diesel": 2.269,
+      "e5": 2.179,
+      "e10": 2.119,
       "isOpen": true,
       "houseNumber": "",
       "postCode": 28719,
-      "superplus": 2.299
+      "superplus": 2.279
     },
     {
       "id": "ad3ee81c-25fa-40b0-9bc5-0f78d271e76f",
@@ -20239,13 +20239,13 @@
       "lat": 53.1777,
       "lng": 8.72565,
       "dist": 12.1,
-      "diesel": 2.269,
-      "e5": 2.179,
-      "e10": 2.119,
-      "isOpen": true,
+      "diesel": 2.229,
+      "e5": 2.129,
+      "e10": 2.069,
+      "isOpen": false,
       "houseNumber": "46",
       "postCode": 28719,
-      "superplus": 2.279
+      "superplus": 2.229
     },
     {
       "id": "f94e9f9f-0cfd-4958-b229-53d39ca8c1af",
@@ -20256,13 +20256,13 @@
       "lat": 53.18436,
       "lng": 8.756663,
       "dist": 12.1,
-      "diesel": 2.279,
-      "e5": 2.199,
-      "e10": 2.139,
-      "isOpen": true,
+      "diesel": 2.239,
+      "e5": 2.139,
+      "e10": 2.079,
+      "isOpen": false,
       "houseNumber": "10",
       "postCode": 27721,
-      "superplus": 2.299
+      "superplus": 2.239
     },
     {
       "id": "874f8b14-865d-4cb4-9646-a8658d82a206",
@@ -20308,12 +20308,12 @@
       "lng": 8.973356,
       "dist": 12.8,
       "diesel": 2.199,
-      "e5": 2.109,
-      "e10": 2.049,
-      "isOpen": true,
+      "e5": 2.079,
+      "e10": 2.019,
+      "isOpen": false,
       "houseNumber": "60a",
       "postCode": 28832,
-      "superplus": 2.209
+      "superplus": 2.179
     },
     {
       "id": "84f19739-9042-4ffc-90d7-a6348ef20a16",
@@ -20324,13 +20324,13 @@
       "lat": 53.180813,
       "lng": 8.708578,
       "dist": 12.9,
-      "diesel": 2.259,
-      "e5": 2.169,
-      "e10": 2.109,
-      "isOpen": true,
+      "diesel": 2.249,
+      "e5": 2.159,
+      "e10": 2.099,
+      "isOpen": false,
       "houseNumber": "5",
       "postCode": 27721,
-      "superplus": 2.269
+      "superplus": 2.259
     },
     {
       "id": "897b1382-0fd6-4982-bdb2-830328034fc7",
@@ -20375,13 +20375,13 @@
       "lat": 53.185259,
       "lng": 8.706642,
       "dist": 13.4,
-      "diesel": 2.269,
-      "e5": 2.179,
-      "e10": 2.119,
-      "isOpen": true,
+      "diesel": 2.259,
+      "e5": 2.169,
+      "e10": 2.109,
+      "isOpen": false,
       "houseNumber": "47",
       "postCode": 27721,
-      "superplus": 2.279
+      "superplus": 2.269
     },
     {
       "id": "70e80725-9ef7-4d92-9d90-b2dd1c342a95",
@@ -20443,13 +20443,13 @@
       "lat": 53.174444,
       "lng": 8.652001,
       "dist": 14.5,
-      "diesel": 2.279,
-      "e5": 2.189,
-      "e10": 2.129,
-      "isOpen": true,
+      "diesel": 2.259,
+      "e5": 2.169,
+      "e10": 2.109,
+      "isOpen": false,
       "houseNumber": "",
       "postCode": 28757,
-      "superplus": 2.289
+      "superplus": 2.269
     },
     {
       "id": "ca388b34-fc83-4562-8da6-03a95cd6206c",
@@ -20478,12 +20478,12 @@
       "lng": 9.02167,
       "dist": 14.8,
       "diesel": 2.209,
-      "e5": 2.129,
-      "e10": 2.069,
-      "isOpen": true,
+      "e5": 2.089,
+      "e10": 2.029,
+      "isOpen": false,
       "houseNumber": "",
       "postCode": 28876,
-      "superplus": 2.229
+      "superplus": 2.189
     },
     {
       "id": "8541cb3f-d883-4abb-a34e-f9f37d0b1a57",
@@ -20494,14 +20494,14 @@
       "lat": 52.97408,
       "lng": 8.940565,
       "dist": 14.9,
-      "diesel": 2.259,
-      "e5": 2.169,
-      "e10": 2.109,
+      "diesel": 2.229,
+      "e5": 2.139,
+      "e10": 2.079,
       "isOpen": true,
       "houseNumber": "1",
       "postCode": 27339,
-      "superplus": 2.269
+      "superplus": 2.239
     }
   ],
-  "fetched_at": "2026-10-22T18:21:17Z"
+  "fetched_at": "2026-10-22T21:48:50Z"
 }
