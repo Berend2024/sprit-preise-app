@@ -5146,7 +5146,7 @@
       "diesel": 2.199,
       "e5": 2.129,
       "e10": 2.069,
-      "isOpen": false,
+      "isOpen": true,
       "houseNumber": "206",
       "postCode": 22525,
       "superplus": 2.229
@@ -7968,7 +7968,7 @@
       "diesel": 2.239,
       "e5": 2.009,
       "e10": 1.949,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "6",
       "postCode": 80469,
       "superplus": 2.109
@@ -10722,7 +10722,7 @@
       "diesel": 2.199,
       "e5": 1.999,
       "e10": 1.939,
-      "isOpen": true,
+      "isOpen": false,
       "houseNumber": "174",
       "postCode": 85757,
       "superplus": 2.099
@@ -20503,5 +20503,5 @@
       "superplus": 2.189
     }
   ],
-  "fetched_at": "2026-10-23T22:27:45Z"
+  "fetched_at": "2026-10-24T00:56:07Z"
 }
